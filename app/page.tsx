@@ -249,18 +249,15 @@ export default function Home() {
         </div>
         <div className="hero-copy anim-stagger" style={{ animationDelay: ".5s" }}>
           <h1>Chợ không thiếu thứ gì,<br /><em>chỉ thiếu đồ bình thường.</em></h1>
+          <p>Mua chuyện lạ bằng Xu Kỳ Lạ. Giao hàng thật, công dụng thì chưa chắc.</p>
         </div>
         <div className="hero-bottom">
-          <div className="hero-bottom-copy anim-stagger" style={{ animationDelay: ".7s" }}>
-            <p>Mua chuyện lạ bằng Xu Kỳ Lạ. Giao hàng thật, công dụng thì chưa chắc.</p>
-          </div>
+          <div />
           <div className="hero-bottom-cta anim-stagger" style={{ animationDelay: ".85s" }}>
-            <span>100 vật phẩm kỳ tuyển</span>
             <a href="#san-pham" className="primary-button btn-cut"><b>Đi chợ ngay</b><span className="cta-arrow">→</span><i className="cta-spark">✦</i></a>
           </div>
           <div className="hero-bottom-social anim-stagger" style={{ animationDelay: "1s" }}>
-            <button className="primary-button btn-cut vendor-hero-button" onClick={() => setVendorOpen(true)}><b>Bán đồ</b><i className="cta-spark">♥</i></button>
-            <a className="btn-cut-sm" href="#cach-cho-chay">Xu Kỳ Lạ</a>
+            <button className="secondary-hero-button btn-cut-sm" onClick={() => setVendorOpen(true)}>Bán đồ</button>
           </div>
         </div>
       </section>
@@ -300,8 +297,9 @@ export default function Home() {
                 </Link>
                 <button className="share-button" onClick={() => share(product)} aria-label={`Gửi ${product.name} cho bạn bè`}>↗</button>
                 <div className="product-meta"><span>{product.category}</span><span>{money(product.users)} {product.usage}</span></div>
-                <h3><Link href={`/san-pham/${product.id}`}>{product.name}</Link></h3>
+                <h3><Link href={`/san-pham/${product.id}`}><span>{product.name}</span><b aria-hidden="true">↗</b></Link></h3>
                 <p>{product.description}</p>
+                <div className="product-tags">{product.tags.slice(0, 2).map((tag) => <span key={tag}>{tag}</span>)}</div>
                 <div className="product-bottom"><strong>{money(product.price)} <small>Xu</small></strong><button className="round-magic-button" onClick={(event) => addToCart(product, event)}>Thêm vào giỏ <span>+</span><i className="heart-float">♥ ♥ ♥</i></button></div>
               </motion.article>
             ))}

@@ -1096,3 +1096,150 @@ footer a:last-child { color:#fff; }
 @media(prefers-reduced-motion:reduce){
   .cart-button.burst .cart-flames,.cart-button.burst .magic-cart-icon,.hero-bottom-cta .primary-button:after,.hero-bottom-social .vendor-hero-button:after,.hero-bottom-social .vendor-hero-button:before,.account-coin img{animation:none!important}
 }
+
+/* Fredoka + Quicksand system and editorial holographic product cards */
+.kyky,
+.kyky button,
+.kyky input,
+.kyky select,
+.kyky textarea { font-family:var(--font-body),"Quicksand",sans-serif!important; }
+.hero h1,
+.section-heading h2,
+.how h2,
+.product-card h3,
+.modal h2,
+.drawer h2,
+.drawer h3 { font-family:var(--font-display),"Fredoka",sans-serif!important;font-weight:700!important; }
+.hero-copy { flex-direction:column;gap:24px; }
+.hero-copy p {
+  max-width:620px;
+  margin:0;
+  color:rgba(255,255,255,.82);
+  font-family:var(--font-body),"Quicksand",sans-serif;
+  font-size:15px;
+  font-weight:600;
+  line-height:1.6;
+}
+.hero h1 {
+  max-width:980px;
+  font-size:clamp(42px,5.3vw,76px);
+  font-weight:700!important;
+  letter-spacing:-.045em;
+}
+.hero h1 em { font-weight:700;font-style:normal; }
+.hero-bottom-cta { gap:0; }
+.hero-bottom-cta .primary-button { justify-content:flex-start;padding-left:22px; }
+.hero-bottom-cta .cta-arrow { margin-left:auto;margin-right:-7px; }
+.hero-bottom-social .secondary-hero-button {
+  min-width:124px;
+  height:46px;
+  padding:0 20px;
+  border:1px solid rgba(255,255,255,.52);
+  background:rgba(21,10,30,.28);
+  color:#fff;
+  font-family:var(--font-body),"Quicksand",sans-serif;
+  font-weight:700;
+  backdrop-filter:blur(14px);
+  transition:transform .25s,background .25s,border-color .25s;
+}
+.hero-bottom-social .secondary-hero-button:hover {
+  transform:translateY(-3px);
+  border-color:#d7b8ff;
+  background:rgba(139,70,255,.22);
+}
+
+.product-card { position:relative; }
+.product-image {
+  isolation:isolate;
+  padding:3px;
+  overflow:hidden;
+  border:0;
+  background:#eeeef2;
+}
+.product-image:before {
+  content:"";
+  position:absolute;
+  z-index:0;
+  inset:-45%;
+  background:conic-gradient(from 0deg,#ff6aa2,#ffb84a,#f7f06a,#67e6a3,#62cbff,#9580ff,#ff6aa2);
+  opacity:0;
+  transform:rotate(0);
+  transition:opacity .28s;
+}
+.product-image:after {
+  content:"";
+  position:absolute;
+  z-index:0;
+  inset:3px;
+  border-radius:13px;
+  background:#0f0a16;
+}
+.product-card:hover .product-image:before {
+  opacity:1;
+  animation:rainbowOrbit 2.4s linear infinite;
+}
+.product-art {
+  position:relative;
+  z-index:1;
+  display:block;
+  width:100%;
+  height:100%;
+  border-radius:13px;
+  object-fit:contain!important;
+  object-position:center;
+  transform:scale(.985);
+}
+.product-card:hover .product-art { transform:scale(.995); }
+.product-shine {
+  z-index:2;
+  background:linear-gradient(112deg,transparent 25%,rgba(255,105,180,.18) 38%,rgba(108,225,255,.22) 49%,rgba(255,237,100,.18) 60%,transparent 74%);
+  background-size:220% 100%;
+  opacity:0;
+}
+.product-card:hover .product-shine { opacity:1;animation:holographicSweep 1.8s ease-in-out infinite; }
+.magic-particles { z-index:3; }
+.product-card h3 { margin-top:12px;font-size:22px;line-height:1.25; }
+.product-card h3 a {
+  display:flex;
+  align-items:flex-start;
+  justify-content:space-between;
+  gap:16px;
+}
+.product-card h3 a span { min-width:0; }
+.product-card h3 a b {
+  flex:0 0 auto;
+  font-family:var(--font-body),"Quicksand",sans-serif;
+  font-size:18px;
+  transition:transform .25s,color .25s;
+}
+.product-card:hover h3 a b { color:#7e3dc4;transform:translate(3px,-3px); }
+.product-card>p {
+  min-height:42px;
+  color:#716b77;
+  font-size:13px;
+  font-weight:500;
+  line-height:1.55;
+}
+.product-meta { font-family:var(--font-body),"Quicksand",sans-serif;font-weight:600; }
+.product-tags { min-height:28px;display:flex;flex-wrap:wrap;gap:7px;margin:0 0 18px; }
+.product-tags span {
+  padding:5px 9px;
+  border-radius:999px;
+  background:#f5efff;
+  color:#633098;
+  font-size:10px;
+  font-weight:700;
+}
+@keyframes rainbowOrbit { to{transform:rotate(360deg)} }
+@keyframes holographicSweep {
+  0%{background-position:180% 0}
+  100%{background-position:-80% 0}
+}
+@media(max-width:760px){
+  .hero-copy{gap:16px}
+  .hero-copy p{max-width:330px;font-size:13px;text-align:center}
+  .hero h1{font-size:clamp(38px,10vw,54px)}
+}
+@media(prefers-reduced-motion:reduce){
+  .product-card:hover .product-image:before,.product-card:hover .product-shine{animation:none}
+}
