@@ -10,7 +10,7 @@ html {
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", "Helvetica Neue", sans-serif;
+  font-family: var(--font-outfit), "Outfit", sans-serif;
   -webkit-font-smoothing: antialiased;
 }
 

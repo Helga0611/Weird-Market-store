@@ -11,6 +11,10 @@ export default function ProductDetail({ product }: { product: Product }) {
   const [quantity, setQuantity] = useState(1);
   const [cartCount, setCartCount] = useState(0);
   const [notice, setNotice] = useState("");
+  const [shareOpen, setShareOpen] = useState(false);
+  const [recipient, setRecipient] = useState("");
+  const [shareNote, setShareNote] = useState(`Vừa săn được món này ở Chợ Kỳ Kỳ, độc lạ lắm xem thử đi!`);
+  const [selectedAura, setSelectedAura] = useState("Tím tinh vân");
   const reduceMotion = useReducedMotion();
 
   useEffect(() => {
@@ -30,21 +34,22 @@ export default function ProductDetail({ product }: { product: Product }) {
     window.setTimeout(() => setNotice(""), 2400);
   };
 
-  const share = async () => {
-    const text = `Vừa săn được “${product.name}” ở Chợ Kỳ Kỳ, độc lạ lắm xem thử đi! ${location.href}`;
-    const canShare = typeof navigator.share === "function";
-    try {
-      if (canShare) await navigator.share({ title: product.name, text, url: location.href });
-      else await navigator.clipboard.writeText(text);
-      setNotice(canShare ? "Đã mở bảng chia sẻ" : "Đã chép lời mời");
-    } catch {}
+  const copyShare = async () => {
+    await navigator.clipboard.writeText(`${shareNote}\n${location.href}`);
+    setNotice("Đã chép lời mời và đường link");
+  };
+
+  const sendEmail = () => {
+    const subject = encodeURIComponent(`Một món kỳ lạ dành cho bạn: ${product.name}`);
+    const body = encodeURIComponent(`${shareNote}\n\n${product.name}\n${location.href}`);
+    window.location.href = `mailto:${encodeURIComponent(recipient)}?subject=${subject}&body=${body}`;
   };
 
   return (
     <main className="detail-page">
       <header className="detail-nav">
-        <Link className="detail-brand" href="/"><img src="/products/ky-la-coin-3d.png" alt="" /><span>Chợ Kỳ Kỳ</span></Link>
-        <div><Link href="/#san-pham">Tiếp tục đi chợ</Link><Link className="detail-cart" href="/thanh-toan">Giỏ phép thuật <b>{cartCount}</b></Link></div>
+        <Link className="detail-brand" href="/"><img src="/products/ky-la-coin-purple-v2.png" alt="" /><span>Chợ Kỳ Kỳ</span></Link>
+        <div><Link className="continue-market" href="/#san-pham"><span>←</span> Tiếp tục đi chợ</Link><Link className="detail-cart" href="/thanh-toan">Giỏ phép thuật <b>{cartCount}</b></Link></div>
       </header>
 
       <section className="detail-shell">
@@ -69,6 +74,10 @@ export default function ProductDetail({ product }: { product: Product }) {
           <div className="detail-rating"><strong>{product.rating}</strong><span>★★★★★</span><i>{money(product.users)} {product.usage}</i></div>
           <p className="detail-description">{product.longDescription}</p>
           <div className="detail-tags">{product.tags.map((tag) => <span key={tag}>{tag}</span>)}</div>
+          <div className="aura-picker">
+            <span>Chọn hào quang</span>
+            <div>{["Tím tinh vân", "Hồng cực quang", "Xanh đá mặt trăng"].map((aura) => <button key={aura} className={selectedAura === aura ? "active" : ""} onClick={() => setSelectedAura(aura)}>{aura}</button>)}</div>
+          </div>
           <div className="witch-stats">
             <div><b>{money(product.users)}</b><span>phù thủy đã chọn</span></div>
             <i>✦</i>
@@ -79,14 +88,39 @@ export default function ProductDetail({ product }: { product: Product }) {
             <div className="quantity-picker"><button onClick={() => setQuantity(Math.max(1, quantity - 1))}>−</button><b>{quantity}</b><button onClick={() => setQuantity(Math.min(product.stock, quantity + 1))}>+</button></div>
           </div>
           <button className="magic-add" onClick={addToCart}><span>Thêm vào giỏ phép thuật</span><b>✦</b></button>
-          <button className="share-detail" onClick={share}>Gửi món này cho bạn bè ↗</button>
+          <button className="share-detail" onClick={() => setShareOpen(true)}>Gửi món này cho bạn bè ↗</button>
           <div className="commerce-notes">
             <span>Giao trước khi phép hết tác dụng</span>
             <span>Đổi trả trong 7 đêm trăng</span>
             <span>Thanh toán an toàn bằng Xu Kỳ Lạ</span>
           </div>
+          <section className="seller-card">
+            <div className="seller-orb">✦</div>
+            <div><small>Được bán bởi</small><h3>Tiệm Phù Thuỷ Có Hoá Đơn</h3><p>98% phản hồi tích cực · trả lời trong 3 nhịp đũa</p></div>
+            <button>Ghé gian hàng</button>
+          </section>
+          <div className="product-facts">
+            <details open><summary>Mô tả độ kỳ lạ</summary><p>{product.longDescription} Mỗi món được niêm phong bằng một lớp bụi sao có mã truy vết riêng.</p></details>
+            <details><summary>Vận chuyển & đổi trả</summary><p>Miễn phí giao bằng chổi. Được kiểm tra hào quang khi nhận và đổi trong 7 đêm trăng nếu phép không tương thích.</p></details>
+            <details><summary>Bảo chứng Chợ Kỳ Kỳ</summary><p>Xu chỉ được chuyển cho người bán sau khi bạn xác nhận món đồ đã đến đúng chiều không gian.</p></details>
+          </div>
         </div>
       </section>
+      {shareOpen && (
+        <div className="share-modal-layer" onMouseDown={() => setShareOpen(false)}>
+          <section className="share-modal liquid-glass" onMouseDown={(event) => event.stopPropagation()}>
+            <button className="share-close" onClick={() => setShareOpen(false)} aria-label="Đóng">×</button>
+            <span className="share-sigil">✦</span>
+            <p>Gửi một lời mời kỳ lạ</p>
+            <h2>Cho bạn bè xem<br />món đồ này.</h2>
+            <label>Email người nhận<input value={recipient} onChange={(event) => setRecipient(event.target.value)} type="email" placeholder="banthan@thegioi.vn" /></label>
+            <label>Lời nhắn<textarea value={shareNote} onChange={(event) => setShareNote(event.target.value)} /></label>
+            <label>Đường link<input readOnly value={typeof window === "undefined" ? "" : window.location.href} /></label>
+            <div className="share-actions"><button onClick={copyShare}>Sao chép link</button><button disabled={!recipient} onClick={sendEmail}>Mở email để gửi ↗</button></div>
+            <small>Email sẽ được gửi bằng ứng dụng mail của bạn. Chợ Kỳ Kỳ không lưu địa chỉ người nhận.</small>
+          </section>
+        </div>
+      )}
       {notice && <div className="detail-toast">{notice}</div>}
     </main>
   );

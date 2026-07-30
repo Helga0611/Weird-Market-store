@@ -42,6 +42,14 @@ export default function CheckoutPage() {
       return;
     }
     const nextBalance = balance - total;
+    const order = {
+      id: `KK-${Date.now().toString().slice(-8)}`,
+      createdAt: Date.now(),
+      items: cart,
+      total,
+      status: "confirmed"
+    };
+    localStorage.setItem("kyky-last-order", JSON.stringify(order));
     localStorage.setItem("kyky-balance", String(nextBalance));
     localStorage.setItem("kyky-cart", "[]");
     setBalance(nextBalance);
@@ -51,11 +59,11 @@ export default function CheckoutPage() {
 
   return (
     <main className="checkout-page">
-      <header className="checkout-nav"><Link href="/"><img src="/products/ky-la-coin-3d.png" alt="" />Chợ Kỳ Kỳ</Link><Link href="/#san-pham">Tiếp tục đi chợ</Link></header>
+      <header className="checkout-nav"><Link href="/"><img src="/products/ky-la-coin-purple-v2.png" alt="" />Chợ Kỳ Kỳ</Link><Link href="/#san-pham">Tiếp tục đi chợ</Link></header>
       <section className="checkout-shell">
         <div className="checkout-title"><p>Thanh toán bằng phép màu</p><h1>Giỏ đồ kỳ lạ<br />của bạn.</h1></div>
         {complete ? (
-          <div className="checkout-success"><img src="/products/ky-la-coin-3d.png" alt="" /><h2>Phép thanh toán đã hoàn tất.</h2><p>Số Xu còn lại: <strong>{money(balance)}</strong>. Đồ kỳ lạ đang tìm đường đến bạn.</p><Link href="/">Về lại Chợ Kỳ Kỳ</Link></div>
+          <div className="checkout-success"><img src="/products/ky-la-coin-purple-v2.png" alt="" /><h2>Phép thanh toán đã hoàn tất.</h2><p>Số Xu còn lại: <strong>{money(balance)}</strong>. Cây chổi giao hàng đã đánh hơi thấy địa chỉ của bạn.</p><div><Link className="track-order-link" href="/don-hang">Theo dõi cây chổi giao hàng ✦</Link><Link href="/">Về lại Chợ Kỳ Kỳ</Link></div></div>
         ) : (
           <div className="checkout-grid">
             <div className="checkout-items">
@@ -64,7 +72,7 @@ export default function CheckoutPage() {
               )) : <div className="checkout-empty"><h2>Giỏ hàng đang rất bình thường.</h2><p>Chưa có món kỳ lạ nào chờ thanh toán.</p><Link href="/#san-pham">Đi chọn một món</Link></div>}
             </div>
             <aside className="order-card">
-              <div className="wallet"><img src="/products/ky-la-coin-3d.png" alt="" /><div><span>Số dư hiện tại</span><strong>{loggedIn ? money(balance) : "Chưa đăng nhập"} <small>{loggedIn ? "Xu" : ""}</small></strong></div></div>
+              <div className="wallet"><img src="/products/ky-la-coin-purple-v2.png" alt="" /><div><span>Số dư hiện tại</span><strong>{loggedIn ? money(balance) : "Chưa đăng nhập"} <small>{loggedIn ? "Xu" : ""}</small></strong></div></div>
               <div className="order-lines"><span>Tạm tính <b>{money(total)} Xu</b></span><span>Phí vận chuyển bằng chổi <b>0 Xu</b></span><span className="order-total">Tổng cộng <b>{money(total)} Xu</b></span></div>
               {!loggedIn ? <form onSubmit={authenticate}><h3>Đăng ký hoặc đăng nhập</h3><p>Tài khoản mới nhận ngay 5.000 Xu.</p><label>Email<input required type="email" placeholder="ban@kyky.vn" /></label><label>Mật khẩu<input required type="password" minLength={6} placeholder="Ít nhất 6 ký tự" /></label><button>Tiếp tục và nhận Xu</button></form> : <button className="pay-button" disabled={!cart.length} onClick={pay}>Xác nhận thanh toán ✦</button>}
               {message && <p className="checkout-message">{message}</p>}

@@ -6,6 +6,7 @@ import Link from "next/link";
 import gsap from "gsap";
 import "./cho-ky-ky.css";
 import { CartItem, money, Product, PRODUCTS } from "./products";
+import MagicVideo from "./components/magic-video";
 
 function LoadingScreen({ onComplete }: { onComplete: () => void }) {
   const [count, setCount] = useState(0);
@@ -168,7 +169,7 @@ export default function Home() {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
     const upload = data.get("image");
-    let uploadedImage = "/products/magic-10-1.webp";
+    let uploadedImage = "/products/wide-10-1.webp";
     if (upload instanceof File && upload.size) {
       uploadedImage = await new Promise<string>((resolve, reject) => {
         const reader = new FileReader();
@@ -208,10 +209,10 @@ export default function Home() {
     <main className={isLoading ? "kyky" : "kyky page-ready"} ref={pageRef}>
       <header className="nav-wrap">
         <nav className="liquid-glass nav">
-          <a className="brand" href="#"><span className="brand-mark"><img src="/products/ky-la-coin-3d.png" alt="" /></span><span>Chợ Kỳ Kỳ</span></a>
+          <a className="brand" href="#"><span className="brand-mark"><img src="/products/ky-la-coin-purple-v2.png" alt="" /></span><span>Chợ Kỳ Kỳ</span></a>
           <div className="nav-links"><a href="#san-pham">Khám phá</a><a href="#cach-cho-chay">Chợ vận hành</a></div>
           <div className="nav-actions">
-            {loggedIn && <span className="balance"><img src="/products/ky-la-coin-3d.png" alt="" /> {money(balance)} Xu</span>}
+            {loggedIn && <span className="balance"><img src="/products/ky-la-coin-purple-v2.png" alt="" /> {money(balance)} Xu</span>}
             <button className="text-button vendor-nav" onClick={() => setVendorOpen(true)}>Mở gian hàng</button>
             <button className="text-button login" onClick={() => setAuthOpen(true)}>{loggedIn ? "Tài khoản" : "Đăng nhập"}</button>
             <button className="icon-button cart-button" onClick={() => setCartOpen(true)} aria-label="Mở giỏ hàng"><span className="magic-cart-icon">✦</span><b>{cartCount}</b></button>
@@ -220,9 +221,7 @@ export default function Home() {
       </header>
 
       <section className="hero">
-        <video className="hero-video" autoPlay loop muted playsInline aria-hidden="true">
-          <source src="https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260717_120352_eb988725-1351-43b3-8095-16e4a1005e3d.mp4" type="video/mp4" />
-        </video>
+        <MagicVideo />
         <div className="hero-video-overlay" />
         <div className="hero-glow" />
         <div className="hero-copy">
@@ -235,11 +234,11 @@ export default function Home() {
           </div>
         </div>
         <div className="hero-visual" aria-label="Bộ sưu tập sản phẩm kỳ lạ">
-          <div className="orb orb-one"><img src="/products/magic-1-1.webp" alt="" /></div>
-          <div className="orb orb-two"><img src="/products/magic-8-1.webp" alt="" /></div>
-          <div className="orb orb-three"><img src="/products/magic-3-1.webp" alt="" /></div>
+          <div className="orb orb-one"><img src="/products/wide-1-1.webp" alt="" /></div>
+          <div className="orb orb-two"><img src="/products/wide-8-1.webp" alt="" /></div>
+          <div className="orb orb-three"><img src="/products/wide-3-1.webp" alt="" /></div>
           <div className="hero-sticker">
-            <img src="/products/ky-la-coin-3d.png" alt="" />
+            <img src="/products/ky-la-coin-purple-v2.png" alt="" />
             <span>10+<small>món lạ<br />đã lên kệ</small></span>
           </div>
         </div>
@@ -291,7 +290,7 @@ export default function Home() {
 
       <motion.section className="how" id="cach-cho-chay" initial={reduceMotion ? false : { opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: "-90px" }} transition={{ duration: .9 }}>
         <div className="how-visual">
-          <motion.img src="/products/ky-la-coin-3d.png" alt="Đồng Xu Kỳ Lạ 3D realistic" whileHover={reduceMotion ? undefined : { scale: 1.05, rotate: -2 }} transition={{ type: "spring", stiffness: 130, damping: 16 }} />
+          <motion.img src="/products/ky-la-coin-purple-v2.png" alt="Đồng Xu Kỳ Lạ 3D realistic" whileHover={reduceMotion ? undefined : { scale: 1.05, rotate: -2 }} transition={{ type: "spring", stiffness: 130, damping: 16 }} />
           <span>5000</span>
         </div>
         <div className="how-copy">
@@ -306,7 +305,7 @@ export default function Home() {
         </div>
       </motion.section>
 
-      <footer><a className="brand" href="#"><span className="brand-mark"><img src="/products/ky-la-coin-3d.png" alt="" /></span><span>Chợ Kỳ Kỳ</span></a><p>Chợ không thiếu thứ gì, chỉ thiếu đồ bình thường.</p><a href="#san-pham">Quay lại gian hàng ↑</a></footer>
+      <footer><a className="brand" href="#"><span className="brand-mark"><img src="/products/ky-la-coin-purple-v2.png" alt="" /></span><span>Chợ Kỳ Kỳ</span></a><p>Chợ không thiếu thứ gì, chỉ thiếu đồ bình thường.</p><a href="#san-pham">Quay lại gian hàng ↑</a></footer>
 
       {notice && <div className="toast" role="status">{notice}</div>}
 
