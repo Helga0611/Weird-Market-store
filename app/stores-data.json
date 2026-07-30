@@ -1,0 +1,32 @@
+[
+  {
+    "slug": "nha-co-phep",
+    "name": "Nhà Có Phép",
+    "blurb": "Đồ gia dụng biết nghe lời, đôi lúc còn biết cãi.",
+    "category": "Gia dụng tâm linh"
+  },
+  {
+    "slug": "tram-may-so-9",
+    "name": "Trạm Mây Số 9",
+    "blurb": "Đi xa bằng những phương tiện không có trong luật vật lý.",
+    "category": "Phương tiện dịch chuyển"
+  },
+  {
+    "slug": "phu-thuy-co-gu",
+    "name": "Phù Thuỷ Có Gu",
+    "blurb": "Khí chất, phòng thân và một chút hào quang mang theo.",
+    "category": "Mỹ phẩm phòng thân"
+  },
+  {
+    "slug": "bep-trang-khuyet",
+    "name": "Bếp Trăng Khuyết",
+    "blurb": "Món ăn ngon đến mức khoa học xin phép không bình luận.",
+    "category": "Ẩm thực thần kỳ"
+  },
+  {
+    "slug": "hoc-vien-tron-bai",
+    "name": "Học Viện Trốn Bài",
+    "blurb": "Đồ chơi cho những ngày não muốn nghỉ nhưng deadline không cho.",
+    "category": "Đồ chơi cứu sinh"
+  }
+]

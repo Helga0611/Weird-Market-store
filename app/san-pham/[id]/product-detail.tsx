@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { type CSSProperties, useEffect, useState } from "react";
 import { motion, useReducedMotion } from "framer-motion";
 import { CartItem, money, Product } from "../../products";
 import "./product-detail.css";
@@ -14,7 +14,7 @@ export default function ProductDetail({ product }: { product: Product }) {
   const [shareOpen, setShareOpen] = useState(false);
   const [recipient, setRecipient] = useState("");
   const [shareNote, setShareNote] = useState(`Vừa săn được món này ở Chợ Kỳ Kỳ, độc lạ lắm xem thử đi!`);
-  const [selectedAura, setSelectedAura] = useState("Tím tinh vân");
+  const [selectedAura, setSelectedAura] = useState(product.colors[0]);
   const reduceMotion = useReducedMotion();
 
   useEffect(() => {
@@ -76,7 +76,7 @@ export default function ProductDetail({ product }: { product: Product }) {
           <div className="detail-tags">{product.tags.map((tag) => <span key={tag}>{tag}</span>)}</div>
           <div className="aura-picker">
             <span>Chọn hào quang</span>
-            <div>{["Tím tinh vân", "Hồng cực quang", "Xanh đá mặt trăng"].map((aura) => <button key={aura} className={selectedAura === aura ? "active" : ""} onClick={() => setSelectedAura(aura)}>{aura}</button>)}</div>
+            <div>{product.colors.map((aura, index) => <button key={aura} className={selectedAura === aura ? "active" : ""} onClick={() => { setSelectedAura(aura); setActiveImage(product.gallery[index]); }}><i style={{ "--aura-index": index } as CSSProperties} />{aura}</button>)}</div>
           </div>
           <div className="witch-stats">
             <div><b>{money(product.users)}</b><span>phù thủy đã chọn</span></div>
@@ -96,8 +96,14 @@ export default function ProductDetail({ product }: { product: Product }) {
           </div>
           <section className="seller-card">
             <div className="seller-orb">✦</div>
-            <div><small>Được bán bởi</small><h3>Tiệm Phù Thuỷ Có Hoá Đơn</h3><p>98% phản hồi tích cực · trả lời trong 3 nhịp đũa</p></div>
-            <button>Ghé gian hàng</button>
+            <div><small>Được bán bởi</small><h3>{product.vendorName}</h3><p>98% phản hồi tích cực · trả lời trong 3 nhịp đũa</p></div>
+            <Link href={`/gian-hang/${product.vendorSlug}`}>Ghé gian hàng</Link>
+          </section>
+          <section className="shipping-magic">
+            <div className="shipping-head"><div><small>Giao miễn phí bằng chổi</small><h3>Đến nơi trong 3–5 đêm trăng</h3></div><span>➶</span></div>
+            <div className="shipping-route"><i /><b className="shipping-broom">✦</b><i /><i /></div>
+            <div className="shipping-labels"><span>Tiệm xác nhận<small>Trong 3 nhịp đũa</small></span><span>Qua cổng mây<small>Có mã truy vết</small></span><span>Đến nhà bạn<small>Được kiểm tra phép</small></span></div>
+            <div className="return-card"><b>↺</b><div><strong>Đổi trả trong 7 đêm trăng</strong><p>Miễn phí nếu sai màu hào quang, hỏng niêm phong hoặc món đồ đến nhầm chiều không gian.</p></div></div>
           </section>
           <div className="product-facts">
             <details open><summary>Mô tả độ kỳ lạ</summary><p>{product.longDescription} Mỗi món được niêm phong bằng một lớp bụi sao có mã truy vết riêng.</p></details>

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
+<defs>
+<radialGradient id="bg"><stop stop-color="#ff62a5" stop-opacity=".48"/><stop offset=".52" stop-color="#151538"/><stop offset="1" stop-color="#05050b"/></radialGradient>
+<linearGradient id="metal" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fff"/><stop offset=".18" stop-color="#ff62a5"/><stop offset=".5" stop-color="#20bfea"/><stop offset=".82" stop-color="#44266b"/><stop offset="1" stop-color="#fff"/></linearGradient>
+<filter id="glow"><feGaussianBlur stdDeviation="16" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs>
+<rect width="1280" height="720" fill="url(#bg)"/>
+<circle cx="830" cy="145" r="250" fill="#20bfea" opacity=".16" filter="url(#glow)"/>
+<path d="M0 555C260 470 410 650 690 550s390-40 590-120v290H0z" fill="#ff62a5" opacity=".12"/>
+<g fill="#fff" opacity=".85" filter="url(#glow)"><circle cx="1100" cy="130" r="5"/><circle cx="1030" cy="265" r="3"/><circle cx="740" cy="90" r="4"/><path d="m1130 350 8 20 20 8-20 8-8 20-8-20-20-8 20-8z"/></g>
+<g transform="translate(570 100)"><ellipse cx="155" cy="282" rx="150" ry="34" fill="#000" opacity=".23"/><path d="M45 80h220l-25 195H70z" fill="url(#metal)"/><path d="M80 112h150l-18 128H98z" fill="#20bfea"/><path d="M265 120c100 0 92 118-18 106" fill="none" stroke="#ff62a5" stroke-width="28" stroke-linecap="round"/></g>
+<text x="72" y="92" fill="#ff62a5" font-family="Inter,Arial,sans-serif" font-size="22" font-weight="700" letter-spacing="3">ĐỒ CHƠI CỨU SINH</text>
+<text x="72" y="175" fill="#fff" font-family="Inter,Arial,sans-serif" font-size="58" font-weight="800">Cây bút tự làm bài tập về</text><text x="72" y="247" fill="#fff" font-family="Inter,Arial,sans-serif" font-size="58" font-weight="800">nhà</text>
+<text x="74" y="600" fill="#fff" opacity=".68" font-family="Inter,Arial,sans-serif" font-size="24">Vật phẩm 3D · Hào quang 3</text>
+<text x="1110" y="635" fill="#fff" font-family="Inter,Arial,sans-serif" font-size="54" font-weight="800">#081</text>
+</svg>

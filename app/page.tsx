@@ -1,6 +1,6 @@
 "use client";
 
-import { FormEvent, useEffect, useMemo, useRef, useState } from "react";
+import { FormEvent, MouseEvent, useEffect, useMemo, useRef, useState } from "react";
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 import Link from "next/link";
 import gsap from "gsap";
@@ -74,6 +74,9 @@ export default function Home() {
   const [balance, setBalance] = useState(0);
   const [hydrated, setHydrated] = useState(false);
   const [notice, setNotice] = useState("");
+  const [shownCount, setShownCount] = useState(24);
+  const [fireball, setFireball] = useState<{ key: number; x: number; y: number; tx: number; ty: number } | null>(null);
+  const [cartBurst, setCartBurst] = useState(false);
   const pageRef = useRef<HTMLElement>(null);
   const reduceMotion = useReducedMotion();
 
@@ -125,13 +128,22 @@ export default function Home() {
     window.setTimeout(() => setNotice(""), 2600);
   };
 
-  const addToCart = (product: Product) => {
+  const addToCart = (product: Product, event?: MouseEvent<HTMLButtonElement>) => {
     setCart((current) => {
       const found = current.find((item) => item.id === product.id);
       return found
         ? current.map((item) => item.id === product.id ? { ...item, quantity: item.quantity + 1 } : item)
         : [...current, { ...product, quantity: 1 }];
     });
+    if (event) {
+      const origin = event.currentTarget.getBoundingClientRect();
+      const target = document.querySelector(".cart-button")?.getBoundingClientRect();
+      if (target) {
+        setFireball({ key: Date.now(), x: origin.left + origin.width / 2, y: origin.top + origin.height / 2, tx: target.left + target.width / 2, ty: target.top + target.height / 2 });
+        window.setTimeout(() => { setFireball(null); setCartBurst(true); }, 620);
+        window.setTimeout(() => setCartBurst(false), 1280);
+      }
+    }
     toast(`Đã bỏ “${product.name}” vào giỏ`);
   };
 
@@ -192,10 +204,13 @@ export default function Home() {
       tags: ["Mới lên kệ", "Đồ của dân chợ"],
       rating: 5,
       stock: 1,
+      vendorSlug: "gian-hang-cua-ban",
+      vendorName: "Gian Hàng Của Bạn",
+      colors: ["Tím trăng khuyết", "Hồng sao băng", "Lam cực quang", "Lục đom đóm"],
     };
     setProducts((current) => {
       const updated = [next, ...current];
-      const vendorItems = updated.filter((item) => item.id > 10);
+      const vendorItems = updated.filter((item) => item.id > 100);
       try { localStorage.setItem("kyky-vendor-products", JSON.stringify(vendorItems)); } catch {}
       return updated;
     });
@@ -209,13 +224,13 @@ export default function Home() {
     <main className={isLoading ? "kyky" : "kyky page-ready"} ref={pageRef}>
       <header className="nav-wrap">
         <nav className="liquid-glass nav">
-          <a className="brand" href="#"><span className="brand-mark"><img src="/products/ky-la-coin-purple-v2.png" alt="" /></span><span>Chợ Kỳ Kỳ</span></a>
+          <a className="brand" href="#"><span className="brand-mark"><img src="/products/cho-ky-ky-logo.png" alt="" /></span><span>Chợ Kỳ Kỳ</span></a>
           <div className="nav-links"><a href="#san-pham">Khám phá</a><a href="#cach-cho-chay">Chợ vận hành</a></div>
           <div className="nav-actions">
             {loggedIn && <span className="balance"><img src="/products/ky-la-coin-purple-v2.png" alt="" /> {money(balance)} Xu</span>}
             <button className="text-button vendor-nav" onClick={() => setVendorOpen(true)}>Mở gian hàng</button>
-            <button className="text-button login" onClick={() => setAuthOpen(true)}>{loggedIn ? "Tài khoản" : "Đăng nhập"}</button>
-            <button className="icon-button cart-button" onClick={() => setCartOpen(true)} aria-label="Mở giỏ hàng"><span className="magic-cart-icon">✦</span><b>{cartCount}</b></button>
+            <button className="text-button login account-button" onClick={() => setAuthOpen(true)}><img src="/products/witch-avatar.png" alt="" />{loggedIn ? "Tài khoản" : "Đăng nhập"}</button>
+            <button className={`icon-button cart-button ${cartBurst ? "burst" : ""}`} onClick={() => setCartOpen(true)} aria-label="Mở giỏ hàng"><span className="magic-cart-icon">✦</span><b>{cartCount}</b></button>
           </div>
         </nav>
       </header>
@@ -224,6 +239,7 @@ export default function Home() {
         <MagicVideo />
         <div className="hero-video-overlay" />
         <div className="hero-glow" />
+        <div className="hero-moon" aria-hidden="true"><span>☾</span><i /><i /><i /></div>
         <div className="hero-copy">
           <p className="eyebrow">Sàn thương mại điện tử không bình thường</p>
           <h1>Chợ không thiếu thứ gì,<br /><em>chỉ thiếu đồ bình thường.</em></h1>
@@ -239,7 +255,7 @@ export default function Home() {
           <div className="orb orb-three"><img src="/products/wide-3-1.webp" alt="" /></div>
           <div className="hero-sticker">
             <img src="/products/ky-la-coin-purple-v2.png" alt="" />
-            <span>10+<small>món lạ<br />đã lên kệ</small></span>
+            <span>100+<small>món lạ<br />đã lên kệ</small></span>
           </div>
         </div>
       </section>
@@ -255,14 +271,14 @@ export default function Home() {
         </motion.div>
 
         <div className="filters liquid-glass">
-          <label className="search"><span>⌕</span><input aria-label="Tìm sản phẩm" value={query} onChange={(e) => setQuery(e.target.value)} placeholder="Tìm một thứ không bình thường..." /></label>
-          <label><span className="sr-only">Danh mục</span><select value={category} onChange={(e) => setCategory(e.target.value)}>{categories.map((item) => <option key={item}>{item}</option>)}</select></label>
-          <label><span className="sr-only">Sắp xếp</span><select value={sort} onChange={(e) => setSort(e.target.value)}><option>Nổi bật</option><option>Giá thấp trước</option><option>Phổ biến nhất</option></select></label>
+          <label className="search"><span>⌕</span><input aria-label="Tìm sản phẩm" value={query} onChange={(e) => { setQuery(e.target.value); setShownCount(24); }} placeholder="Tìm một thứ không bình thường..." /></label>
+          <label><span className="sr-only">Danh mục</span><select value={category} onChange={(e) => { setCategory(e.target.value); setShownCount(24); }}>{categories.map((item) => <option key={item}>{item}</option>)}</select></label>
+          <label><span className="sr-only">Sắp xếp</span><select value={sort} onChange={(e) => { setSort(e.target.value); setShownCount(24); }}><option>Nổi bật</option><option>Giá thấp trước</option><option>Phổ biến nhất</option></select></label>
         </div>
 
         {visible.length ? (
           <div className="product-grid">
-            {visible.map((product, index) => (
+            {visible.slice(0, shownCount).map((product, index) => (
               <motion.article
                 className={`product-card card-${index % 3}`}
                 key={product.id}
@@ -281,9 +297,10 @@ export default function Home() {
                 <div className="product-meta"><span>{product.category}</span><span>{money(product.users)} {product.usage}</span></div>
                 <h3><Link href={`/san-pham/${product.id}`}>{product.name}</Link></h3>
                 <p>{product.description}</p>
-                <div className="product-bottom"><strong>{money(product.price)} <small>Xu</small></strong><button onClick={() => addToCart(product)}>Thêm vào giỏ <span>+</span></button></div>
+                <div className="product-bottom"><strong>{money(product.price)} <small>Xu</small></strong><button className="round-magic-button" onClick={(event) => addToCart(product, event)}>Thêm vào giỏ <span>+</span><i className="heart-float">♥ ♥ ♥</i></button></div>
               </motion.article>
             ))}
+            {shownCount < visible.length && <button className="load-more" onClick={() => setShownCount((count) => count + 24)}>Mở thêm 24 món kỳ lạ <span>↓</span></button>}
           </div>
         ) : <div className="empty"><h3>Chưa tìm thấy món nào kỳ đến vậy.</h3><button onClick={() => { setQuery(""); setCategory("Tất cả danh mục"); }}>Xem tất cả sản phẩm</button></div>}
       </section>
@@ -305,9 +322,10 @@ export default function Home() {
         </div>
       </motion.section>
 
-      <footer><a className="brand" href="#"><span className="brand-mark"><img src="/products/ky-la-coin-purple-v2.png" alt="" /></span><span>Chợ Kỳ Kỳ</span></a><p>Chợ không thiếu thứ gì, chỉ thiếu đồ bình thường.</p><a href="#san-pham">Quay lại gian hàng ↑</a></footer>
+      <footer><a className="brand" href="#"><span className="brand-mark"><img src="/products/cho-ky-ky-logo.png" alt="" /></span><span>Chợ Kỳ Kỳ</span></a><p>Chợ không thiếu thứ gì, chỉ thiếu đồ bình thường.</p><a href="#san-pham">Quay lại gian hàng ↑</a></footer>
 
       {notice && <div className="toast" role="status">{notice}</div>}
+      <AnimatePresence>{fireball && <motion.span key={fireball.key} className="cart-fireball" initial={{ left: fireball.x, top: fireball.y, scale: .3, opacity: 0 }} animate={{ left: fireball.tx, top: fireball.ty, scale: [1, 1.5, .45], opacity: [0, 1, 1] }} exit={{ scale: 2.8, opacity: 0 }} transition={{ duration: .62, ease: [0.34, 1.2, .4, 1] }}><i>✦</i></motion.span>}</AnimatePresence>
 
       {cartOpen && <div className="modal-layer" onMouseDown={() => setCartOpen(false)}>
         <aside className="drawer" onMouseDown={(e) => e.stopPropagation()}>

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
+<defs>
+<radialGradient id="bg"><stop stop-color="#d7ff62" stop-opacity=".48"/><stop offset=".52" stop-color="#09271b"/><stop offset="1" stop-color="#05050b"/></radialGradient>
+<linearGradient id="metal" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fff"/><stop offset=".18" stop-color="#d7ff62"/><stop offset=".5" stop-color="#32d17d"/><stop offset=".82" stop-color="#44266b"/><stop offset="1" stop-color="#fff"/></linearGradient>
+<filter id="glow"><feGaussianBlur stdDeviation="16" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs>
+<rect width="1280" height="720" fill="url(#bg)"/>
+<circle cx="830" cy="145" r="250" fill="#32d17d" opacity=".16" filter="url(#glow)"/>
+<path d="M0 555C260 470 410 650 690 550s390-40 590-120v290H0z" fill="#d7ff62" opacity=".12"/>
+<g fill="#fff" opacity=".85" filter="url(#glow)"><circle cx="1100" cy="130" r="5"/><circle cx="1030" cy="265" r="3"/><circle cx="740" cy="90" r="4"/><path d="m1130 350 8 20 20 8-20 8-8 20-8-20-20-8 20-8z"/></g>
+<g transform="translate(570 110)"><path d="M30 235 145 25l125 210-120 80z" fill="url(#metal)"/><path d="M85 220 150 98l66 122-64 41z" fill="#32d17d"/><circle cx="150" cy="176" r="26" fill="#d7ff62"/></g>
+<text x="72" y="92" fill="#d7ff62" font-family="Inter,Arial,sans-serif" font-size="22" font-weight="700" letter-spacing="3">ẨM THỰC THẦN KỲ</text>
+<text x="72" y="175" fill="#fff" font-family="Inter,Arial,sans-serif" font-size="58" font-weight="800">Muối chấm vạn năng</text>
+<text x="74" y="600" fill="#fff" opacity=".68" font-family="Inter,Arial,sans-serif" font-size="24">Vật phẩm 3D · Hào quang 3</text>
+<text x="1110" y="635" fill="#fff" font-family="Inter,Arial,sans-serif" font-size="54" font-weight="800">#072</text>
+</svg>

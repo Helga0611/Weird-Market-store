@@ -1,0 +1,3202 @@
+[
+  {
+    "id": 1,
+    "name": "Chổi tự động quét sạch vận đen",
+    "category": "Gia dụng tâm linh",
+    "price": 200,
+    "description": "Quét đến đâu, xui xẻo bay màu đến đấy",
+    "longDescription": "Quét đến đâu, xui xẻo bay màu đến đấy. Vật phẩm được kiểm định tại Chợ Kỳ Kỳ, niêm phong bằng bụi sao và kèm hướng dẫn sử dụng an toàn trong đúng chiều không gian.",
+    "users": 14200,
+    "usage": "người đã đổi vận",
+    "image": "/catalog/product-1-1.svg",
+    "gallery": [
+      "/catalog/product-1-1.svg",
+      "/catalog/product-1-2.svg",
+      "/catalog/product-1-3.svg",
+      "/catalog/product-1-4.svg"
+    ],
+    "tags": [
+      "Gia dụng tâm linh",
+      "Có bảo chứng",
+      "Sẵn hàng"
+    ],
+    "rating": 4.7,
+    "stock": 35,
+    "vendorSlug": "nha-co-phep",
+    "vendorName": "Nhà Có Phép",
+    "colors": [
+      "San hô sao",
+      "Lam cực quang",
+      "Tím trăng khuyết",
+      "Lục đom đóm"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Nồi cơm điện biết khen ngon",
+    "category": "Gia dụng tâm linh",
+    "price": 350,
+    "description": "Mở nắp ra là phát loa khen người nấu bằng giọng ngọt ngào",
+    "longDescription": "Mở nắp ra là phát loa khen người nấu bằng giọng ngọt ngào. Vật phẩm được kiểm định tại Chợ Kỳ Kỳ, niêm phong bằng bụi sao và kèm hướng dẫn sử dụng an toàn trong đúng chiều không gian.",
+    "users": 8500,
+    "usage": "người bớt cô đơn",
+    "image": "/catalog/product-2-1.svg",
+    "gallery": [
+      "/catalog/product-2-1.svg",
+      "/catalog/product-2-2.svg",
+      "/catalog/product-2-3.svg",
+      "/catalog/product-2-4.svg"
+    ],
+    "tags": [
+      "Gia dụng tâm linh",
+      "Có bảo chứng",
+      "Sẵn hàng"
+    ],
+    "rating": 4.8,
+    "stock": 52,
+    "vendorSlug": "nha-co-phep",
+    "vendorName": "Nhà Có Phép",
+    "colors": [
+      "San hô sao",
+      "Lam cực quang",
+      "Tím trăng khuyết",
+      "Lục đom đóm"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Gương thần khen bạn đẹp mỗi sáng",
+    "category": "Gia dụng tâm linh",
+    "price": 500,
+    "description": "Dù đầu bù tóc rối nhìn vào vẫn thấy mình như hoa hậu",
+    "longDescription": "Dù đầu bù tóc rối nhìn vào vẫn thấy mình như hoa hậu. Vật phẩm được kiểm định tại Chợ Kỳ Kỳ, niêm phong bằng bụi sao và kèm hướng dẫn sử dụng an toàn trong đúng chiều không gian.",
+    "users": 45000,
+    "usage": "người tự tin lên",
+    "image": "/catalog/product-3-1.svg",
+    "gallery": [
+      "/catalog/product-3-1.svg",
+      "/catalog/product-3-2.svg",
+      "/catalog/product-3-3.svg",
+      "/catalog/product-3-4.svg"
+    ],
+    "tags": [
+      "Gia dụng tâm linh",
+      "Có bảo chứng",
+      "Sẵn hàng"
+    ],
+    "rating": 4.9,
+    "stock": 69,
+    "vendorSlug": "nha-co-phep",
+    "vendorName": "Nhà Có Phép",
+    "colors": [
+      "San hô sao",
+      "Lam cực quang",
+      "Tím trăng khuyết",
+      "Lục đom đóm"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Bóng đèn thắp sáng ý tưởng",
+    "category": "Gia dụng tâm linh",
+    "price": 150,
+    "description": "Bật lên phát là đầu nhảy số ra ngay kịch bản triệu view",
+    "longDescription": "Bật lên phát là đầu nhảy số ra ngay kịch bản triệu view. Vật phẩm được kiểm định tại Chợ Kỳ Kỳ, niêm phong bằng bụi sao và kèm hướng dẫn sử dụng an toàn trong đúng chiều không gian.",
+    "users": 9300,
+    "usage": "creator đang bật",
+    "image": "/catalog/product-4-1.svg",
+    "gallery": [
+      "/catalog/product-4-1.svg",
+      "/catalog/product-4-2.svg",
+      "/catalog/product-4-3.svg",
+      "/catalog/product-4-4.svg"
+    ],
+    "tags": [
+      "Gia dụng tâm linh",
+      "Có bảo chứng",
+      "Sẵn hàng"
+    ],
+    "rating": 5,
+    "stock": 86,
+    "vendorSlug": "nha-co-phep",
+    "vendorName": "Nhà Có Phép",
+    "colors": [
+      "San hô sao",
+      "Lam cực quang",
+      "Tím trăng khuyết",
+      "Lục đom đóm"
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Cốc nước uống vào là hết dỗi",
+    "category": "Gia dụng tâm linh",
+    "price": 80,
+    "description": "Pha nước lọc vào cốc này người yêu uống xong tự động hết giận",
+    "longDescription": "Pha nước lọc vào cốc này người yêu uống xong tự động hết giận. Vật phẩm được kiểm định tại Chợ Kỳ Kỳ, niêm phong bằng bụi sao và kèm hướng dẫn sử dụng an toàn trong đúng chiều không gian.",
+    "users": 62000,
+    "usage": "cặp đôi đã làm lành",
+    "image": "/catalog/product-5-1.svg",
+    "gallery": [
+      "/catalog/product-5-1.svg",
+      "/catalog/product-5-2.svg",
+      "/catalog/product-5-3.svg",
+      "/catalog/product-5-4.svg"
+    ],
+    "tags": [
+      "Gia dụng tâm linh",
+      "Bán chạy",
+      "Sẵn hàng"
+    ],
+    "rating": 4.6,
+    "stock": 103,
+    "vendorSlug": "nha-co-phep",
+    "vendorName": "Nhà Có Phép",
+    "colors": [
+      "San hô sao",
+      "Lam cực quang",
+      "Tím trăng khuyết",
+      "Lục đom đóm"
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Móc quần áo tự sấy bằng niềm tin",
+    "category": "Gia dụng tâm linh",
+    "price": 110,
+    "description": "Treo lên chỉ cần tin là áo khô thì 5 phút sau sẽ khô thật",
+    "longDescription": "Treo lên chỉ cần tin là áo khô thì 5 phút sau sẽ khô thật. Vật phẩm được kiểm định tại Chợ Kỳ Kỳ, niêm phong bằng bụi sao và kèm hướng dẫn sử dụng an toàn trong đúng chiều không gian.",
+    "users": 3100,
+    "usage": "người lạc quan sử dụng",
+    "image": "/catalog/product-6-1.svg",
+    "gallery": [
+      "/catalog/product-6-1.svg",
+      "/catalog/product-6-2.svg",
+      "/catalog/product-6-3.svg",
+      "/catalog/product-6-4.svg"
+    ],
+    "tags": [
+      "Gia dụng tâm linh",
+      "Có bảo chứng",
+      "Sẵn hàng"
+    ],
+    "rating": 4.7,
+    "stock": 120,
+    "vendorSlug": "nha-co-phep",
+    "vendorName": "Nhà Có Phép",
+    "colors": [
+      "San hô sao",
+      "Lam cực quang",
+      "Tím trăng khuyết",
+      "Lục đom đóm"
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Ổ khóa chống người mượn tiền",
+    "category": "Gia dụng tâm linh",
+    "price": 290,
+    "description": "Ai có ý định mượn tiền chạm vào ví sẽ bị điện giật nhẹ tê tê",
+    "longDescription": "Ai có ý định mượn tiền chạm vào ví sẽ bị điện giật nhẹ tê tê. Vật phẩm được kiểm định tại Chợ Kỳ Kỳ, niêm phong bằng bụi sao và kèm hướng dẫn sử dụng an toàn trong đúng chiều không gian.",
+    "users": 18900,
+    "usage": "ví tiền được bảo vệ",
+    "image": "/catalog/product-7-1.svg",
+    "gallery": [
+      "/catalog/product-7-1.svg",
+      "/catalog/product-7-2.svg",
+      "/catalog/product-7-3.svg",
+      "/catalog/product-7-4.svg"
+    ],
+    "tags": [
+      "Gia dụng tâm linh",
+      "Có bảo chứng",
+      "Sẵn hàng"
+    ],
+    "rating": 4.8,
+    "stock": 137,
+    "vendorSlug": "nha-co-phep",
+    "vendorName": "Nhà Có Phép",
+    "colors": [
+      "San hô sao",
+      "Lam cực quang",
+      "Tím trăng khuyết",
+      "Lục đom đóm"
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Đồng hồ báo thức tạt nước online",
+    "category": "Gia dụng tâm linh",
+    "price": 400,
+    "description": "Đến giờ không dậy sẽ gửi tin nhắn tiếng nước dội thẳng vào máy",
+    "longDescription": "Đến giờ không dậy sẽ gửi tin nhắn tiếng nước dội thẳng vào máy. Vật phẩm được kiểm định tại Chợ Kỳ Kỳ, niêm phong bằng bụi sao và kèm hướng dẫn sử dụng an toàn trong đúng chiều không gian.",
+    "users": 25600,
+    "usage": "người đã dậy đúng giờ",
+    "image": "/catalog/product-8-1.svg",
+    "gallery": [
+      "/catalog/product-8-1.svg",
+      "/catalog/product-8-2.svg",
+      "/catalog/product-8-3.svg",
+      "/catalog/product-8-4.svg"
+    ],
+    "tags": [
+      "Gia dụng tâm linh",
+      "Có bảo chứng",
+      "Sẵn hàng"
+    ],
+    "rating": 4.9,
+    "stock": 154,
+    "vendorSlug": "nha-co-phep",
+    "vendorName": "Nhà Có Phép",
+    "colors": [
+      "San hô sao",
+      "Lam cực quang",
+      "Tím trăng khuyết",
+      "Lục đom đóm"
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Thảm lau chân xóa sạch quá khứ",
+    "category": "Gia dụng tâm linh",
+    "price": 190,
+    "description": "Giẫm lên thảm trước khi vào nhà mọi ký ức buồn chiều nay bay biến",
+    "longDescription": "Giẫm lên thảm trước khi vào nhà mọi ký ức buồn chiều nay bay biến. Vật phẩm được kiểm định tại Chợ Kỳ Kỳ, niêm phong bằng bụi sao và kèm hướng dẫn sử dụng an toàn trong đúng chiều không gian.",
+    "users": 7400,
+    "usage": "người đã reset cảm xúc",
+    "image": "/catalog/product-9-1.svg",
+    "gallery": [
+      "/catalog/product-9-1.svg",
+      "/catalog/product-9-2.svg",
+      "/catalog/product-9-3.svg",
+      "/catalog/product-9-4.svg"
+    ],
+    "tags": [
+      "Gia dụng tâm linh",
+      "Có bảo chứng",
+      "Sẵn hàng"
+    ],
+    "rating": 5,
+    "stock": 171,
+    "vendorSlug": "nha-co-phep",
+    "vendorName": "Nhà Có Phép",
+    "colors": [
+      "San hô sao",
+      "Lam cực quang",
+      "Tím trăng khuyết",
+      "Lục đom đóm"
+    ]
+  },
+  {
+    "id": 10,
+    "name": "Lịch vạn niên toàn ngày đẹp",
+    "category": "Gia dụng tâm linh",
+    "price": 99,
+    "description": "Tờ lịch nào xé ra cũng ghi hôm nay thích hợp để đi chơi và tiêu tiền",
+    "longDescription": "Tờ lịch nào xé ra cũng ghi hôm nay thích hợp để đi chơi và tiêu tiền. Vật phẩm được kiểm định tại Chợ Kỳ Kỳ, niêm phong bằng bụi sao và kèm hướng dẫn sử dụng an toàn trong đúng chiều không gian.",
+    "users": 33000,
+    "usage": "người sống thảnh thơi",
+    "image": "/catalog/product-10-1.svg",
+    "gallery": [
+      "/catalog/product-10-1.svg",
+      "/catalog/product-10-2.svg",
+      "/catalog/product-10-3.svg",
+      "/catalog/product-10-4.svg"
+    ],
+    "tags": [
+      "Gia dụng tâm linh",
+      "Bán chạy",
+      "Sẵn hàng"
+    ],
+    "rating": 4.6,
+    "stock": 188,
+    "vendorSlug": "nha-co-phep",
+    "vendorName": "Nhà Có Phép",
+    "colors": [
+      "San hô sao",
+      "Lam cực quang",
+      "Tím trăng khuyết",
+      "Lục đom đóm"
+    ]
+  },
+  {
+    "id": 11,
+    "name": "Rèm cửa ngăn drama hàng xóm",
+    "category": "Gia dụng tâm linh",
+    "price": 600,
+    "description": "Kéo rèm lại mọi tiếng hóng hớt bên ngoài biến thành tiếng nhạc thiền",
+    "longDescription": "Kéo rèm lại mọi tiếng hóng hớt bên ngoài biến thành tiếng nhạc thiền. Vật phẩm được kiểm định tại Chợ Kỳ Kỳ, niêm phong bằng bụi sao và kèm hướng dẫn sử dụng an toàn trong đúng chiều không gian.",
+    "users": 5200,
+    "usage": "khu phố bình yên",
+    "image": "/catalog/product-11-1.svg",
+    "gallery": [
+      "/catalog/product-11-1.svg",
+      "/catalog/product-11-2.svg",
+      "/catalog/product-11-3.svg",
+      "/catalog/product-11-4.svg"
+    ],
+    "tags": [
+      "Gia dụng tâm linh",
+      "Có bảo chứng",
+      "Sẵn hàng"
+    ],
+    "rating": 4.7,
+    "stock": 25,
+    "vendorSlug": "nha-co-phep",
+    "vendorName": "Nhà Có Phép",
+    "colors": [
+      "San hô sao",
+      "Lam cực quang",
+      "Tím trăng khuyết",
+      "Lục đom đóm"
+    ]
+  },
+  {
+    "id": 12,
+    "name": "Bếp ga nấu gì cũng thành đặc sản",
+    "category": "Gia dụng tâm linh",
+    "price": 888,
+    "description": "Luộc rau muống trên bếp này cũng có vị như bò Wagyu",
+    "longDescription": "Luộc rau muống trên bếp này cũng có vị như bò Wagyu. Vật phẩm được kiểm định tại Chợ Kỳ Kỳ, niêm phong bằng bụi sao và kèm hướng dẫn sử dụng an toàn trong đúng chiều không gian.",
+    "users": 1200,
+    "usage": "siêu đầu bếp tự phong",
+    "image": "/catalog/product-12-1.svg",
+    "gallery": [
+      "/catalog/product-12-1.svg",
+      "/catalog/product-12-2.svg",
+      "/catalog/product-12-3.svg",
+      "/catalog/product-12-4.svg"
+    ],
+    "tags": [
+      "Gia dụng tâm linh",
+      "Có bảo chứng",
+      "Sẵn hàng"
+    ],
+    "rating": 4.8,
+    "stock": 42,
+    "vendorSlug": "nha-co-phep",
+    "vendorName": "Nhà Có Phép",
+    "colors": [
+      "San hô sao",
+      "Lam cực quang",
+      "Tím trăng khuyết",
+      "Lục đom đóm"
+    ]
+  },
+  {
+    "id": 13,
+    "name": "Xô nước chứa một góc biển",
+    "category": "Gia dụng tâm linh",
+    "price": 450,
+    "description": "Múc nước ra là có vị mặn và tiếng sóng vỗ rì rào của Nha Trang",
+    "longDescription": "Múc nước ra là có vị mặn và tiếng sóng vỗ rì rào của Nha Trang. Vật phẩm được kiểm định tại Chợ Kỳ Kỳ, niêm phong bằng bụi sao và kèm hướng dẫn sử dụng an toàn trong đúng chiều không gian.",
+    "users": 2800,
+    "usage": "người đang tắm biển tại nhà",
+    "image": "/catalog/product-13-1.svg",
+    "gallery": [
+      "/catalog/product-13-1.svg",
+      "/catalog/product-13-2.svg",
+      "/catalog/product-13-3.svg",
+      "/catalog/product-13-4.svg"
+    ],
+    "tags": [
+      "Gia dụng tâm linh",
+      "Có bảo chứng",
+      "Sẵn hàng"
+    ],
+    "rating": 4.9,
+    "stock": 59,
+    "vendorSlug": "nha-co-phep",
+    "vendorName": "Nhà Có Phép",
+    "colors": [
+      "San hô sao",
+      "Lam cực quang",
+      "Tím trăng khuyết",
+      "Lục đom đóm"
+    ]
+  },
+  {
+    "id": 14,
+    "name": "Cây lau nhà tự tìm chỗ bẩn",
+    "category": "Gia dụng tâm linh",
+    "price": 220,
+    "description": "Nó tự lôi bạn đi đến góc nhà có bụi để lau nghiêm cấm cãi",
+    "longDescription": "Nó tự lôi bạn đi đến góc nhà có bụi để lau nghiêm cấm cãi. Vật phẩm được kiểm định tại Chợ Kỳ Kỳ, niêm phong bằng bụi sao và kèm hướng dẫn sử dụng an toàn trong đúng chiều không gian.",
+    "users": 11500,
+    "usage": "người lười bị xích đi",
+    "image": "/catalog/product-14-1.svg",
+    "gallery": [
+      "/catalog/product-14-1.svg",
+      "/catalog/product-14-2.svg",
+      "/catalog/product-14-3.svg",
+      "/catalog/product-14-4.svg"
+    ],
+    "tags": [
+      "Gia dụng tâm linh",
+      "Có bảo chứng",
+      "Sẵn hàng"
+    ],
+    "rating": 5,
+    "stock": 76,
+    "vendorSlug": "nha-co-phep",
+    "vendorName": "Nhà Có Phép",
+    "colors": [
+      "San hô sao",
+      "Lam cực quang",
+      "Tím trăng khuyết",
+      "Lục đom đóm"
+    ]
+  },
+  {
+    "id": 15,
+    "name": "Hộp diêm thắp lên hy vọng",
+    "category": "Gia dụng tâm linh",
+    "price": 45,
+    "description": "Quẹt một que tâm trạng đang âm vô cực bỗng thấy yêu đời lạ kỳ",
+    "longDescription": "Quẹt một que tâm trạng đang âm vô cực bỗng thấy yêu đời lạ kỳ. Vật phẩm được kiểm định tại Chợ Kỳ Kỳ, niêm phong bằng bụi sao và kèm hướng dẫn sử dụng an toàn trong đúng chiều không gian.",
+    "users": 95000,
+    "usage": "que diêm đã cháy",
+    "image": "/catalog/product-15-1.svg",
+    "gallery": [
+      "/catalog/product-15-1.svg",
+      "/catalog/product-15-2.svg",
+      "/catalog/product-15-3.svg",
+      "/catalog/product-15-4.svg"
+    ],
+    "tags": [
+      "Gia dụng tâm linh",
+      "Bán chạy",
+      "Sẵn hàng"
+    ],
+    "rating": 4.6,
+    "stock": 93,
+    "vendorSlug": "nha-co-phep",
+    "vendorName": "Nhà Có Phép",
+    "colors": [
+      "San hô sao",
+      "Lam cực quang",
+      "Tím trăng khuyết",
+      "Lục đom đóm"
+    ]
+  },
+  {
+    "id": 16,
+    "name": "Bình hoa không bao giờ héo",
+    "category": "Gia dụng tâm linh",
+    "price": 300,
+    "description": "Cắm hoa héo vào hôm sau hoa tự động tươi roi rói như mới hái",
+    "longDescription": "Cắm hoa héo vào hôm sau hoa tự động tươi roi rói như mới hái. Vật phẩm được kiểm định tại Chợ Kỳ Kỳ, niêm phong bằng bụi sao và kèm hướng dẫn sử dụng an toàn trong đúng chiều không gian.",
+    "users": 14000,
+    "usage": "bông hoa hồi sinh",
+    "image": "/catalog/product-16-1.svg",
+    "gallery": [
+      "/catalog/product-16-1.svg",
+      "/catalog/product-16-2.svg",
+      "/catalog/product-16-3.svg",
+      "/catalog/product-16-4.svg"
+    ],
+    "tags": [
+      "Gia dụng tâm linh",
+      "Có bảo chứng",
+      "Sẵn hàng"
+    ],
+    "rating": 4.7,
+    "stock": 110,
+    "vendorSlug": "nha-co-phep",
+    "vendorName": "Nhà Có Phép",
+    "colors": [
+      "San hô sao",
+      "Lam cực quang",
+      "Tím trăng khuyết",
+      "Lục đom đóm"
+    ]
+  },
+  {
+    "id": 17,
+    "name": "Tủ quần áo tự phối đồ phong thủy",
+    "category": "Gia dụng tâm linh",
+    "price": 999,
+    "description": "Mở tủ ra quần áo tự bay vào người theo đúng màu may mắn hôm nay",
+    "longDescription": "Mở tủ ra quần áo tự bay vào người theo đúng màu may mắn hôm nay. Vật phẩm được kiểm định tại Chợ Kỳ Kỳ, niêm phong bằng bụi sao và kèm hướng dẫn sử dụng an toàn trong đúng chiều không gian.",
+    "users": 6800,
+    "usage": "tín đồ thời trang rảnh tay",
+    "image": "/catalog/product-17-1.svg",
+    "gallery": [
+      "/catalog/product-17-1.svg",
+      "/catalog/product-17-2.svg",
+      "/catalog/product-17-3.svg",
+      "/catalog/product-17-4.svg"
+    ],
+    "tags": [
+      "Gia dụng tâm linh",
+      "Có bảo chứng",
+      "Sẵn hàng"
+    ],
+    "rating": 4.8,
+    "stock": 127,
+    "vendorSlug": "nha-co-phep",
+    "vendorName": "Nhà Có Phép",
+    "colors": [
+      "San hô sao",
+      "Lam cực quang",
+      "Tím trăng khuyết",
+      "Lục đom đóm"
+    ]
+  },
+  {
+    "id": 18,
+    "name": "Gối ôm biết tự vỗ về khi khóc",
+    "category": "Gia dụng tâm linh",
+    "price": 260,
+    "description": "Cứ ôm vào lòng khóc là gối tự động có hai cánh tay giả vỗ vai",
+    "longDescription": "Cứ ôm vào lòng khóc là gối tự động có hai cánh tay giả vỗ vai. Vật phẩm được kiểm định tại Chợ Kỳ Kỳ, niêm phong bằng bụi sao và kèm hướng dẫn sử dụng an toàn trong đúng chiều không gian.",
+    "users": 19000,
+    "usage": "người được an ủi",
+    "image": "/catalog/product-18-1.svg",
+    "gallery": [
+      "/catalog/product-18-1.svg",
+      "/catalog/product-18-2.svg",
+      "/catalog/product-18-3.svg",
+      "/catalog/product-18-4.svg"
+    ],
+    "tags": [
+      "Gia dụng tâm linh",
+      "Có bảo chứng",
+      "Sẵn hàng"
+    ],
+    "rating": 4.9,
+    "stock": 144,
+    "vendorSlug": "nha-co-phep",
+    "vendorName": "Nhà Có Phép",
+    "colors": [
+      "San hô sao",
+      "Lam cực quang",
+      "Tím trăng khuyết",
+      "Lục đom đóm"
+    ]
+  },
+  {
+    "id": 19,
+    "name": "Quạt máy thổi bay deadline",
+    "category": "Gia dụng tâm linh",
+    "price": 330,
+    "description": "Bật số 3 gió thổi vù vù khiến sếp quên mất việc đang giao cho bạn",
+    "longDescription": "Bật số 3 gió thổi vù vù khiến sếp quên mất việc đang giao cho bạn. Vật phẩm được kiểm định tại Chợ Kỳ Kỳ, niêm phong bằng bụi sao và kèm hướng dẫn sử dụng an toàn trong đúng chiều không gian.",
+    "users": 41000,
+    "usage": "văn phòng phẩm cứu sinh",
+    "image": "/catalog/product-19-1.svg",
+    "gallery": [
+      "/catalog/product-19-1.svg",
+      "/catalog/product-19-2.svg",
+      "/catalog/product-19-3.svg",
+      "/catalog/product-19-4.svg"
+    ],
+    "tags": [
+      "Gia dụng tâm linh",
+      "Có bảo chứng",
+      "Sẵn hàng"
+    ],
+    "rating": 5,
+    "stock": 161,
+    "vendorSlug": "nha-co-phep",
+    "vendorName": "Nhà Có Phép",
+    "colors": [
+      "San hô sao",
+      "Lam cực quang",
+      "Tím trăng khuyết",
+      "Lục đom đóm"
+    ]
+  },
+  {
+    "id": 20,
+    "name": "Ấm trà nói chuyện triết lý",
+    "category": "Gia dụng tâm linh",
+    "price": 210,
+    "description": "Vừa rót trà ấm vừa ngân nga mấy câu đạo lý của các vĩ nhân",
+    "longDescription": "Vừa rót trà ấm vừa ngân nga mấy câu đạo lý của các vĩ nhân. Vật phẩm được kiểm định tại Chợ Kỳ Kỳ, niêm phong bằng bụi sao và kèm hướng dẫn sử dụng an toàn trong đúng chiều không gian.",
+    "users": 3900,
+    "usage": "trà sư đang đàm đạo",
+    "image": "/catalog/product-20-1.svg",
+    "gallery": [
+      "/catalog/product-20-1.svg",
+      "/catalog/product-20-2.svg",
+      "/catalog/product-20-3.svg",
+      "/catalog/product-20-4.svg"
+    ],
+    "tags": [
+      "Gia dụng tâm linh",
+      "Bán chạy",
+      "Sẵn hàng"
+    ],
+    "rating": 4.6,
+    "stock": 178,
+    "vendorSlug": "nha-co-phep",
+    "vendorName": "Nhà Có Phép",
+    "colors": [
+      "San hô sao",
+      "Lam cực quang",
+      "Tím trăng khuyết",
+      "Lục đom đóm"
+    ]
+  },
+  {
+    "id": 21,
+    "name": "Thảm bay tốc độ ánh sáng",
+    "category": "Phương tiện dịch chuyển",
+    "price": 2500,
+    "description": "Bay từ Hà Nội vào Sài Gòn chỉ mất 5 phút không lo tốn xăng",
+    "longDescription": "Bay từ Hà Nội vào Sài Gòn chỉ mất 5 phút không lo tốn xăng. Vật phẩm được kiểm định tại Chợ Kỳ Kỳ, niêm phong bằng bụi sao và kèm hướng dẫn sử dụng an toàn trong đúng chiều không gian.",
+    "users": 450,
+    "usage": "pháp sư đang bay",
+    "image": "/catalog/product-21-1.svg",
+    "gallery": [
+      "/catalog/product-21-1.svg",
+      "/catalog/product-21-2.svg",
+      "/catalog/product-21-3.svg",
+      "/catalog/product-21-4.svg"
+    ],
+    "tags": [
+      "Phương tiện dịch chuyển",
+      "Có bảo chứng",
+      "Cực hiếm"
+    ],
+    "rating": 4.7,
+    "stock": 195,
+    "vendorSlug": "tram-may-so-9",
+    "vendorName": "Trạm Mây Số 9",
+    "colors": [
+      "San hô sao",
+      "Lam cực quang",
+      "Tím trăng khuyết",
+      "Lục đom đóm"
+    ]
+  },
+  {
+    "id": 22,
+    "name": "Đôi giày lướt trên mặt nước",
+    "category": "Phương tiện dịch chuyển",
+    "price": 600,
+    "description": "Mùa mưa lũ ngập lụt cứ đi đôi này đi bộ như đi trên sàn catwalk",
+    "longDescription": "Mùa mưa lũ ngập lụt cứ đi đôi này đi bộ như đi trên sàn catwalk. Vật phẩm được kiểm định tại Chợ Kỳ Kỳ, niêm phong bằng bụi sao và kèm hướng dẫn sử dụng an toàn trong đúng chiều không gian.",
+    "users": 12300,
+    "usage": "người vượt lũ thành công",
+    "image": "/catalog/product-22-1.svg",
+    "gallery": [
+      "/catalog/product-22-1.svg",
+      "/catalog/product-22-2.svg",
+      "/catalog/product-22-3.svg",
+      "/catalog/product-22-4.svg"
+    ],
+    "tags": [
+      "Phương tiện dịch chuyển",
+      "Có bảo chứng",
+      "Sẵn hàng"
+    ],
+    "rating": 4.8,
+    "stock": 32,
+    "vendorSlug": "tram-may-so-9",
+    "vendorName": "Trạm Mây Số 9",
+    "colors": [
+      "San hô sao",
+      "Lam cực quang",
+      "Tím trăng khuyết",
+      "Lục đom đóm"
+    ]
+  },
+  {
+    "id": 23,
+    "name": "Giày cao gót nhảy xa 10 mét",
+    "category": "Phương tiện dịch chuyển",
+    "price": 750,
+    "description": "Bấm nút ở gót bật nhảy một phát qua luôn đám tắc đường",
+    "longDescription": "Bấm nút ở gót bật nhảy một phát qua luôn đám tắc đường. Vật phẩm được kiểm định tại Chợ Kỳ Kỳ, niêm phong bằng bụi sao và kèm hướng dẫn sử dụng an toàn trong đúng chiều không gian.",
+    "users": 2100,
+    "usage": "cô nàng cá tính nhảy vọt",
+    "image": "/catalog/product-23-1.svg",
+    "gallery": [
+      "/catalog/product-23-1.svg",
+      "/catalog/product-23-2.svg",
+      "/catalog/product-23-3.svg",
+      "/catalog/product-23-4.svg"
+    ],
+    "tags": [
+      "Phương tiện dịch chuyển",
+      "Có bảo chứng",
+      "Sẵn hàng"
+    ],
+    "rating": 4.9,
+    "stock": 49,
+    "vendorSlug": "tram-may-so-9",
+    "vendorName": "Trạm Mây Số 9",
+    "colors": [
+      "San hô sao",
+      "Lam cực quang",
+      "Tím trăng khuyết",
+      "Lục đom đóm"
+    ]
+  },
+  {
+    "id": 24,
+    "name": "Xe đạp không cần đạp",
+    "category": "Phương tiện dịch chuyển",
+    "price": 1200,
+    "description": "Chỉ cần ngồi lên và nghĩ về điểm đến xe tự lăn bánh vèo vèo",
+    "longDescription": "Chỉ cần ngồi lên và nghĩ về điểm đến xe tự lăn bánh vèo vèo. Vật phẩm được kiểm định tại Chợ Kỳ Kỳ, niêm phong bằng bụi sao và kèm hướng dẫn sử dụng an toàn trong đúng chiều không gian.",
+    "users": 8600,
+    "usage": "người lười đi phượt",
+    "image": "/catalog/product-24-1.svg",
+    "gallery": [
+      "/catalog/product-24-1.svg",
+      "/catalog/product-24-2.svg",
+      "/catalog/product-24-3.svg",
+      "/catalog/product-24-4.svg"
+    ],
+    "tags": [
+      "Phương tiện dịch chuyển",
+      "Có bảo chứng",
+      "Cực hiếm"
+    ],
+    "rating": 5,
+    "stock": 66,
+    "vendorSlug": "tram-may-so-9",
+    "vendorName": "Trạm Mây Số 9",
+    "colors": [
+      "San hô sao",
+      "Lam cực quang",
+      "Tím trăng khuyết",
+      "Lục đom đóm"
+    ]
+  },
+  {
+    "id": 25,
+    "name": "Ván trượt bay bo cua không ngã",
+    "category": "Phương tiện dịch chuyển",
+    "price": 950,
+    "description": "Cách mặt đất 20cm bo cua khét lẹt bảo đảm an toàn tuyệt đối",
+    "longDescription": "Cách mặt đất 20cm bo cua khét lẹt bảo đảm an toàn tuyệt đối. Vật phẩm được kiểm định tại Chợ Kỳ Kỳ, niêm phong bằng bụi sao và kèm hướng dẫn sử dụng an toàn trong đúng chiều không gian.",
+    "users": 5400,
+    "usage": "dân chơi phố đi bộ",
+    "image": "/catalog/product-25-1.svg",
+    "gallery": [
+      "/catalog/product-25-1.svg",
+      "/catalog/product-25-2.svg",
+      "/catalog/product-25-3.svg",
+      "/catalog/product-25-4.svg"
+    ],
+    "tags": [
+      "Phương tiện dịch chuyển",
+      "Bán chạy",
+      "Sẵn hàng"
+    ],
+    "rating": 4.6,
+    "stock": 83,
+    "vendorSlug": "tram-may-so-9",
+    "vendorName": "Trạm Mây Số 9",
+    "colors": [
+      "San hô sao",
+      "Lam cực quang",
+      "Tím trăng khuyết",
+      "Lục đom đóm"
+    ]
+  },
+  {
+    "id": 26,
+    "name": "Dây thừng leo lên mây",
+    "category": "Phương tiện dịch chuyển",
+    "price": 1100,
+    "description": "Quăng lên trời dây tự bám vào mây để bạn leo lên hóng gió",
+    "longDescription": "Quăng lên trời dây tự bám vào mây để bạn leo lên hóng gió. Vật phẩm được kiểm định tại Chợ Kỳ Kỳ, niêm phong bằng bụi sao và kèm hướng dẫn sử dụng an toàn trong đúng chiều không gian.",
+    "users": 850,
+    "usage": "người thích độ cao",
+    "image": "/catalog/product-26-1.svg",
+    "gallery": [
+      "/catalog/product-26-1.svg",
+      "/catalog/product-26-2.svg",
+      "/catalog/product-26-3.svg",
+      "/catalog/product-26-4.svg"
+    ],
+    "tags": [
+      "Phương tiện dịch chuyển",
+      "Có bảo chứng",
+      "Cực hiếm"
+    ],
+    "rating": 4.7,
+    "stock": 100,
+    "vendorSlug": "tram-may-so-9",
+    "vendorName": "Trạm Mây Số 9",
+    "colors": [
+      "San hô sao",
+      "Lam cực quang",
+      "Tím trăng khuyết",
+      "Lục đom đóm"
+    ]
+  },
+  {
+    "id": 27,
+    "name": "Kính râm nhìn thấy đường tắt",
+    "category": "Phương tiện dịch chuyển",
+    "price": 350,
+    "description": "Đeo vào là thấy ngay những con hẻm bí ẩn đi tắt qua chỗ kẹt xe",
+    "longDescription": "Đeo vào là thấy ngay những con hẻm bí ẩn đi tắt qua chỗ kẹt xe. Vật phẩm được kiểm định tại Chợ Kỳ Kỳ, niêm phong bằng bụi sao và kèm hướng dẫn sử dụng an toàn trong đúng chiều không gian.",
+    "users": 16000,
+    "usage": "tài xế công nghệ tin dùng",
+    "image": "/catalog/product-27-1.svg",
+    "gallery": [
+      "/catalog/product-27-1.svg",
+      "/catalog/product-27-2.svg",
+      "/catalog/product-27-3.svg",
+      "/catalog/product-27-4.svg"
+    ],
+    "tags": [
+      "Phương tiện dịch chuyển",
+      "Có bảo chứng",
+      "Sẵn hàng"
+    ],
+    "rating": 4.8,
+    "stock": 117,
+    "vendorSlug": "tram-may-so-9",
+    "vendorName": "Trạm Mây Số 9",
+    "colors": [
+      "San hô sao",
+      "Lam cực quang",
+      "Tím trăng khuyết",
+      "Lục đom đóm"
+    ]
+  },
+  {
+    "id": 28,
+    "name": "Ủng hộ mệnh nhảy qua hố sâu",
+    "category": "Phương tiện dịch chuyển",
+    "price": 420,
+    "description": "Đi vào chân nhảy qua mọi ổ gà ổ voi trên đường êm ái",
+    "longDescription": "Đi vào chân nhảy qua mọi ổ gà ổ voi trên đường êm ái. Vật phẩm được kiểm định tại Chợ Kỳ Kỳ, niêm phong bằng bụi sao và kèm hướng dẫn sử dụng an toàn trong đúng chiều không gian.",
+    "users": 7900,
+    "usage": "phượt thủ sở hữu",
+    "image": "/catalog/product-28-1.svg",
+    "gallery": [
+      "/catalog/product-28-1.svg",
+      "/catalog/product-28-2.svg",
+      "/catalog/product-28-3.svg",
+      "/catalog/product-28-4.svg"
+    ],
+    "tags": [
+      "Phương tiện dịch chuyển",
+      "Có bảo chứng",
+      "Sẵn hàng"
+    ],
+    "rating": 4.9,
+    "stock": 134,
+    "vendorSlug": "tram-may-so-9",
+    "vendorName": "Trạm Mây Số 9",
+    "colors": [
+      "San hô sao",
+      "Lam cực quang",
+      "Tím trăng khuyết",
+      "Lục đom đóm"
+    ]
+  },
+  {
+    "id": 29,
+    "name": "Pa-tin chạy bằng tiếng cười",
+    "category": "Phương tiện dịch chuyển",
+    "price": 550,
+    "description": "Càng cười to xe càng chạy nhanh khóc là xe dừng lại",
+    "longDescription": "Càng cười to xe càng chạy nhanh khóc là xe dừng lại. Vật phẩm được kiểm định tại Chợ Kỳ Kỳ, niêm phong bằng bụi sao và kèm hướng dẫn sử dụng an toàn trong đúng chiều không gian.",
+    "users": 4200,
+    "usage": "người cười trừ trên đường",
+    "image": "/catalog/product-29-1.svg",
+    "gallery": [
+      "/catalog/product-29-1.svg",
+      "/catalog/product-29-2.svg",
+      "/catalog/product-29-3.svg",
+      "/catalog/product-29-4.svg"
+    ],
+    "tags": [
+      "Phương tiện dịch chuyển",
+      "Có bảo chứng",
+      "Sẵn hàng"
+    ],
+    "rating": 5,
+    "stock": 151,
+    "vendorSlug": "tram-may-so-9",
+    "vendorName": "Trạm Mây Số 9",
+    "colors": [
+      "San hô sao",
+      "Lam cực quang",
+      "Tím trăng khuyết",
+      "Lục đom đóm"
+    ]
+  },
+  {
+    "id": 30,
+    "name": "Ba lô phản lực chạy bằng trà sữa",
+    "category": "Phương tiện dịch chuyển",
+    "price": 3500,
+    "description": "Đổ 1 ly trà sữa trân châu vào là bay được 10km",
+    "longDescription": "Đổ 1 ly trà sữa trân châu vào là bay được 10km. Vật phẩm được kiểm định tại Chợ Kỳ Kỳ, niêm phong bằng bụi sao và kèm hướng dẫn sử dụng an toàn trong đúng chiều không gian.",
+    "users": 320,
+    "usage": "tín đồ trà sữa bay lượn",
+    "image": "/catalog/product-30-1.svg",
+    "gallery": [
+      "/catalog/product-30-1.svg",
+      "/catalog/product-30-2.svg",
+      "/catalog/product-30-3.svg",
+      "/catalog/product-30-4.svg"
+    ],
+    "tags": [
+      "Phương tiện dịch chuyển",
+      "Bán chạy",
+      "Cực hiếm"
+    ],
+    "rating": 4.6,
+    "stock": 168,
+    "vendorSlug": "tram-may-so-9",
+    "vendorName": "Trạm Mây Số 9",
+    "colors": [
+      "San hô sao",
+      "Lam cực quang",
+      "Tím trăng khuyết",
+      "Lục đom đóm"
+    ]
+  },
+  {
+    "id": 31,
+    "name": "Ô che mưa quay ngược thời gian",
+    "category": "Phương tiện dịch chuyển",
+    "price": 1800,
+    "description": "Xoay cán ô ngược chiều kim đồng hồ để quay lại 5 phút trước khi ướt",
+    "longDescription": "Xoay cán ô ngược chiều kim đồng hồ để quay lại 5 phút trước khi ướt. Vật phẩm được kiểm định tại Chợ Kỳ Kỳ, niêm phong bằng bụi sao và kèm hướng dẫn sử dụng an toàn trong đúng chiều không gian.",
+    "users": 900,
+    "usage": "người thích sửa sai",
+    "image": "/catalog/product-31-1.svg",
+    "gallery": [
+      "/catalog/product-31-1.svg",
+      "/catalog/product-31-2.svg",
+      "/catalog/product-31-3.svg",
+      "/catalog/product-31-4.svg"
+    ],
+    "tags": [
+      "Phương tiện dịch chuyển",
+      "Có bảo chứng",
+      "Cực hiếm"
+    ],
+    "rating": 4.7,
+    "stock": 185,
+    "vendorSlug": "tram-may-so-9",
+    "vendorName": "Trạm Mây Số 9",
+    "colors": [
+      "San hô sao",
+      "Lam cực quang",
+      "Tím trăng khuyết",
+      "Lục đom đóm"
+    ]
+  },
+  {
+    "id": 32,
+    "name": "Bản đồ chỉ đường đến nhà người giàu",
+    "category": "Phương tiện dịch chuyển",
+    "price": 5000,
+    "description": "Chỉ đi đến những nơi có quý nhân phù trợ mở ra thấy tương lai",
+    "longDescription": "Chỉ đi đến những nơi có quý nhân phù trợ mở ra thấy tương lai. Vật phẩm được kiểm định tại Chợ Kỳ Kỳ, niêm phong bằng bụi sao và kèm hướng dẫn sử dụng an toàn trong đúng chiều không gian.",
+    "users": 150,
+    "usage": "đại gia tương lai sử dụng",
+    "image": "/catalog/product-32-1.svg",
+    "gallery": [
+      "/catalog/product-32-1.svg",
+      "/catalog/product-32-2.svg",
+      "/catalog/product-32-3.svg",
+      "/catalog/product-32-4.svg"
+    ],
+    "tags": [
+      "Phương tiện dịch chuyển",
+      "Có bảo chứng",
+      "Cực hiếm"
+    ],
+    "rating": 4.8,
+    "stock": 22,
+    "vendorSlug": "tram-may-so-9",
+    "vendorName": "Trạm Mây Số 9",
+    "colors": [
+      "San hô sao",
+      "Lam cực quang",
+      "Tím trăng khuyết",
+      "Lục đom đóm"
+    ]
+  },
+  {
+    "id": 33,
+    "name": "Vé tàu lượn xuyên không gian",
+    "category": "Phương tiện dịch chuyển",
+    "price": 2000,
+    "description": "Cầm vé lên xe buýt chớp mắt phát xuống ngay tháp Eiffel",
+    "longDescription": "Cầm vé lên xe buýt chớp mắt phát xuống ngay tháp Eiffel. Vật phẩm được kiểm định tại Chợ Kỳ Kỳ, niêm phong bằng bụi sao và kèm hướng dẫn sử dụng an toàn trong đúng chiều không gian.",
+    "users": 1100,
+    "usage": "nhà du hành thế giới",
+    "image": "/catalog/product-33-1.svg",
+    "gallery": [
+      "/catalog/product-33-1.svg",
+      "/catalog/product-33-2.svg",
+      "/catalog/product-33-3.svg",
+      "/catalog/product-33-4.svg"
+    ],
+    "tags": [
+      "Phương tiện dịch chuyển",
+      "Có bảo chứng",
+      "Cực hiếm"
+    ],
+    "rating": 4.9,
+    "stock": 39,
+    "vendorSlug": "tram-may-so-9",
+    "vendorName": "Trạm Mây Số 9",
+    "colors": [
+      "San hô sao",
+      "Lam cực quang",
+      "Tím trăng khuyết",
+      "Lục đom đóm"
+    ]
+  },
+  {
+    "id": 34,
+    "name": "Chiếc lá rụng bay theo gió tình yêu",
+    "category": "Phương tiện dịch chuyển",
+    "price": 150,
+    "description": "Thả lá ra lá bay về hướng nào thì định mệnh của bạn ở hướng đó",
+    "longDescription": "Thả lá ra lá bay về hướng nào thì định mệnh của bạn ở hướng đó. Vật phẩm được kiểm định tại Chợ Kỳ Kỳ, niêm phong bằng bụi sao và kèm hướng dẫn sử dụng an toàn trong đúng chiều không gian.",
+    "users": 22000,
+    "usage": "người đang đi tìm bồ",
+    "image": "/catalog/product-34-1.svg",
+    "gallery": [
+      "/catalog/product-34-1.svg",
+      "/catalog/product-34-2.svg",
+      "/catalog/product-34-3.svg",
+      "/catalog/product-34-4.svg"
+    ],
+    "tags": [
+      "Phương tiện dịch chuyển",
+      "Có bảo chứng",
+      "Sẵn hàng"
+    ],
+    "rating": 5,
+    "stock": 56,
+    "vendorSlug": "tram-may-so-9",
+    "vendorName": "Trạm Mây Số 9",
+    "colors": [
+      "San hô sao",
+      "Lam cực quang",
+      "Tím trăng khuyết",
+      "Lục đom đóm"
+    ]
+  },
+  {
+    "id": 35,
+    "name": "Bánh xe tự vá bằng nước bọt",
+    "category": "Phương tiện dịch chuyển",
+    "price": 310,
+    "description": "Nổ lốp ư chỉ cần mắng nó một câu vết thủng tự lành lại",
+    "longDescription": "Nổ lốp ư chỉ cần mắng nó một câu vết thủng tự lành lại. Vật phẩm được kiểm định tại Chợ Kỳ Kỳ, niêm phong bằng bụi sao và kèm hướng dẫn sử dụng an toàn trong đúng chiều không gian.",
+    "users": 13400,
+    "usage": "bác tài rảnh tay",
+    "image": "/catalog/product-35-1.svg",
+    "gallery": [
+      "/catalog/product-35-1.svg",
+      "/catalog/product-35-2.svg",
+      "/catalog/product-35-3.svg",
+      "/catalog/product-35-4.svg"
+    ],
+    "tags": [
+      "Phương tiện dịch chuyển",
+      "Bán chạy",
+      "Sẵn hàng"
+    ],
+    "rating": 4.6,
+    "stock": 73,
+    "vendorSlug": "tram-may-so-9",
+    "vendorName": "Trạm Mây Số 9",
+    "colors": [
+      "San hô sao",
+      "Lam cực quang",
+      "Tím trăng khuyết",
+      "Lục đom đóm"
+    ]
+  },
+  {
+    "id": 36,
+    "name": "Còi xe phát tiếng nhường đường ngọt ngào",
+    "category": "Phương tiện dịch chuyển",
+    "price": 180,
+    "description": "Bấm còi một phát cả phố tự động dạt ra cười vui vẻ",
+    "longDescription": "Bấm còi một phát cả phố tự động dạt ra cười vui vẻ. Vật phẩm được kiểm định tại Chợ Kỳ Kỳ, niêm phong bằng bụi sao và kèm hướng dẫn sử dụng an toàn trong đúng chiều không gian.",
+    "users": 28000,
+    "usage": "người tham gia giao thông văn minh",
+    "image": "/catalog/product-36-1.svg",
+    "gallery": [
+      "/catalog/product-36-1.svg",
+      "/catalog/product-36-2.svg",
+      "/catalog/product-36-3.svg",
+      "/catalog/product-36-4.svg"
+    ],
+    "tags": [
+      "Phương tiện dịch chuyển",
+      "Có bảo chứng",
+      "Sẵn hàng"
+    ],
+    "rating": 4.7,
+    "stock": 90,
+    "vendorSlug": "tram-may-so-9",
+    "vendorName": "Trạm Mây Số 9",
+    "colors": [
+      "San hô sao",
+      "Lam cực quang",
+      "Tím trăng khuyết",
+      "Lục đom đóm"
+    ]
+  },
+  {
+    "id": 37,
+    "name": "Yên xe máy mát rượi trưa hè",
+    "category": "Phương tiện dịch chuyển",
+    "price": 250,
+    "description": "Để xe ngoài nắng 40 độ ngồi lên vẫn mát lạnh như tủ kem",
+    "longDescription": "Để xe ngoài nắng 40 độ ngồi lên vẫn mát lạnh như tủ kem. Vật phẩm được kiểm định tại Chợ Kỳ Kỳ, niêm phong bằng bụi sao và kèm hướng dẫn sử dụng an toàn trong đúng chiều không gian.",
+    "users": 37000,
+    "usage": "shipper tin dùng",
+    "image": "/catalog/product-37-1.svg",
+    "gallery": [
+      "/catalog/product-37-1.svg",
+      "/catalog/product-37-2.svg",
+      "/catalog/product-37-3.svg",
+      "/catalog/product-37-4.svg"
+    ],
+    "tags": [
+      "Phương tiện dịch chuyển",
+      "Có bảo chứng",
+      "Sẵn hàng"
+    ],
+    "rating": 4.8,
+    "stock": 107,
+    "vendorSlug": "tram-may-so-9",
+    "vendorName": "Trạm Mây Số 9",
+    "colors": [
+      "San hô sao",
+      "Lam cực quang",
+      "Tím trăng khuyết",
+      "Lục đom đóm"
+    ]
+  },
+  {
+    "id": 38,
+    "name": "Bao tay lái xe tự động né chốt",
+    "category": "Phương tiện dịch chuyển",
+    "price": 700,
+    "description": "Đeo vào tay tay lái tự bẻ vào đường an toàn khi có biến",
+    "longDescription": "Đeo vào tay tay lái tự bẻ vào đường an toàn khi có biến. Vật phẩm được kiểm định tại Chợ Kỳ Kỳ, niêm phong bằng bụi sao và kèm hướng dẫn sử dụng an toàn trong đúng chiều không gian.",
+    "users": 9800,
+    "usage": "người thích sự an toàn",
+    "image": "/catalog/product-38-1.svg",
+    "gallery": [
+      "/catalog/product-38-1.svg",
+      "/catalog/product-38-2.svg",
+      "/catalog/product-38-3.svg",
+      "/catalog/product-38-4.svg"
+    ],
+    "tags": [
+      "Phương tiện dịch chuyển",
+      "Có bảo chứng",
+      "Sẵn hàng"
+    ],
+    "rating": 4.9,
+    "stock": 124,
+    "vendorSlug": "tram-may-so-9",
+    "vendorName": "Trạm Mây Số 9",
+    "colors": [
+      "San hô sao",
+      "Lam cực quang",
+      "Tím trăng khuyết",
+      "Lục đom đóm"
+    ]
+  },
+  {
+    "id": 39,
+    "name": "Mũ bảo hiểm không làm xẹp tóc mái",
+    "category": "Phương tiện dịch chuyển",
+    "price": 450,
+    "description": "Đội cả ngày bỏ ra tóc vẫn bồng bềnh như vừa ở salon về",
+    "longDescription": "Đội cả ngày bỏ ra tóc vẫn bồng bềnh như vừa ở salon về. Vật phẩm được kiểm định tại Chợ Kỳ Kỳ, niêm phong bằng bụi sao và kèm hướng dẫn sử dụng an toàn trong đúng chiều không gian.",
+    "users": 54000,
+    "usage": "hot girl kiểm chứng",
+    "image": "/catalog/product-39-1.svg",
+    "gallery": [
+      "/catalog/product-39-1.svg",
+      "/catalog/product-39-2.svg",
+      "/catalog/product-39-3.svg",
+      "/catalog/product-39-4.svg"
+    ],
+    "tags": [
+      "Phương tiện dịch chuyển",
+      "Có bảo chứng",
+      "Sẵn hàng"
+    ],
+    "rating": 5,
+    "stock": 141,
+    "vendorSlug": "tram-may-so-9",
+    "vendorName": "Trạm Mây Số 9",
+    "colors": [
+      "San hô sao",
+      "Lam cực quang",
+      "Tím trăng khuyết",
+      "Lục đom đóm"
+    ]
+  },
+  {
+    "id": 40,
+    "name": "Xịt lốp xe đi trên hư không",
+    "category": "Phương tiện dịch chuyển",
+    "price": 1600,
+    "description": "Xịt vào bánh xe có thể đi tạm trên không trung trong 3 phút",
+    "longDescription": "Xịt vào bánh xe có thể đi tạm trên không trung trong 3 phút. Vật phẩm được kiểm định tại Chợ Kỳ Kỳ, niêm phong bằng bụi sao và kèm hướng dẫn sử dụng an toàn trong đúng chiều không gian.",
+    "users": 650,
+    "usage": "quái xế né tắc đường",
+    "image": "/catalog/product-40-1.svg",
+    "gallery": [
+      "/catalog/product-40-1.svg",
+      "/catalog/product-40-2.svg",
+      "/catalog/product-40-3.svg",
+      "/catalog/product-40-4.svg"
+    ],
+    "tags": [
+      "Phương tiện dịch chuyển",
+      "Bán chạy",
+      "Cực hiếm"
+    ],
+    "rating": 4.6,
+    "stock": 158,
+    "vendorSlug": "tram-may-so-9",
+    "vendorName": "Trạm Mây Số 9",
+    "colors": [
+      "San hô sao",
+      "Lam cực quang",
+      "Tím trăng khuyết",
+      "Lục đom đóm"
+    ]
+  },
+  {
+    "id": 41,
+    "name": "Son môi nói lời đường mật",
+    "category": "Mỹ phẩm phòng thân",
+    "price": 150,
+    "description": "Thoa son này vào mở mồm ra là toàn lời hay ý đẹp ai nghe cũng yêu",
+    "longDescription": "Thoa son này vào mở mồm ra là toàn lời hay ý đẹp ai nghe cũng yêu. Vật phẩm được kiểm định tại Chợ Kỳ Kỳ, niêm phong bằng bụi sao và kèm hướng dẫn sử dụng an toàn trong đúng chiều không gian.",
+    "users": 65000,
+    "usage": "người giao tiếp đỉnh cao",
+    "image": "/catalog/product-41-1.svg",
+    "gallery": [
+      "/catalog/product-41-1.svg",
+      "/catalog/product-41-2.svg",
+      "/catalog/product-41-3.svg",
+      "/catalog/product-41-4.svg"
+    ],
+    "tags": [
+      "Mỹ phẩm phòng thân",
+      "Có bảo chứng",
+      "Sẵn hàng"
+    ],
+    "rating": 4.7,
+    "stock": 175,
+    "vendorSlug": "phu-thuy-co-gu",
+    "vendorName": "Phù Thuỷ Có Gu",
+    "colors": [
+      "San hô sao",
+      "Lam cực quang",
+      "Tím trăng khuyết",
+      "Lục đom đóm"
+    ]
+  },
+  {
+    "id": 42,
+    "name": "Kính áp tròng nhìn thấu nói dối",
+    "category": "Mỹ phẩm phòng thân",
+    "price": 850,
+    "description": "Nhìn vào ai đang chém gió mắt họ sẽ hiện chữ Xạo nè",
+    "longDescription": "Nhìn vào ai đang chém gió mắt họ sẽ hiện chữ Xạo nè. Vật phẩm được kiểm định tại Chợ Kỳ Kỳ, niêm phong bằng bụi sao và kèm hướng dẫn sử dụng an toàn trong đúng chiều không gian.",
+    "users": 14000,
+    "usage": "nóc nhà kiểm tra chồng",
+    "image": "/catalog/product-42-1.svg",
+    "gallery": [
+      "/catalog/product-42-1.svg",
+      "/catalog/product-42-2.svg",
+      "/catalog/product-42-3.svg",
+      "/catalog/product-42-4.svg"
+    ],
+    "tags": [
+      "Mỹ phẩm phòng thân",
+      "Có bảo chứng",
+      "Sẵn hàng"
+    ],
+    "rating": 4.8,
+    "stock": 192,
+    "vendorSlug": "phu-thuy-co-gu",
+    "vendorName": "Phù Thuỷ Có Gu",
+    "colors": [
+      "San hô sao",
+      "Lam cực quang",
+      "Tím trăng khuyết",
+      "Lục đom đóm"
+    ]
+  },
+  {
+    "id": 43,
+    "name": "Nước hoa ngửi phát tha thứ luôn",
+    "category": "Mỹ phẩm phòng thân",
+    "price": 390,
+    "description": "Xịt lên người trước khi đi xin lỗi tỷ lệ thành công 100%",
+    "longDescription": "Xịt lên người trước khi đi xin lỗi tỷ lệ thành công 100%. Vật phẩm được kiểm định tại Chợ Kỳ Kỳ, niêm phong bằng bụi sao và kèm hướng dẫn sử dụng an toàn trong đúng chiều không gian.",
+    "users": 27000,
+    "usage": "ca xin lỗi thành công",
+    "image": "/catalog/product-43-1.svg",
+    "gallery": [
+      "/catalog/product-43-1.svg",
+      "/catalog/product-43-2.svg",
+      "/catalog/product-43-3.svg",
+      "/catalog/product-43-4.svg"
+    ],
+    "tags": [
+      "Mỹ phẩm phòng thân",
+      "Có bảo chứng",
+      "Sẵn hàng"
+    ],
+    "rating": 4.9,
+    "stock": 29,
+    "vendorSlug": "phu-thuy-co-gu",
+    "vendorName": "Phù Thuỷ Có Gu",
+    "colors": [
+      "San hô sao",
+      "Lam cực quang",
+      "Tím trăng khuyết",
+      "Lục đom đóm"
+    ]
+  },
+  {
+    "id": 44,
+    "name": "Mặt nạ ngủ dậy thành tổng tài",
+    "category": "Mỹ phẩm phòng thân",
+    "price": 600,
+    "description": "Đắp qua đêm sáng ra khí chất ngút ngàn đi đứng oai phong",
+    "longDescription": "Đắp qua đêm sáng ra khí chất ngút ngàn đi đứng oai phong. Vật phẩm được kiểm định tại Chợ Kỳ Kỳ, niêm phong bằng bụi sao và kèm hướng dẫn sử dụng an toàn trong đúng chiều không gian.",
+    "users": 8200,
+    "usage": "người thích làm sếp",
+    "image": "/catalog/product-44-1.svg",
+    "gallery": [
+      "/catalog/product-44-1.svg",
+      "/catalog/product-44-2.svg",
+      "/catalog/product-44-3.svg",
+      "/catalog/product-44-4.svg"
+    ],
+    "tags": [
+      "Mỹ phẩm phòng thân",
+      "Có bảo chứng",
+      "Sẵn hàng"
+    ],
+    "rating": 5,
+    "stock": 46,
+    "vendorSlug": "phu-thuy-co-gu",
+    "vendorName": "Phù Thuỷ Có Gu",
+    "colors": [
+      "San hô sao",
+      "Lam cực quang",
+      "Tím trăng khuyết",
+      "Lục đom đóm"
+    ]
+  },
+  {
+    "id": 45,
+    "name": "Áo khoác tàng hình khi thấy chủ nợ",
+    "category": "Mỹ phẩm phòng thân",
+    "price": 1500,
+    "description": "Mặc vào đi lướt qua người đòi nợ mà họ tưởng là cơn gió",
+    "longDescription": "Mặc vào đi lướt qua người đòi nợ mà họ tưởng là cơn gió. Vật phẩm được kiểm định tại Chợ Kỳ Kỳ, niêm phong bằng bụi sao và kèm hướng dẫn sử dụng an toàn trong đúng chiều không gian.",
+    "users": 3400,
+    "usage": "con nợ an toàn",
+    "image": "/catalog/product-45-1.svg",
+    "gallery": [
+      "/catalog/product-45-1.svg",
+      "/catalog/product-45-2.svg",
+      "/catalog/product-45-3.svg",
+      "/catalog/product-45-4.svg"
+    ],
+    "tags": [
+      "Mỹ phẩm phòng thân",
+      "Bán chạy",
+      "Cực hiếm"
+    ],
+    "rating": 4.6,
+    "stock": 63,
+    "vendorSlug": "phu-thuy-co-gu",
+    "vendorName": "Phù Thuỷ Có Gu",
+    "colors": [
+      "San hô sao",
+      "Lam cực quang",
+      "Tím trăng khuyết",
+      "Lục đom đóm"
+    ]
+  },
+  {
+    "id": 46,
+    "name": "Kẹp tóc mọc ra ý tưởng kinh doanh",
+    "category": "Mỹ phẩm phòng thân",
+    "price": 120,
+    "description": "Kẹp lên đầu cứ 5 phút đầu nảy ra một ý tưởng kiếm tỷ bạc",
+    "longDescription": "Kẹp lên đầu cứ 5 phút đầu nảy ra một ý tưởng kiếm tỷ bạc. Vật phẩm được kiểm định tại Chợ Kỳ Kỳ, niêm phong bằng bụi sao và kèm hướng dẫn sử dụng an toàn trong đúng chiều không gian.",
+    "users": 19500,
+    "usage": "startup đang kẹp",
+    "image": "/catalog/product-46-1.svg",
+    "gallery": [
+      "/catalog/product-46-1.svg",
+      "/catalog/product-46-2.svg",
+      "/catalog/product-46-3.svg",
+      "/catalog/product-46-4.svg"
+    ],
+    "tags": [
+      "Mỹ phẩm phòng thân",
+      "Có bảo chứng",
+      "Sẵn hàng"
+    ],
+    "rating": 4.7,
+    "stock": 80,
+    "vendorSlug": "phu-thuy-co-gu",
+    "vendorName": "Phù Thuỷ Có Gu",
+    "colors": [
+      "San hô sao",
+      "Lam cực quang",
+      "Tím trăng khuyết",
+      "Lục đom đóm"
+    ]
+  },
+  {
+    "id": 47,
+    "name": "Xịt khoáng giữ bình tĩnh khi bị mắng",
+    "category": "Mỹ phẩm phòng thân",
+    "price": 180,
+    "description": "Xịt một phát mặt tỉnh bơ tai tự lọc tiếng mắng thành tiếng nhạc",
+    "longDescription": "Xịt một phát mặt tỉnh bơ tai tự lọc tiếng mắng thành tiếng nhạc. Vật phẩm được kiểm định tại Chợ Kỳ Kỳ, niêm phong bằng bụi sao và kèm hướng dẫn sử dụng an toàn trong đúng chiều không gian.",
+    "users": 42000,
+    "usage": "nhân viên văn phòng bất tử",
+    "image": "/catalog/product-47-1.svg",
+    "gallery": [
+      "/catalog/product-47-1.svg",
+      "/catalog/product-47-2.svg",
+      "/catalog/product-47-3.svg",
+      "/catalog/product-47-4.svg"
+    ],
+    "tags": [
+      "Mỹ phẩm phòng thân",
+      "Có bảo chứng",
+      "Sẵn hàng"
+    ],
+    "rating": 4.8,
+    "stock": 97,
+    "vendorSlug": "phu-thuy-co-gu",
+    "vendorName": "Phù Thuỷ Có Gu",
+    "colors": [
+      "San hô sao",
+      "Lam cực quang",
+      "Tím trăng khuyết",
+      "Lục đom đóm"
+    ]
+  },
+  {
+    "id": 48,
+    "name": "Dây chuyền tăng may mắn bốc thăm",
+    "category": "Mỹ phẩm phòng thân",
+    "price": 777,
+    "description": "Đeo cái này đi săn sale trúng thưởng giải đặc biệt liên tục",
+    "longDescription": "Đeo cái này đi săn sale trúng thưởng giải đặc biệt liên tục. Vật phẩm được kiểm định tại Chợ Kỳ Kỳ, niêm phong bằng bụi sao và kèm hướng dẫn sử dụng an toàn trong đúng chiều không gian.",
+    "users": 5100,
+    "usage": "bàn tay vàng trúng thưởng",
+    "image": "/catalog/product-48-1.svg",
+    "gallery": [
+      "/catalog/product-48-1.svg",
+      "/catalog/product-48-2.svg",
+      "/catalog/product-48-3.svg",
+      "/catalog/product-48-4.svg"
+    ],
+    "tags": [
+      "Mỹ phẩm phòng thân",
+      "Có bảo chứng",
+      "Sẵn hàng"
+    ],
+    "rating": 4.9,
+    "stock": 114,
+    "vendorSlug": "phu-thuy-co-gu",
+    "vendorName": "Phù Thuỷ Có Gu",
+    "colors": [
+      "San hô sao",
+      "Lam cực quang",
+      "Tím trăng khuyết",
+      "Lục đom đóm"
+    ]
+  },
+  {
+    "id": 49,
+    "name": "Quần jean co giãn theo lượng đồ ăn",
+    "category": "Mỹ phẩm phòng thân",
+    "price": 320,
+    "description": "Ăn buffet 10 đĩa quần tự nới ra lúc đói tự khít lại",
+    "longDescription": "Ăn buffet 10 đĩa quần tự nới ra lúc đói tự khít lại. Vật phẩm được kiểm định tại Chợ Kỳ Kỳ, niêm phong bằng bụi sao và kèm hướng dẫn sử dụng an toàn trong đúng chiều không gian.",
+    "users": 73000,
+    "usage": "thánh ăn uống tin dùng",
+    "image": "/catalog/product-49-1.svg",
+    "gallery": [
+      "/catalog/product-49-1.svg",
+      "/catalog/product-49-2.svg",
+      "/catalog/product-49-3.svg",
+      "/catalog/product-49-4.svg"
+    ],
+    "tags": [
+      "Mỹ phẩm phòng thân",
+      "Có bảo chứng",
+      "Sẵn hàng"
+    ],
+    "rating": 5,
+    "stock": 131,
+    "vendorSlug": "phu-thuy-co-gu",
+    "vendorName": "Phù Thuỷ Có Gu",
+    "colors": [
+      "San hô sao",
+      "Lam cực quang",
+      "Tím trăng khuyết",
+      "Lục đom đóm"
+    ]
+  },
+  {
+    "id": 50,
+    "name": "Vớ chân đi không biết mệt",
+    "category": "Mỹ phẩm phòng thân",
+    "price": 210,
+    "description": "Mang đôi vớ này đi bộ vòng quanh Trái Đất chân vẫn êm như nhung",
+    "longDescription": "Mang đôi vớ này đi bộ vòng quanh Trái Đất chân vẫn êm như nhung. Vật phẩm được kiểm định tại Chợ Kỳ Kỳ, niêm phong bằng bụi sao và kèm hướng dẫn sử dụng an toàn trong đúng chiều không gian.",
+    "users": 11000,
+    "usage": "phượt thủ đi bộ",
+    "image": "/catalog/product-50-1.svg",
+    "gallery": [
+      "/catalog/product-50-1.svg",
+      "/catalog/product-50-2.svg",
+      "/catalog/product-50-3.svg",
+      "/catalog/product-50-4.svg"
+    ],
+    "tags": [
+      "Mỹ phẩm phòng thân",
+      "Bán chạy",
+      "Sẵn hàng"
+    ],
+    "rating": 4.6,
+    "stock": 148,
+    "vendorSlug": "phu-thuy-co-gu",
+    "vendorName": "Phù Thuỷ Có Gu",
+    "colors": [
+      "San hô sao",
+      "Lam cực quang",
+      "Tím trăng khuyết",
+      "Lục đom đóm"
+    ]
+  },
+  {
+    "id": 51,
+    "name": "Kem chống nắng chặn mọi lời đàm tiếu",
+    "category": "Mỹ phẩm phòng thân",
+    "price": 260,
+    "description": "Thoa lên mặt mọi lời nói xấu sau lưng tự bật ngược lại",
+    "longDescription": "Thoa lên mặt mọi lời nói xấu sau lưng tự bật ngược lại. Vật phẩm được kiểm định tại Chợ Kỳ Kỳ, niêm phong bằng bụi sao và kèm hướng dẫn sử dụng an toàn trong đúng chiều không gian.",
+    "users": 24000,
+    "usage": "người sống thảnh thơi",
+    "image": "/catalog/product-51-1.svg",
+    "gallery": [
+      "/catalog/product-51-1.svg",
+      "/catalog/product-51-2.svg",
+      "/catalog/product-51-3.svg",
+      "/catalog/product-51-4.svg"
+    ],
+    "tags": [
+      "Mỹ phẩm phòng thân",
+      "Có bảo chứng",
+      "Sẵn hàng"
+    ],
+    "rating": 4.7,
+    "stock": 165,
+    "vendorSlug": "phu-thuy-co-gu",
+    "vendorName": "Phù Thuỷ Có Gu",
+    "colors": [
+      "San hô sao",
+      "Lam cực quang",
+      "Tím trăng khuyết",
+      "Lục đom đóm"
+    ]
+  },
+  {
+    "id": 52,
+    "name": "Nhẫn cưới tự động báo cáo vị trí",
+    "category": "Mỹ phẩm phòng thân",
+    "price": 1999,
+    "description": "Chồng đi đâu nhẫn tự rung và hiện bản đồ 3D lên máy vợ",
+    "longDescription": "Chồng đi đâu nhẫn tự rung và hiện bản đồ 3D lên máy vợ. Vật phẩm được kiểm định tại Chợ Kỳ Kỳ, niêm phong bằng bụi sao và kèm hướng dẫn sử dụng an toàn trong đúng chiều không gian.",
+    "users": 15500,
+    "usage": "người vợ quyền lực",
+    "image": "/catalog/product-52-1.svg",
+    "gallery": [
+      "/catalog/product-52-1.svg",
+      "/catalog/product-52-2.svg",
+      "/catalog/product-52-3.svg",
+      "/catalog/product-52-4.svg"
+    ],
+    "tags": [
+      "Mỹ phẩm phòng thân",
+      "Có bảo chứng",
+      "Cực hiếm"
+    ],
+    "rating": 4.8,
+    "stock": 182,
+    "vendorSlug": "phu-thuy-co-gu",
+    "vendorName": "Phù Thuỷ Có Gu",
+    "colors": [
+      "San hô sao",
+      "Lam cực quang",
+      "Tím trăng khuyết",
+      "Lục đom đóm"
+    ]
+  },
+  {
+    "id": 53,
+    "name": "Cà vạt tự động thắt đúng chuẩn",
+    "category": "Mỹ phẩm phòng thân",
+    "price": 190,
+    "description": "Thả ra cổ nó tự quấn thành nút thắt hoàn hảo trong 1 giây",
+    "longDescription": "Thả ra cổ nó tự quấn thành nút thắt hoàn hảo trong 1 giây. Vật phẩm được kiểm định tại Chợ Kỳ Kỳ, niêm phong bằng bụi sao và kèm hướng dẫn sử dụng an toàn trong đúng chiều không gian.",
+    "users": 8300,
+    "usage": "quý ông lười biếng",
+    "image": "/catalog/product-53-1.svg",
+    "gallery": [
+      "/catalog/product-53-1.svg",
+      "/catalog/product-53-2.svg",
+      "/catalog/product-53-3.svg",
+      "/catalog/product-53-4.svg"
+    ],
+    "tags": [
+      "Mỹ phẩm phòng thân",
+      "Có bảo chứng",
+      "Sẵn hàng"
+    ],
+    "rating": 4.9,
+    "stock": 19,
+    "vendorSlug": "phu-thuy-co-gu",
+    "vendorName": "Phù Thuỷ Có Gu",
+    "colors": [
+      "San hô sao",
+      "Lam cực quang",
+      "Tím trăng khuyết",
+      "Lục đom đóm"
+    ]
+  },
+  {
+    "id": 54,
+    "name": "Bông tai lọc tiếng thả thính xạo",
+    "category": "Mỹ phẩm phòng thân",
+    "price": 430,
+    "description": "Trai hư thả thính bông tai sẽ phát ra tiếng còi báo động",
+    "longDescription": "Trai hư thả thính bông tai sẽ phát ra tiếng còi báo động. Vật phẩm được kiểm định tại Chợ Kỳ Kỳ, niêm phong bằng bụi sao và kèm hướng dẫn sử dụng an toàn trong đúng chiều không gian.",
+    "users": 29000,
+    "usage": "cô gái tỉnh táo",
+    "image": "/catalog/product-54-1.svg",
+    "gallery": [
+      "/catalog/product-54-1.svg",
+      "/catalog/product-54-2.svg",
+      "/catalog/product-54-3.svg",
+      "/catalog/product-54-4.svg"
+    ],
+    "tags": [
+      "Mỹ phẩm phòng thân",
+      "Có bảo chứng",
+      "Sẵn hàng"
+    ],
+    "rating": 5,
+    "stock": 36,
+    "vendorSlug": "phu-thuy-co-gu",
+    "vendorName": "Phù Thuỷ Có Gu",
+    "colors": [
+      "San hô sao",
+      "Lam cực quang",
+      "Tím trăng khuyết",
+      "Lục đom đóm"
+    ]
+  },
+  {
+    "id": 55,
+    "name": "Dép tổ ong phát ra tiếng nhạc remix",
+    "category": "Mỹ phẩm phòng thân",
+    "price": 150,
+    "description": "Bước đi đến đâu tiếng nhạc sàn xập xình nổi lên đến đấy",
+    "longDescription": "Bước đi đến đâu tiếng nhạc sàn xập xình nổi lên đến đấy. Vật phẩm được kiểm định tại Chợ Kỳ Kỳ, niêm phong bằng bụi sao và kèm hướng dẫn sử dụng an toàn trong đúng chiều không gian.",
+    "users": 6700,
+    "usage": "dân chơi xóm",
+    "image": "/catalog/product-55-1.svg",
+    "gallery": [
+      "/catalog/product-55-1.svg",
+      "/catalog/product-55-2.svg",
+      "/catalog/product-55-3.svg",
+      "/catalog/product-55-4.svg"
+    ],
+    "tags": [
+      "Mỹ phẩm phòng thân",
+      "Bán chạy",
+      "Sẵn hàng"
+    ],
+    "rating": 4.6,
+    "stock": 53,
+    "vendorSlug": "phu-thuy-co-gu",
+    "vendorName": "Phù Thuỷ Có Gu",
+    "colors": [
+      "San hô sao",
+      "Lam cực quang",
+      "Tím trăng khuyết",
+      "Lục đom đóm"
+    ]
+  },
+  {
+    "id": 56,
+    "name": "Nón sơn chống rụng tóc",
+    "category": "Mỹ phẩm phòng thân",
+    "price": 280,
+    "description": "Đội vào đầu kích thích mọc tóc tua tủa bất chấp di truyền",
+    "longDescription": "Đội vào đầu kích thích mọc tóc tua tủa bất chấp di truyền. Vật phẩm được kiểm định tại Chợ Kỳ Kỳ, niêm phong bằng bụi sao và kèm hướng dẫn sử dụng an toàn trong đúng chiều không gian.",
+    "users": 85000,
+    "usage": "người thoát nạn hói",
+    "image": "/catalog/product-56-1.svg",
+    "gallery": [
+      "/catalog/product-56-1.svg",
+      "/catalog/product-56-2.svg",
+      "/catalog/product-56-3.svg",
+      "/catalog/product-56-4.svg"
+    ],
+    "tags": [
+      "Mỹ phẩm phòng thân",
+      "Có bảo chứng",
+      "Sẵn hàng"
+    ],
+    "rating": 4.7,
+    "stock": 70,
+    "vendorSlug": "phu-thuy-co-gu",
+    "vendorName": "Phù Thuỷ Có Gu",
+    "colors": [
+      "San hô sao",
+      "Lam cực quang",
+      "Tím trăng khuyết",
+      "Lục đom đóm"
+    ]
+  },
+  {
+    "id": 57,
+    "name": "Bộ đồ ngủ mơ thấy số đề",
+    "category": "Mỹ phẩm phòng thân",
+    "price": 2200,
+    "description": "Mặc vào đi ngủ trong mơ hiển thị rõ mồn một con số may mắn",
+    "longDescription": "Mặc vào đi ngủ trong mơ hiển thị rõ mồn một con số may mắn. Vật phẩm được kiểm định tại Chợ Kỳ Kỳ, niêm phong bằng bụi sao và kèm hướng dẫn sử dụng an toàn trong đúng chiều không gian.",
+    "users": 450,
+    "usage": "thần tài ẩn danh",
+    "image": "/catalog/product-57-1.svg",
+    "gallery": [
+      "/catalog/product-57-1.svg",
+      "/catalog/product-57-2.svg",
+      "/catalog/product-57-3.svg",
+      "/catalog/product-57-4.svg"
+    ],
+    "tags": [
+      "Mỹ phẩm phòng thân",
+      "Có bảo chứng",
+      "Cực hiếm"
+    ],
+    "rating": 4.8,
+    "stock": 87,
+    "vendorSlug": "phu-thuy-co-gu",
+    "vendorName": "Phù Thuỷ Có Gu",
+    "colors": [
+      "San hô sao",
+      "Lam cực quang",
+      "Tím trăng khuyết",
+      "Lục đom đóm"
+    ]
+  },
+  {
+    "id": 58,
+    "name": "Kính cận nhìn đời qua lăng kính hồng",
+    "category": "Mỹ phẩm phòng thân",
+    "price": 310,
+    "description": "Nhìn đống rác cũng thấy đẹp như vườn hoa tâm hồn luôn vui vẻ",
+    "longDescription": "Nhìn đống rác cũng thấy đẹp như vườn hoa tâm hồn luôn vui vẻ. Vật phẩm được kiểm định tại Chợ Kỳ Kỳ, niêm phong bằng bụi sao và kèm hướng dẫn sử dụng an toàn trong đúng chiều không gian.",
+    "users": 12000,
+    "usage": "người sống tích cực",
+    "image": "/catalog/product-58-1.svg",
+    "gallery": [
+      "/catalog/product-58-1.svg",
+      "/catalog/product-58-2.svg",
+      "/catalog/product-58-3.svg",
+      "/catalog/product-58-4.svg"
+    ],
+    "tags": [
+      "Mỹ phẩm phòng thân",
+      "Có bảo chứng",
+      "Sẵn hàng"
+    ],
+    "rating": 4.9,
+    "stock": 104,
+    "vendorSlug": "phu-thuy-co-gu",
+    "vendorName": "Phù Thuỷ Có Gu",
+    "colors": [
+      "San hô sao",
+      "Lam cực quang",
+      "Tím trăng khuyết",
+      "Lục đom đóm"
+    ]
+  },
+  {
+    "id": 59,
+    "name": "Thuốc nhuộm tóc đổi màu theo tâm trạng",
+    "category": "Mỹ phẩm phòng thân",
+    "price": 240,
+    "description": "Vui tóc màu hồng buồn tóc màu xanh đang cáu tóc đỏ rực",
+    "longDescription": "Vui tóc màu hồng buồn tóc màu xanh đang cáu tóc đỏ rực. Vật phẩm được kiểm định tại Chợ Kỳ Kỳ, niêm phong bằng bụi sao và kèm hướng dẫn sử dụng an toàn trong đúng chiều không gian.",
+    "users": 18000,
+    "usage": "bạn trẻ Gen Z trải nghiệm",
+    "image": "/catalog/product-59-1.svg",
+    "gallery": [
+      "/catalog/product-59-1.svg",
+      "/catalog/product-59-2.svg",
+      "/catalog/product-59-3.svg",
+      "/catalog/product-59-4.svg"
+    ],
+    "tags": [
+      "Mỹ phẩm phòng thân",
+      "Có bảo chứng",
+      "Sẵn hàng"
+    ],
+    "rating": 5,
+    "stock": 121,
+    "vendorSlug": "phu-thuy-co-gu",
+    "vendorName": "Phù Thuỷ Có Gu",
+    "colors": [
+      "San hô sao",
+      "Lam cực quang",
+      "Tím trăng khuyết",
+      "Lục đom đóm"
+    ]
+  },
+  {
+    "id": 60,
+    "name": "Thắt lưng tự siết eo về 60cm",
+    "category": "Mỹ phẩm phòng thân",
+    "price": 490,
+    "description": "Nịt vào một phát eo thon dáng chuẩn ngay không cần tập gym",
+    "longDescription": "Nịt vào một phát eo thon dáng chuẩn ngay không cần tập gym. Vật phẩm được kiểm định tại Chợ Kỳ Kỳ, niêm phong bằng bụi sao và kèm hướng dẫn sử dụng an toàn trong đúng chiều không gian.",
+    "users": 38000,
+    "usage": "chị em lên dáng",
+    "image": "/catalog/product-60-1.svg",
+    "gallery": [
+      "/catalog/product-60-1.svg",
+      "/catalog/product-60-2.svg",
+      "/catalog/product-60-3.svg",
+      "/catalog/product-60-4.svg"
+    ],
+    "tags": [
+      "Mỹ phẩm phòng thân",
+      "Bán chạy",
+      "Sẵn hàng"
+    ],
+    "rating": 4.6,
+    "stock": 138,
+    "vendorSlug": "phu-thuy-co-gu",
+    "vendorName": "Phù Thuỷ Có Gu",
+    "colors": [
+      "San hô sao",
+      "Lam cực quang",
+      "Tím trăng khuyết",
+      "Lục đom đóm"
+    ]
+  },
+  {
+    "id": 61,
+    "name": "Trà sữa trân châu không calo",
+    "category": "Ẩm thực thần kỳ",
+    "price": 35,
+    "description": "Uống 10 ly một ngày vẫn giảm cân vèo vèo càng uống càng gầy",
+    "longDescription": "Uống 10 ly một ngày vẫn giảm cân vèo vèo càng uống càng gầy. Vật phẩm được kiểm định tại Chợ Kỳ Kỳ, niêm phong bằng bụi sao và kèm hướng dẫn sử dụng an toàn trong đúng chiều không gian.",
+    "users": 950000,
+    "usage": "ly đã bán ra",
+    "image": "/catalog/product-61-1.svg",
+    "gallery": [
+      "/catalog/product-61-1.svg",
+      "/catalog/product-61-2.svg",
+      "/catalog/product-61-3.svg",
+      "/catalog/product-61-4.svg"
+    ],
+    "tags": [
+      "Ẩm thực thần kỳ",
+      "Có bảo chứng",
+      "Sẵn hàng"
+    ],
+    "rating": 4.7,
+    "stock": 155,
+    "vendorSlug": "bep-trang-khuyet",
+    "vendorName": "Bếp Trăng Khuyết",
+    "colors": [
+      "San hô sao",
+      "Lam cực quang",
+      "Tím trăng khuyết",
+      "Lục đom đóm"
+    ]
+  },
+  {
+    "id": 62,
+    "name": "Bánh mì chuyển ngữ",
+    "category": "Ẩm thực thần kỳ",
+    "price": 120,
+    "description": "Ăn một miếng nói được ngay tiếng Pháp tiếng Nhật như người bản xứ",
+    "longDescription": "Ăn một miếng nói được ngay tiếng Pháp tiếng Nhật như người bản xứ. Vật phẩm được kiểm định tại Chợ Kỳ Kỳ, niêm phong bằng bụi sao và kèm hướng dẫn sử dụng an toàn trong đúng chiều không gian.",
+    "users": 54000,
+    "usage": "học sinh qua môn tiếng Anh",
+    "image": "/catalog/product-62-1.svg",
+    "gallery": [
+      "/catalog/product-62-1.svg",
+      "/catalog/product-62-2.svg",
+      "/catalog/product-62-3.svg",
+      "/catalog/product-62-4.svg"
+    ],
+    "tags": [
+      "Ẩm thực thần kỳ",
+      "Có bảo chứng",
+      "Sẵn hàng"
+    ],
+    "rating": 4.8,
+    "stock": 172,
+    "vendorSlug": "bep-trang-khuyet",
+    "vendorName": "Bếp Trăng Khuyết",
+    "colors": [
+      "San hô sao",
+      "Lam cực quang",
+      "Tím trăng khuyết",
+      "Lục đom đóm"
+    ]
+  },
+  {
+    "id": 63,
+    "name": "Kẹo cao su nhai ra tiền lẻ",
+    "category": "Ẩm thực thần kỳ",
+    "price": 70,
+    "description": "Càng nhai lâu trong túi quần tự động xuất hiện tiền tờ 5k 10k",
+    "longDescription": "Càng nhai lâu trong túi quần tự động xuất hiện tiền tờ 5k 10k. Vật phẩm được kiểm định tại Chợ Kỳ Kỳ, niêm phong bằng bụi sao và kèm hướng dẫn sử dụng an toàn trong đúng chiều không gian.",
+    "users": 32000,
+    "usage": "người nhai liên tục",
+    "image": "/catalog/product-63-1.svg",
+    "gallery": [
+      "/catalog/product-63-1.svg",
+      "/catalog/product-63-2.svg",
+      "/catalog/product-63-3.svg",
+      "/catalog/product-63-4.svg"
+    ],
+    "tags": [
+      "Ẩm thực thần kỳ",
+      "Có bảo chứng",
+      "Sẵn hàng"
+    ],
+    "rating": 4.9,
+    "stock": 189,
+    "vendorSlug": "bep-trang-khuyet",
+    "vendorName": "Bếp Trăng Khuyết",
+    "colors": [
+      "San hô sao",
+      "Lam cực quang",
+      "Tím trăng khuyết",
+      "Lục đom đóm"
+    ]
+  },
+  {
+    "id": 64,
+    "name": "Mì tôm không nóng trong người",
+    "category": "Ẩm thực thần kỳ",
+    "price": 45,
+    "description": "Ăn xuyên đêm suốt tháng mặt vẫn nhẵn thín không một nốt mụn",
+    "longDescription": "Ăn xuyên đêm suốt tháng mặt vẫn nhẵn thín không một nốt mụn. Vật phẩm được kiểm định tại Chợ Kỳ Kỳ, niêm phong bằng bụi sao và kèm hướng dẫn sử dụng an toàn trong đúng chiều không gian.",
+    "users": 120000,
+    "usage": "game thủ sống sót",
+    "image": "/catalog/product-64-1.svg",
+    "gallery": [
+      "/catalog/product-64-1.svg",
+      "/catalog/product-64-2.svg",
+      "/catalog/product-64-3.svg",
+      "/catalog/product-64-4.svg"
+    ],
+    "tags": [
+      "Ẩm thực thần kỳ",
+      "Có bảo chứng",
+      "Sẵn hàng"
+    ],
+    "rating": 5,
+    "stock": 26,
+    "vendorSlug": "bep-trang-khuyet",
+    "vendorName": "Bếp Trăng Khuyết",
+    "colors": [
+      "San hô sao",
+      "Lam cực quang",
+      "Tím trăng khuyết",
+      "Lục đom đóm"
+    ]
+  },
+  {
+    "id": 65,
+    "name": "Nước suối ngọt ngào như lời ny cũ",
+    "category": "Ẩm thực thần kỳ",
+    "price": 25,
+    "description": "Nước lọc bình thường nhưng uống vào có vị ngọt lịm tim",
+    "longDescription": "Nước lọc bình thường nhưng uống vào có vị ngọt lịm tim. Vật phẩm được kiểm định tại Chợ Kỳ Kỳ, niêm phong bằng bụi sao và kèm hướng dẫn sử dụng an toàn trong đúng chiều không gian.",
+    "users": 18500,
+    "usage": "người hoài niệm",
+    "image": "/catalog/product-65-1.svg",
+    "gallery": [
+      "/catalog/product-65-1.svg",
+      "/catalog/product-65-2.svg",
+      "/catalog/product-65-3.svg",
+      "/catalog/product-65-4.svg"
+    ],
+    "tags": [
+      "Ẩm thực thần kỳ",
+      "Bán chạy",
+      "Sẵn hàng"
+    ],
+    "rating": 4.6,
+    "stock": 43,
+    "vendorSlug": "bep-trang-khuyet",
+    "vendorName": "Bếp Trăng Khuyết",
+    "colors": [
+      "San hô sao",
+      "Lam cực quang",
+      "Tím trăng khuyết",
+      "Lục đom đóm"
+    ]
+  },
+  {
+    "id": 66,
+    "name": "Ớt cay nhưng không rát lưỡi",
+    "category": "Ẩm thực thần kỳ",
+    "price": 55,
+    "description": "Cay nồng nàn kích thích vị giác nhưng nuốt xuống mát lạnh dạ dày",
+    "longDescription": "Cay nồng nàn kích thích vị giác nhưng nuốt xuống mát lạnh dạ dày. Vật phẩm được kiểm định tại Chợ Kỳ Kỳ, niêm phong bằng bụi sao và kèm hướng dẫn sử dụng an toàn trong đúng chiều không gian.",
+    "users": 21000,
+    "usage": "tín đồ ăn cay",
+    "image": "/catalog/product-66-1.svg",
+    "gallery": [
+      "/catalog/product-66-1.svg",
+      "/catalog/product-66-2.svg",
+      "/catalog/product-66-3.svg",
+      "/catalog/product-66-4.svg"
+    ],
+    "tags": [
+      "Ẩm thực thần kỳ",
+      "Có bảo chứng",
+      "Sẵn hàng"
+    ],
+    "rating": 4.7,
+    "stock": 60,
+    "vendorSlug": "bep-trang-khuyet",
+    "vendorName": "Bếp Trăng Khuyết",
+    "colors": [
+      "San hô sao",
+      "Lam cực quang",
+      "Tím trăng khuyết",
+      "Lục đom đóm"
+    ]
+  },
+  {
+    "id": 67,
+    "name": "Hạt hướng dương cắn ra sự thật",
+    "category": "Ẩm thực thần kỳ",
+    "price": 80,
+    "description": "Mời đứa bạn cắn hạt này nó tự động khai ra hết bí mật thầm kín",
+    "longDescription": "Mời đứa bạn cắn hạt này nó tự động khai ra hết bí mật thầm kín. Vật phẩm được kiểm định tại Chợ Kỳ Kỳ, niêm phong bằng bụi sao và kèm hướng dẫn sử dụng an toàn trong đúng chiều không gian.",
+    "users": 43000,
+    "usage": "hội bà tám tin dùng",
+    "image": "/catalog/product-67-1.svg",
+    "gallery": [
+      "/catalog/product-67-1.svg",
+      "/catalog/product-67-2.svg",
+      "/catalog/product-67-3.svg",
+      "/catalog/product-67-4.svg"
+    ],
+    "tags": [
+      "Ẩm thực thần kỳ",
+      "Có bảo chứng",
+      "Sẵn hàng"
+    ],
+    "rating": 4.8,
+    "stock": 77,
+    "vendorSlug": "bep-trang-khuyet",
+    "vendorName": "Bếp Trăng Khuyết",
+    "colors": [
+      "San hô sao",
+      "Lam cực quang",
+      "Tím trăng khuyết",
+      "Lục đom đóm"
+    ]
+  },
+  {
+    "id": 68,
+    "name": "Cà phê tỉnh táo suốt 3 ngày",
+    "category": "Ẩm thực thần kỳ",
+    "price": 150,
+    "description": "Uống một hớp cày deadline 72 tiếng không cần chợp mắt",
+    "longDescription": "Uống một hớp cày deadline 72 tiếng không cần chợp mắt. Vật phẩm được kiểm định tại Chợ Kỳ Kỳ, niêm phong bằng bụi sao và kèm hướng dẫn sử dụng an toàn trong đúng chiều không gian.",
+    "users": 67000,
+    "usage": "cú đêm văn phòng",
+    "image": "/catalog/product-68-1.svg",
+    "gallery": [
+      "/catalog/product-68-1.svg",
+      "/catalog/product-68-2.svg",
+      "/catalog/product-68-3.svg",
+      "/catalog/product-68-4.svg"
+    ],
+    "tags": [
+      "Ẩm thực thần kỳ",
+      "Có bảo chứng",
+      "Sẵn hàng"
+    ],
+    "rating": 4.9,
+    "stock": 94,
+    "vendorSlug": "bep-trang-khuyet",
+    "vendorName": "Bếp Trăng Khuyết",
+    "colors": [
+      "San hô sao",
+      "Lam cực quang",
+      "Tím trăng khuyết",
+      "Lục đom đóm"
+    ]
+  },
+  {
+    "id": 69,
+    "name": "Kem ăn vào thấy lạnh sống lưng",
+    "category": "Ẩm thực thần kỳ",
+    "price": 65,
+    "description": "Giữa trưa hè ăn một thìa kem là rét run cầm cập như ở Bắc Cực",
+    "longDescription": "Giữa trưa hè ăn một thìa kem là rét run cầm cập như ở Bắc Cực. Vật phẩm được kiểm định tại Chợ Kỳ Kỳ, niêm phong bằng bụi sao và kèm hướng dẫn sử dụng an toàn trong đúng chiều không gian.",
+    "users": 23000,
+    "usage": "người giải nhiệt cấp tốc",
+    "image": "/catalog/product-69-1.svg",
+    "gallery": [
+      "/catalog/product-69-1.svg",
+      "/catalog/product-69-2.svg",
+      "/catalog/product-69-3.svg",
+      "/catalog/product-69-4.svg"
+    ],
+    "tags": [
+      "Ẩm thực thần kỳ",
+      "Có bảo chứng",
+      "Sẵn hàng"
+    ],
+    "rating": 5,
+    "stock": 111,
+    "vendorSlug": "bep-trang-khuyet",
+    "vendorName": "Bếp Trăng Khuyết",
+    "colors": [
+      "San hô sao",
+      "Lam cực quang",
+      "Tím trăng khuyết",
+      "Lục đom đóm"
+    ]
+  },
+  {
+    "id": 70,
+    "name": "Bánh quy tăng IQ cấp tốc",
+    "category": "Ẩm thực thần kỳ",
+    "price": 200,
+    "description": "Ăn trước khi thi 5 phút tự nhớ hết công thức tích phân đạo hàm",
+    "longDescription": "Ăn trước khi thi 5 phút tự nhớ hết công thức tích phân đạo hàm. Vật phẩm được kiểm định tại Chợ Kỳ Kỳ, niêm phong bằng bụi sao và kèm hướng dẫn sử dụng an toàn trong đúng chiều không gian.",
+    "users": 89000,
+    "usage": "sĩ tử phòng thi",
+    "image": "/catalog/product-70-1.svg",
+    "gallery": [
+      "/catalog/product-70-1.svg",
+      "/catalog/product-70-2.svg",
+      "/catalog/product-70-3.svg",
+      "/catalog/product-70-4.svg"
+    ],
+    "tags": [
+      "Ẩm thực thần kỳ",
+      "Bán chạy",
+      "Sẵn hàng"
+    ],
+    "rating": 4.6,
+    "stock": 128,
+    "vendorSlug": "bep-trang-khuyet",
+    "vendorName": "Bếp Trăng Khuyết",
+    "colors": [
+      "San hô sao",
+      "Lam cực quang",
+      "Tím trăng khuyết",
+      "Lục đom đóm"
+    ]
+  },
+  {
+    "id": 71,
+    "name": "Hành tây thái không chảy nước mắt",
+    "category": "Ẩm thực thần kỳ",
+    "price": 40,
+    "description": "Thái thoải mái hành tây còn tự động khóc hộ nếu bạn đang buồn",
+    "longDescription": "Thái thoải mái hành tây còn tự động khóc hộ nếu bạn đang buồn. Vật phẩm được kiểm định tại Chợ Kỳ Kỳ, niêm phong bằng bụi sao và kèm hướng dẫn sử dụng an toàn trong đúng chiều không gian.",
+    "users": 7800,
+    "usage": "đầu bếp gia đình",
+    "image": "/catalog/product-71-1.svg",
+    "gallery": [
+      "/catalog/product-71-1.svg",
+      "/catalog/product-71-2.svg",
+      "/catalog/product-71-3.svg",
+      "/catalog/product-71-4.svg"
+    ],
+    "tags": [
+      "Ẩm thực thần kỳ",
+      "Có bảo chứng",
+      "Sẵn hàng"
+    ],
+    "rating": 4.7,
+    "stock": 145,
+    "vendorSlug": "bep-trang-khuyet",
+    "vendorName": "Bếp Trăng Khuyết",
+    "colors": [
+      "San hô sao",
+      "Lam cực quang",
+      "Tím trăng khuyết",
+      "Lục đom đóm"
+    ]
+  },
+  {
+    "id": 72,
+    "name": "Muối chấm vạn năng",
+    "category": "Ẩm thực thần kỳ",
+    "price": 30,
+    "description": "Chấm với dép guốc ăn cũng thấy ngon vị chua cay mặn ngọt hoàn hảo",
+    "longDescription": "Chấm với dép guốc ăn cũng thấy ngon vị chua cay mặn ngọt hoàn hảo. Vật phẩm được kiểm định tại Chợ Kỳ Kỳ, niêm phong bằng bụi sao và kèm hướng dẫn sử dụng an toàn trong đúng chiều không gian.",
+    "users": 150000,
+    "usage": "hũ được tiêu thụ",
+    "image": "/catalog/product-72-1.svg",
+    "gallery": [
+      "/catalog/product-72-1.svg",
+      "/catalog/product-72-2.svg",
+      "/catalog/product-72-3.svg",
+      "/catalog/product-72-4.svg"
+    ],
+    "tags": [
+      "Ẩm thực thần kỳ",
+      "Có bảo chứng",
+      "Sẵn hàng"
+    ],
+    "rating": 4.8,
+    "stock": 162,
+    "vendorSlug": "bep-trang-khuyet",
+    "vendorName": "Bếp Trăng Khuyết",
+    "colors": [
+      "San hô sao",
+      "Lam cực quang",
+      "Tím trăng khuyết",
+      "Lục đom đóm"
+    ]
+  },
+  {
+    "id": 73,
+    "name": "Kẹo mút kéo dài tuổi thanh xuân",
+    "category": "Ẩm thực thần kỳ",
+    "price": 500,
+    "description": "Mút một cây trẻ lại 1 tuổi tối đa dùng 5 cây một năm",
+    "longDescription": "Mút một cây trẻ lại 1 tuổi tối đa dùng 5 cây một năm. Vật phẩm được kiểm định tại Chợ Kỳ Kỳ, niêm phong bằng bụi sao và kèm hướng dẫn sử dụng an toàn trong đúng chiều không gian.",
+    "users": 8900,
+    "usage": "quý bà níu giữ thanh xuân",
+    "image": "/catalog/product-73-1.svg",
+    "gallery": [
+      "/catalog/product-73-1.svg",
+      "/catalog/product-73-2.svg",
+      "/catalog/product-73-3.svg",
+      "/catalog/product-73-4.svg"
+    ],
+    "tags": [
+      "Ẩm thực thần kỳ",
+      "Có bảo chứng",
+      "Sẵn hàng"
+    ],
+    "rating": 4.9,
+    "stock": 179,
+    "vendorSlug": "bep-trang-khuyet",
+    "vendorName": "Bếp Trăng Khuyết",
+    "colors": [
+      "San hô sao",
+      "Lam cực quang",
+      "Tím trăng khuyết",
+      "Lục đom đóm"
+    ]
+  },
+  {
+    "id": 74,
+    "name": "Bột chiên giòn chiên cả nỗi buồn",
+    "category": "Ẩm thực thần kỳ",
+    "price": 90,
+    "description": "Bỏ nỗi buồn vào lăn bột chiên lên ăn vào thấy giòn rụm vui vẻ",
+    "longDescription": "Bỏ nỗi buồn vào lăn bột chiên lên ăn vào thấy giòn rụm vui vẻ. Vật phẩm được kiểm định tại Chợ Kỳ Kỳ, niêm phong bằng bụi sao và kèm hướng dẫn sử dụng an toàn trong đúng chiều không gian.",
+    "users": 14200,
+    "usage": "người thích ăn đồ chiên",
+    "image": "/catalog/product-74-1.svg",
+    "gallery": [
+      "/catalog/product-74-1.svg",
+      "/catalog/product-74-2.svg",
+      "/catalog/product-74-3.svg",
+      "/catalog/product-74-4.svg"
+    ],
+    "tags": [
+      "Ẩm thực thần kỳ",
+      "Có bảo chứng",
+      "Sẵn hàng"
+    ],
+    "rating": 5,
+    "stock": 196,
+    "vendorSlug": "bep-trang-khuyet",
+    "vendorName": "Bếp Trăng Khuyết",
+    "colors": [
+      "San hô sao",
+      "Lam cực quang",
+      "Tím trăng khuyết",
+      "Lục đom đóm"
+    ]
+  },
+  {
+    "id": 75,
+    "name": "Nước ép chanh sả thật sự",
+    "category": "Ẩm thực thần kỳ",
+    "price": 60,
+    "description": "Uống vào tự nhiên thấy mình sang chảnh thần thái quý tộc nổi lên",
+    "longDescription": "Uống vào tự nhiên thấy mình sang chảnh thần thái quý tộc nổi lên. Vật phẩm được kiểm định tại Chợ Kỳ Kỳ, niêm phong bằng bụi sao và kèm hướng dẫn sử dụng an toàn trong đúng chiều không gian.",
+    "users": 31000,
+    "usage": "người hướng đến thượng lưu",
+    "image": "/catalog/product-75-1.svg",
+    "gallery": [
+      "/catalog/product-75-1.svg",
+      "/catalog/product-75-2.svg",
+      "/catalog/product-75-3.svg",
+      "/catalog/product-75-4.svg"
+    ],
+    "tags": [
+      "Ẩm thực thần kỳ",
+      "Bán chạy",
+      "Sẵn hàng"
+    ],
+    "rating": 4.6,
+    "stock": 33,
+    "vendorSlug": "bep-trang-khuyet",
+    "vendorName": "Bếp Trăng Khuyết",
+    "colors": [
+      "San hô sao",
+      "Lam cực quang",
+      "Tím trăng khuyết",
+      "Lục đom đóm"
+    ]
+  },
+  {
+    "id": 76,
+    "name": "Socola tình yêu sét đánh",
+    "category": "Ẩm thực thần kỳ",
+    "price": 250,
+    "description": "Bẻ nửa cho người thầm thương ăn họ sẽ thích bạn ngay lập tức",
+    "longDescription": "Bẻ nửa cho người thầm thương ăn họ sẽ thích bạn ngay lập tức. Vật phẩm được kiểm định tại Chợ Kỳ Kỳ, niêm phong bằng bụi sao và kèm hướng dẫn sử dụng an toàn trong đúng chiều không gian.",
+    "users": 5600,
+    "usage": "vụ tỏ tình thành công",
+    "image": "/catalog/product-76-1.svg",
+    "gallery": [
+      "/catalog/product-76-1.svg",
+      "/catalog/product-76-2.svg",
+      "/catalog/product-76-3.svg",
+      "/catalog/product-76-4.svg"
+    ],
+    "tags": [
+      "Ẩm thực thần kỳ",
+      "Có bảo chứng",
+      "Sẵn hàng"
+    ],
+    "rating": 4.7,
+    "stock": 50,
+    "vendorSlug": "bep-trang-khuyet",
+    "vendorName": "Bếp Trăng Khuyết",
+    "colors": [
+      "San hô sao",
+      "Lam cực quang",
+      "Tím trăng khuyết",
+      "Lục đom đóm"
+    ]
+  },
+  {
+    "id": 77,
+    "name": "Kẹo ngậm tắt tiếng ngáy",
+    "category": "Ẩm thực thần kỳ",
+    "price": 110,
+    "description": "Chồng ngậm một viên trước khi ngủ đêm đó cả nhà ngủ ngon",
+    "longDescription": "Chồng ngậm một viên trước khi ngủ đêm đó cả nhà ngủ ngon. Vật phẩm được kiểm định tại Chợ Kỳ Kỳ, niêm phong bằng bụi sao và kèm hướng dẫn sử dụng an toàn trong đúng chiều không gian.",
+    "users": 44000,
+    "usage": "gia đình hạnh phúc",
+    "image": "/catalog/product-77-1.svg",
+    "gallery": [
+      "/catalog/product-77-1.svg",
+      "/catalog/product-77-2.svg",
+      "/catalog/product-77-3.svg",
+      "/catalog/product-77-4.svg"
+    ],
+    "tags": [
+      "Ẩm thực thần kỳ",
+      "Có bảo chứng",
+      "Sẵn hàng"
+    ],
+    "rating": 4.8,
+    "stock": 67,
+    "vendorSlug": "bep-trang-khuyet",
+    "vendorName": "Bếp Trăng Khuyết",
+    "colors": [
+      "San hô sao",
+      "Lam cực quang",
+      "Tím trăng khuyết",
+      "Lục đom đóm"
+    ]
+  },
+  {
+    "id": 78,
+    "name": "Sing-gum thổi bong bóng bay được",
+    "category": "Ẩm thực thần kỳ",
+    "price": 85,
+    "description": "Thổi bong bóng thật to nó nhấc bạn bay lên trời",
+    "longDescription": "Thổi bong bóng thật to nó nhấc bạn bay lên trời. Vật phẩm được kiểm định tại Chợ Kỳ Kỳ, niêm phong bằng bụi sao và kèm hướng dẫn sử dụng an toàn trong đúng chiều không gian.",
+    "users": 12000,
+    "usage": "người trải nghiệm",
+    "image": "/catalog/product-78-1.svg",
+    "gallery": [
+      "/catalog/product-78-1.svg",
+      "/catalog/product-78-2.svg",
+      "/catalog/product-78-3.svg",
+      "/catalog/product-78-4.svg"
+    ],
+    "tags": [
+      "Ẩm thực thần kỳ",
+      "Có bảo chứng",
+      "Sẵn hàng"
+    ],
+    "rating": 4.9,
+    "stock": 84,
+    "vendorSlug": "bep-trang-khuyet",
+    "vendorName": "Bếp Trăng Khuyết",
+    "colors": [
+      "San hô sao",
+      "Lam cực quang",
+      "Tím trăng khuyết",
+      "Lục đom đóm"
+    ]
+  },
+  {
+    "id": 79,
+    "name": "Trứng gà nở ra vàng găm",
+    "category": "Ẩm thực thần kỳ",
+    "price": 3000,
+    "description": "Luộc lên bóc vỏ ra thấy nguyên một thỏi vàng 24k bên trong",
+    "longDescription": "Luộc lên bóc vỏ ra thấy nguyên một thỏi vàng 24k bên trong. Vật phẩm được kiểm định tại Chợ Kỳ Kỳ, niêm phong bằng bụi sao và kèm hướng dẫn sử dụng an toàn trong đúng chiều không gian.",
+    "users": 150,
+    "usage": "người may mắn săn được",
+    "image": "/catalog/product-79-1.svg",
+    "gallery": [
+      "/catalog/product-79-1.svg",
+      "/catalog/product-79-2.svg",
+      "/catalog/product-79-3.svg",
+      "/catalog/product-79-4.svg"
+    ],
+    "tags": [
+      "Ẩm thực thần kỳ",
+      "Có bảo chứng",
+      "Cực hiếm"
+    ],
+    "rating": 5,
+    "stock": 101,
+    "vendorSlug": "bep-trang-khuyet",
+    "vendorName": "Bếp Trăng Khuyết",
+    "colors": [
+      "San hô sao",
+      "Lam cực quang",
+      "Tím trăng khuyết",
+      "Lục đom đóm"
+    ]
+  },
+  {
+    "id": 80,
+    "name": "Rượu uống vào nói lời thật lòng",
+    "category": "Ẩm thực thần kỳ",
+    "price": 380,
+    "description": "Không say nhưng tự động khai hết quỹ đen mật khẩu điện thoại",
+    "longDescription": "Không say nhưng tự động khai hết quỹ đen mật khẩu điện thoại. Vật phẩm được kiểm định tại Chợ Kỳ Kỳ, niêm phong bằng bụi sao và kèm hướng dẫn sử dụng an toàn trong đúng chiều không gian.",
+    "users": 9200,
+    "usage": "người vợ kiểm chứng",
+    "image": "/catalog/product-80-1.svg",
+    "gallery": [
+      "/catalog/product-80-1.svg",
+      "/catalog/product-80-2.svg",
+      "/catalog/product-80-3.svg",
+      "/catalog/product-80-4.svg"
+    ],
+    "tags": [
+      "Ẩm thực thần kỳ",
+      "Bán chạy",
+      "Sẵn hàng"
+    ],
+    "rating": 4.6,
+    "stock": 118,
+    "vendorSlug": "bep-trang-khuyet",
+    "vendorName": "Bếp Trăng Khuyết",
+    "colors": [
+      "San hô sao",
+      "Lam cực quang",
+      "Tím trăng khuyết",
+      "Lục đom đóm"
+    ]
+  },
+  {
+    "id": 81,
+    "name": "Cây bút tự làm bài tập về nhà",
+    "category": "Đồ chơi cứu sinh",
+    "price": 300,
+    "description": "Đặt bút xuống vở nó tự động viết lời giải toán văn Anh vèo vèo",
+    "longDescription": "Đặt bút xuống vở nó tự động viết lời giải toán văn Anh vèo vèo. Vật phẩm được kiểm định tại Chợ Kỳ Kỳ, niêm phong bằng bụi sao và kèm hướng dẫn sử dụng an toàn trong đúng chiều không gian.",
+    "users": 85000,
+    "usage": "học sinh thoát nạn",
+    "image": "/catalog/product-81-1.svg",
+    "gallery": [
+      "/catalog/product-81-1.svg",
+      "/catalog/product-81-2.svg",
+      "/catalog/product-81-3.svg",
+      "/catalog/product-81-4.svg"
+    ],
+    "tags": [
+      "Đồ chơi cứu sinh",
+      "Có bảo chứng",
+      "Sẵn hàng"
+    ],
+    "rating": 4.7,
+    "stock": 135,
+    "vendorSlug": "hoc-vien-tron-bai",
+    "vendorName": "Học Viện Trốn Bài",
+    "colors": [
+      "San hô sao",
+      "Lam cực quang",
+      "Tím trăng khuyết",
+      "Lục đom đóm"
+    ]
+  },
+  {
+    "id": 82,
+    "name": "Cục tẩy xóa ký ức người yêu cũ",
+    "category": "Đồ chơi cứu sinh",
+    "price": 150,
+    "description": "Viết tên người yêu cũ ra giấy rồi tẩy đi bạn sẽ quên sạch họ",
+    "longDescription": "Viết tên người yêu cũ ra giấy rồi tẩy đi bạn sẽ quên sạch họ. Vật phẩm được kiểm định tại Chợ Kỳ Kỳ, niêm phong bằng bụi sao và kèm hướng dẫn sử dụng an toàn trong đúng chiều không gian.",
+    "users": 104000,
+    "usage": "người đã quên quá khứ",
+    "image": "/catalog/product-82-1.svg",
+    "gallery": [
+      "/catalog/product-82-1.svg",
+      "/catalog/product-82-2.svg",
+      "/catalog/product-82-3.svg",
+      "/catalog/product-82-4.svg"
+    ],
+    "tags": [
+      "Đồ chơi cứu sinh",
+      "Có bảo chứng",
+      "Sẵn hàng"
+    ],
+    "rating": 4.8,
+    "stock": 152,
+    "vendorSlug": "hoc-vien-tron-bai",
+    "vendorName": "Học Viện Trốn Bài",
+    "colors": [
+      "San hô sao",
+      "Lam cực quang",
+      "Tím trăng khuyết",
+      "Lục đom đóm"
+    ]
+  },
+  {
+    "id": 83,
+    "name": "Sách giáo khoa tự thì thầm vào tai",
+    "category": "Đồ chơi cứu sinh",
+    "price": 450,
+    "description": "Để sách dưới gối kiến thức tự động chạy vào đầu lúc ngủ",
+    "longDescription": "Để sách dưới gối kiến thức tự động chạy vào đầu lúc ngủ. Vật phẩm được kiểm định tại Chợ Kỳ Kỳ, niêm phong bằng bụi sao và kèm hướng dẫn sử dụng an toàn trong đúng chiều không gian.",
+    "users": 61000,
+    "usage": "sĩ tử vượt vũ môn",
+    "image": "/catalog/product-83-1.svg",
+    "gallery": [
+      "/catalog/product-83-1.svg",
+      "/catalog/product-83-2.svg",
+      "/catalog/product-83-3.svg",
+      "/catalog/product-83-4.svg"
+    ],
+    "tags": [
+      "Đồ chơi cứu sinh",
+      "Có bảo chứng",
+      "Sẵn hàng"
+    ],
+    "rating": 4.9,
+    "stock": 169,
+    "vendorSlug": "hoc-vien-tron-bai",
+    "vendorName": "Học Viện Trốn Bài",
+    "colors": [
+      "San hô sao",
+      "Lam cực quang",
+      "Tím trăng khuyết",
+      "Lục đom đóm"
+    ]
+  },
+  {
+    "id": 84,
+    "name": "Giấy ghi chú nhắc nhở giọng mẹ",
+    "category": "Đồ chơi cứu sinh",
+    "price": 50,
+    "description": "Dán lên bàn đến giờ chưa làm việc nó sẽ phát tiếng mắng giục giã",
+    "longDescription": "Dán lên bàn đến giờ chưa làm việc nó sẽ phát tiếng mắng giục giã. Vật phẩm được kiểm định tại Chợ Kỳ Kỳ, niêm phong bằng bụi sao và kèm hướng dẫn sử dụng an toàn trong đúng chiều không gian.",
+    "users": 27000,
+    "usage": "người hết bệnh trì hoãn",
+    "image": "/catalog/product-84-1.svg",
+    "gallery": [
+      "/catalog/product-84-1.svg",
+      "/catalog/product-84-2.svg",
+      "/catalog/product-84-3.svg",
+      "/catalog/product-84-4.svg"
+    ],
+    "tags": [
+      "Đồ chơi cứu sinh",
+      "Có bảo chứng",
+      "Sẵn hàng"
+    ],
+    "rating": 5,
+    "stock": 186,
+    "vendorSlug": "hoc-vien-tron-bai",
+    "vendorName": "Học Viện Trốn Bài",
+    "colors": [
+      "San hô sao",
+      "Lam cực quang",
+      "Tím trăng khuyết",
+      "Lục đom đóm"
+    ]
+  },
+  {
+    "id": 85,
+    "name": "Thước kẻ đo độ dày da mặt",
+    "category": "Đồ chơi cứu sinh",
+    "price": 190,
+    "description": "Đưa lên gần mặt ai đó thước tự hiện số cm độ chai lì mặt dày",
+    "longDescription": "Đưa lên gần mặt ai đó thước tự hiện số cm độ chai lì mặt dày. Vật phẩm được kiểm định tại Chợ Kỳ Kỳ, niêm phong bằng bụi sao và kèm hướng dẫn sử dụng an toàn trong đúng chiều không gian.",
+    "users": 8400,
+    "usage": "người dùng đi đo thiên hạ",
+    "image": "/catalog/product-85-1.svg",
+    "gallery": [
+      "/catalog/product-85-1.svg",
+      "/catalog/product-85-2.svg",
+      "/catalog/product-85-3.svg",
+      "/catalog/product-85-4.svg"
+    ],
+    "tags": [
+      "Đồ chơi cứu sinh",
+      "Bán chạy",
+      "Sẵn hàng"
+    ],
+    "rating": 4.6,
+    "stock": 23,
+    "vendorSlug": "hoc-vien-tron-bai",
+    "vendorName": "Học Viện Trốn Bài",
+    "colors": [
+      "San hô sao",
+      "Lam cực quang",
+      "Tím trăng khuyết",
+      "Lục đom đóm"
+    ]
+  },
+  {
+    "id": 86,
+    "name": "Hộp bút không bao giờ mất nắp",
+    "category": "Đồ chơi cứu sinh",
+    "price": 99,
+    "description": "Cứ rơi nắp bút là nắp tự động bay ngược trở lại như có nam châm",
+    "longDescription": "Cứ rơi nắp bút là nắp tự động bay ngược trở lại như có nam châm. Vật phẩm được kiểm định tại Chợ Kỳ Kỳ, niêm phong bằng bụi sao và kèm hướng dẫn sử dụng an toàn trong đúng chiều không gian.",
+    "users": 34000,
+    "usage": "học sinh bảo toàn đồ đạc",
+    "image": "/catalog/product-86-1.svg",
+    "gallery": [
+      "/catalog/product-86-1.svg",
+      "/catalog/product-86-2.svg",
+      "/catalog/product-86-3.svg",
+      "/catalog/product-86-4.svg"
+    ],
+    "tags": [
+      "Đồ chơi cứu sinh",
+      "Có bảo chứng",
+      "Sẵn hàng"
+    ],
+    "rating": 4.7,
+    "stock": 40,
+    "vendorSlug": "hoc-vien-tron-bai",
+    "vendorName": "Học Viện Trốn Bài",
+    "colors": [
+      "San hô sao",
+      "Lam cực quang",
+      "Tím trăng khuyết",
+      "Lục đom đóm"
+    ]
+  },
+  {
+    "id": 87,
+    "name": "Con dấu duyệt bài siêu tốc",
+    "category": "Đồ chơi cứu sinh",
+    "price": 350,
+    "description": "Sếp lười ký tên dùng con dấu này đóng phát mọi dự án thông qua",
+    "longDescription": "Sếp lười ký tên dùng con dấu này đóng phát mọi dự án thông qua. Vật phẩm được kiểm định tại Chợ Kỳ Kỳ, niêm phong bằng bụi sao và kèm hướng dẫn sử dụng an toàn trong đúng chiều không gian.",
+    "users": 13000,
+    "usage": "trưởng phòng sở hữu",
+    "image": "/catalog/product-87-1.svg",
+    "gallery": [
+      "/catalog/product-87-1.svg",
+      "/catalog/product-87-2.svg",
+      "/catalog/product-87-3.svg",
+      "/catalog/product-87-4.svg"
+    ],
+    "tags": [
+      "Đồ chơi cứu sinh",
+      "Có bảo chứng",
+      "Sẵn hàng"
+    ],
+    "rating": 4.8,
+    "stock": 57,
+    "vendorSlug": "hoc-vien-tron-bai",
+    "vendorName": "Học Viện Trốn Bài",
+    "colors": [
+      "San hô sao",
+      "Lam cực quang",
+      "Tím trăng khuyết",
+      "Lục đom đóm"
+    ]
+  },
+  {
+    "id": 88,
+    "name": "Mực in tự bay màu sau 24h",
+    "category": "Đồ chơi cứu sinh",
+    "price": 120,
+    "description": "Viết thư tỏ tình bằng mực này hôm sau giấy trắng mực đen biến mất sạch",
+    "longDescription": "Viết thư tỏ tình bằng mực này hôm sau giấy trắng mực đen biến mất sạch. Vật phẩm được kiểm định tại Chợ Kỳ Kỳ, niêm phong bằng bụi sao và kèm hướng dẫn sử dụng an toàn trong đúng chiều không gian.",
+    "users": 5500,
+    "usage": "lời tỏ tình bí mật",
+    "image": "/catalog/product-88-1.svg",
+    "gallery": [
+      "/catalog/product-88-1.svg",
+      "/catalog/product-88-2.svg",
+      "/catalog/product-88-3.svg",
+      "/catalog/product-88-4.svg"
+    ],
+    "tags": [
+      "Đồ chơi cứu sinh",
+      "Có bảo chứng",
+      "Sẵn hàng"
+    ],
+    "rating": 4.9,
+    "stock": 74,
+    "vendorSlug": "hoc-vien-tron-bai",
+    "vendorName": "Học Viện Trốn Bài",
+    "colors": [
+      "San hô sao",
+      "Lam cực quang",
+      "Tím trăng khuyết",
+      "Lục đom đóm"
+    ]
+  },
+  {
+    "id": 89,
+    "name": "Bảng vẽ hiện thực hóa ước mơ",
+    "category": "Đồ chơi cứu sinh",
+    "price": 2999,
+    "description": "Vẽ ô tô lên bảng hôm sau có người mang ô tô đồ chơi đến tặng",
+    "longDescription": "Vẽ ô tô lên bảng hôm sau có người mang ô tô đồ chơi đến tặng. Vật phẩm được kiểm định tại Chợ Kỳ Kỳ, niêm phong bằng bụi sao và kèm hướng dẫn sử dụng an toàn trong đúng chiều không gian.",
+    "users": 1500,
+    "usage": "người ngã ngửa vì bất ngờ",
+    "image": "/catalog/product-89-1.svg",
+    "gallery": [
+      "/catalog/product-89-1.svg",
+      "/catalog/product-89-2.svg",
+      "/catalog/product-89-3.svg",
+      "/catalog/product-89-4.svg"
+    ],
+    "tags": [
+      "Đồ chơi cứu sinh",
+      "Có bảo chứng",
+      "Cực hiếm"
+    ],
+    "rating": 5,
+    "stock": 91,
+    "vendorSlug": "hoc-vien-tron-bai",
+    "vendorName": "Học Viện Trốn Bài",
+    "colors": [
+      "San hô sao",
+      "Lam cực quang",
+      "Tím trăng khuyết",
+      "Lục đom đóm"
+    ]
+  },
+  {
+    "id": 90,
+    "name": "Kẹp giấy giữ chặt tình bạn",
+    "category": "Đồ chơi cứu sinh",
+    "price": 40,
+    "description": "Kẹp ảnh hai đứa vào nhau tình bạn khăng khít trọn đời không rạn nứt",
+    "longDescription": "Kẹp ảnh hai đứa vào nhau tình bạn khăng khít trọn đời không rạn nứt. Vật phẩm được kiểm định tại Chợ Kỳ Kỳ, niêm phong bằng bụi sao và kèm hướng dẫn sử dụng an toàn trong đúng chiều không gian.",
+    "users": 53000,
+    "usage": "đôi bạn thân sử dụng",
+    "image": "/catalog/product-90-1.svg",
+    "gallery": [
+      "/catalog/product-90-1.svg",
+      "/catalog/product-90-2.svg",
+      "/catalog/product-90-3.svg",
+      "/catalog/product-90-4.svg"
+    ],
+    "tags": [
+      "Đồ chơi cứu sinh",
+      "Bán chạy",
+      "Sẵn hàng"
+    ],
+    "rating": 4.6,
+    "stock": 108,
+    "vendorSlug": "hoc-vien-tron-bai",
+    "vendorName": "Học Viện Trốn Bài",
+    "colors": [
+      "San hô sao",
+      "Lam cực quang",
+      "Tím trăng khuyết",
+      "Lục đom đóm"
+    ]
+  },
+  {
+    "id": 91,
+    "name": "Sổ tay ghi chép ý tưởng triệu đô",
+    "category": "Đồ chơi cứu sinh",
+    "price": 550,
+    "description": "Cứ mở sổ ra là chữ tự hiện gợi ý hướng đi kinh doanh làm giàu",
+    "longDescription": "Cứ mở sổ ra là chữ tự hiện gợi ý hướng đi kinh doanh làm giàu. Vật phẩm được kiểm định tại Chợ Kỳ Kỳ, niêm phong bằng bụi sao và kèm hướng dẫn sử dụng an toàn trong đúng chiều không gian.",
+    "users": 2600,
+    "usage": "triệu phú tương lai",
+    "image": "/catalog/product-91-1.svg",
+    "gallery": [
+      "/catalog/product-91-1.svg",
+      "/catalog/product-91-2.svg",
+      "/catalog/product-91-3.svg",
+      "/catalog/product-91-4.svg"
+    ],
+    "tags": [
+      "Đồ chơi cứu sinh",
+      "Có bảo chứng",
+      "Sẵn hàng"
+    ],
+    "rating": 4.7,
+    "stock": 125,
+    "vendorSlug": "hoc-vien-tron-bai",
+    "vendorName": "Học Viện Trốn Bài",
+    "colors": [
+      "San hô sao",
+      "Lam cực quang",
+      "Tím trăng khuyết",
+      "Lục đom đóm"
+    ]
+  },
+  {
+    "id": 92,
+    "name": "Chong chóng tre bay tại chỗ",
+    "category": "Đồ chơi cứu sinh",
+    "price": 110,
+    "description": "Gắn lên đầu quay tít mù giúp bạn mát mẻ chứ không bay đi đâu cả",
+    "longDescription": "Gắn lên đầu quay tít mù giúp bạn mát mẻ chứ không bay đi đâu cả. Vật phẩm được kiểm định tại Chợ Kỳ Kỳ, niêm phong bằng bụi sao và kèm hướng dẫn sử dụng an toàn trong đúng chiều không gian.",
+    "users": 16500,
+    "usage": "người dùng giải nhiệt",
+    "image": "/catalog/product-92-1.svg",
+    "gallery": [
+      "/catalog/product-92-1.svg",
+      "/catalog/product-92-2.svg",
+      "/catalog/product-92-3.svg",
+      "/catalog/product-92-4.svg"
+    ],
+    "tags": [
+      "Đồ chơi cứu sinh",
+      "Có bảo chứng",
+      "Sẵn hàng"
+    ],
+    "rating": 4.8,
+    "stock": 142,
+    "vendorSlug": "hoc-vien-tron-bai",
+    "vendorName": "Học Viện Trốn Bài",
+    "colors": [
+      "San hô sao",
+      "Lam cực quang",
+      "Tím trăng khuyết",
+      "Lục đom đóm"
+    ]
+  },
+  {
+    "id": 93,
+    "name": "Xúc xắc quyết định hôm nay ăn gì",
+    "category": "Đồ chơi cứu sinh",
+    "price": 65,
+    "description": "6 mặt tương ứng Cơm Phở Mì Pizza Nhịn Ăn bám để bạn lắc chọn",
+    "longDescription": "6 mặt tương ứng Cơm Phở Mì Pizza Nhịn Ăn bám để bạn lắc chọn. Vật phẩm được kiểm định tại Chợ Kỳ Kỳ, niêm phong bằng bụi sao và kèm hướng dẫn sử dụng an toàn trong đúng chiều không gian.",
+    "users": 92000,
+    "usage": "người hết đau đầu chọn món",
+    "image": "/catalog/product-93-1.svg",
+    "gallery": [
+      "/catalog/product-93-1.svg",
+      "/catalog/product-93-2.svg",
+      "/catalog/product-93-3.svg",
+      "/catalog/product-93-4.svg"
+    ],
+    "tags": [
+      "Đồ chơi cứu sinh",
+      "Có bảo chứng",
+      "Sẵn hàng"
+    ],
+    "rating": 4.9,
+    "stock": 159,
+    "vendorSlug": "hoc-vien-tron-bai",
+    "vendorName": "Học Viện Trốn Bài",
+    "colors": [
+      "San hô sao",
+      "Lam cực quang",
+      "Tím trăng khuyết",
+      "Lục đom đóm"
+    ]
+  },
+  {
+    "id": 94,
+    "name": "Bài tây nhìn thấu bài đối thủ",
+    "category": "Đồ chơi cứu sinh",
+    "price": 999,
+    "description": "Mặt sau bài tự hiện hình mờ lá bài chơi tiến lên bất bại",
+    "longDescription": "Mặt sau bài tự hiện hình mờ lá bài chơi tiến lên bất bại. Vật phẩm được kiểm định tại Chợ Kỳ Kỳ, niêm phong bằng bụi sao và kèm hướng dẫn sử dụng an toàn trong đúng chiều không gian.",
+    "users": 350,
+    "usage": "thần bài Chợ Kỳ Kỳ",
+    "image": "/catalog/product-94-1.svg",
+    "gallery": [
+      "/catalog/product-94-1.svg",
+      "/catalog/product-94-2.svg",
+      "/catalog/product-94-3.svg",
+      "/catalog/product-94-4.svg"
+    ],
+    "tags": [
+      "Đồ chơi cứu sinh",
+      "Có bảo chứng",
+      "Sẵn hàng"
+    ],
+    "rating": 5,
+    "stock": 176,
+    "vendorSlug": "hoc-vien-tron-bai",
+    "vendorName": "Học Viện Trốn Bài",
+    "colors": [
+      "San hô sao",
+      "Lam cực quang",
+      "Tím trăng khuyết",
+      "Lục đom đóm"
+    ]
+  },
+  {
+    "id": 95,
+    "name": "Con quay vô hạn không bao giờ dừng",
+    "category": "Đồ chơi cứu sinh",
+    "price": 250,
+    "description": "Quay một phát nó quay từ năm này qua năm khác thách thức vật lý",
+    "longDescription": "Quay một phát nó quay từ năm này qua năm khác thách thức vật lý. Vật phẩm được kiểm định tại Chợ Kỳ Kỳ, niêm phong bằng bụi sao và kèm hướng dẫn sử dụng an toàn trong đúng chiều không gian.",
+    "users": 7100,
+    "usage": "người ngồi ngắm giải sầu",
+    "image": "/catalog/product-95-1.svg",
+    "gallery": [
+      "/catalog/product-95-1.svg",
+      "/catalog/product-95-2.svg",
+      "/catalog/product-95-3.svg",
+      "/catalog/product-95-4.svg"
+    ],
+    "tags": [
+      "Đồ chơi cứu sinh",
+      "Bán chạy",
+      "Sẵn hàng"
+    ],
+    "rating": 4.6,
+    "stock": 193,
+    "vendorSlug": "hoc-vien-tron-bai",
+    "vendorName": "Học Viện Trốn Bài",
+    "colors": [
+      "San hô sao",
+      "Lam cực quang",
+      "Tím trăng khuyết",
+      "Lục đom đóm"
+    ]
+  },
+  {
+    "id": 96,
+    "name": "Slime tự động dọn sạch bàn phím",
+    "category": "Đồ chơi cứu sinh",
+    "price": 75,
+    "description": "Thả vào bàn phím tự chui vào khe hút sạch bụi và vụn bánh mì",
+    "longDescription": "Thả vào bàn phím tự chui vào khe hút sạch bụi và vụn bánh mì. Vật phẩm được kiểm định tại Chợ Kỳ Kỳ, niêm phong bằng bụi sao và kèm hướng dẫn sử dụng an toàn trong đúng chiều không gian.",
+    "users": 48000,
+    "usage": "dân IT tin dùng",
+    "image": "/catalog/product-96-1.svg",
+    "gallery": [
+      "/catalog/product-96-1.svg",
+      "/catalog/product-96-2.svg",
+      "/catalog/product-96-3.svg",
+      "/catalog/product-96-4.svg"
+    ],
+    "tags": [
+      "Đồ chơi cứu sinh",
+      "Có bảo chứng",
+      "Sẵn hàng"
+    ],
+    "rating": 4.7,
+    "stock": 30,
+    "vendorSlug": "hoc-vien-tron-bai",
+    "vendorName": "Học Viện Trốn Bài",
+    "colors": [
+      "San hô sao",
+      "Lam cực quang",
+      "Tím trăng khuyết",
+      "Lục đom đóm"
+    ]
+  },
+  {
+    "id": 97,
+    "name": "Kính hiển vi nhìn vi khuẩn nói xấu",
+    "category": "Đồ chơi cứu sinh",
+    "price": 410,
+    "description": "Soi vào thấy vi khuẩn đang tụ tập chê bai bạn vệ sinh kém",
+    "longDescription": "Soi vào thấy vi khuẩn đang tụ tập chê bai bạn vệ sinh kém. Vật phẩm được kiểm định tại Chợ Kỳ Kỳ, niêm phong bằng bụi sao và kèm hướng dẫn sử dụng an toàn trong đúng chiều không gian.",
+    "users": 1900,
+    "usage": "người nghiện sạch sẽ",
+    "image": "/catalog/product-97-1.svg",
+    "gallery": [
+      "/catalog/product-97-1.svg",
+      "/catalog/product-97-2.svg",
+      "/catalog/product-97-3.svg",
+      "/catalog/product-97-4.svg"
+    ],
+    "tags": [
+      "Đồ chơi cứu sinh",
+      "Có bảo chứng",
+      "Sẵn hàng"
+    ],
+    "rating": 4.8,
+    "stock": 47,
+    "vendorSlug": "hoc-vien-tron-bai",
+    "vendorName": "Học Viện Trốn Bài",
+    "colors": [
+      "San hô sao",
+      "Lam cực quang",
+      "Tím trăng khuyết",
+      "Lục đom đóm"
+    ]
+  },
+  {
+    "id": 98,
+    "name": "Hộp âm nhạc phát theo nhịp tim",
+    "category": "Đồ chơi cứu sinh",
+    "price": 280,
+    "description": "Chạm tay vào hộp tự chơi bản nhạc đúng với tâm trạng hiện tại",
+    "longDescription": "Chạm tay vào hộp tự chơi bản nhạc đúng với tâm trạng hiện tại. Vật phẩm được kiểm định tại Chợ Kỳ Kỳ, niêm phong bằng bụi sao và kèm hướng dẫn sử dụng an toàn trong đúng chiều không gian.",
+    "users": 14000,
+    "usage": "người thưởng thức âm nhạc",
+    "image": "/catalog/product-98-1.svg",
+    "gallery": [
+      "/catalog/product-98-1.svg",
+      "/catalog/product-98-2.svg",
+      "/catalog/product-98-3.svg",
+      "/catalog/product-98-4.svg"
+    ],
+    "tags": [
+      "Đồ chơi cứu sinh",
+      "Có bảo chứng",
+      "Sẵn hàng"
+    ],
+    "rating": 4.9,
+    "stock": 64,
+    "vendorSlug": "hoc-vien-tron-bai",
+    "vendorName": "Học Viện Trốn Bài",
+    "colors": [
+      "San hô sao",
+      "Lam cực quang",
+      "Tím trăng khuyết",
+      "Lục đom đóm"
+    ]
+  },
+  {
+    "id": 99,
+    "name": "Đèn laser chiếu hình crush lên tường",
+    "category": "Đồ chơi cứu sinh",
+    "price": 190,
+    "description": "Bật lên là có bóng crush ngồi cạnh học bài cùng cho đỡ chán",
+    "longDescription": "Bật lên là có bóng crush ngồi cạnh học bài cùng cho đỡ chán. Vật phẩm được kiểm định tại Chợ Kỳ Kỳ, niêm phong bằng bụi sao và kèm hướng dẫn sử dụng an toàn trong đúng chiều không gian.",
+    "users": 36000,
+    "usage": "người FA ôm mộng",
+    "image": "/catalog/product-99-1.svg",
+    "gallery": [
+      "/catalog/product-99-1.svg",
+      "/catalog/product-99-2.svg",
+      "/catalog/product-99-3.svg",
+      "/catalog/product-99-4.svg"
+    ],
+    "tags": [
+      "Đồ chơi cứu sinh",
+      "Có bảo chứng",
+      "Sẵn hàng"
+    ],
+    "rating": 5,
+    "stock": 81,
+    "vendorSlug": "hoc-vien-tron-bai",
+    "vendorName": "Học Viện Trốn Bài",
+    "colors": [
+      "San hô sao",
+      "Lam cực quang",
+      "Tím trăng khuyết",
+      "Lục đom đóm"
+    ]
+  },
+  {
+    "id": 100,
+    "name": "Nút bấm kết thúc ngày mệt mỏi",
+    "category": "Đồ chơi cứu sinh",
+    "price": 500,
+    "description": "Bấm Tách một phát đèn tắt chăn đắp bạn chìm vào giấc ngủ ngon",
+    "longDescription": "Bấm Tách một phát đèn tắt chăn đắp bạn chìm vào giấc ngủ ngon. Vật phẩm được kiểm định tại Chợ Kỳ Kỳ, niêm phong bằng bụi sao và kèm hướng dẫn sử dụng an toàn trong đúng chiều không gian.",
+    "users": 85000,
+    "usage": "người bấm mỗi đêm",
+    "image": "/catalog/product-100-1.svg",
+    "gallery": [
+      "/catalog/product-100-1.svg",
+      "/catalog/product-100-2.svg",
+      "/catalog/product-100-3.svg",
+      "/catalog/product-100-4.svg"
+    ],
+    "tags": [
+      "Đồ chơi cứu sinh",
+      "Bán chạy",
+      "Sẵn hàng"
+    ],
+    "rating": 4.6,
+    "stock": 98,
+    "vendorSlug": "hoc-vien-tron-bai",
+    "vendorName": "Học Viện Trốn Bài",
+    "colors": [
+      "San hô sao",
+      "Lam cực quang",
+      "Tím trăng khuyết",
+      "Lục đom đóm"
+    ]
+  }
+]

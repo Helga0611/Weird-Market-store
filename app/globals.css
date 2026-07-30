@@ -10,7 +10,7 @@ html {
 
 body {
   margin: 0;
-  font-family: var(--font-outfit), "Outfit", sans-serif;
+  font-family: var(--font-body), "Inter", sans-serif;
   -webkit-font-smoothing: antialiased;
 }
 
