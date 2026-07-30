@@ -83,7 +83,7 @@ export default function Home() {
   useEffect(() => {
     if (isLoading || reduceMotion || !pageRef.current) return;
     const context = gsap.context(() => {
-      gsap.to(".ticker > div", { xPercent: -50, duration: 28, ease: "none", repeat: -1 });
+      gsap.to(".ticker > div", { xPercent: -50, duration: 22.4, ease: "none", repeat: -1 });
     }, pageRef);
     return () => context.revert();
   }, [isLoading, reduceMotion]);
@@ -255,15 +255,14 @@ export default function Home() {
           <div />
           <div className="hero-bottom-cta anim-stagger" style={{ animationDelay: ".85s" }}>
             <a href="#san-pham" className="primary-button btn-cut"><b>Đi chợ ngay</b><span className="cta-arrow">→</span><i className="cta-spark">✦</i></a>
+            <button className="secondary-hero-button btn-cut" onClick={() => setVendorOpen(true)}>Bán đồ</button>
           </div>
-          <div className="hero-bottom-social anim-stagger" style={{ animationDelay: "1s" }}>
-            <button className="secondary-hero-button btn-cut-sm" onClick={() => setVendorOpen(true)}>Bán đồ</button>
-          </div>
+          <div />
         </div>
       </section>
 
       <section className="ticker" aria-label="Cam kết của Chợ Kỳ Kỳ">
-        <div>Độc lạ có bảo chứng <span>✦</span> 5.000 Xu cho người mới <span>✦</span> Giao nhanh trước khi bạn đổi ý <span>✦</span> Độc lạ có bảo chứng <span>✦</span></div>
+        <div>+5.000 Xu cho dân chợ mới <span>✦</span> Đồ lạ có bảo chứng <span>✦</span> Giao nhanh bằng chổi phép <span>✦</span> Đổi trả trong 7 đêm trăng <span>✦</span> 100 món kỳ tuyển đang mở cửa <span>✦</span> +5.000 Xu cho dân chợ mới <span>✦</span> Đồ lạ có bảo chứng <span>✦</span> Giao nhanh bằng chổi phép <span>✦</span> Đổi trả trong 7 đêm trăng <span>✦</span> 100 món kỳ tuyển đang mở cửa <span>✦</span></div>
       </section>
 
       <section className="market" id="san-pham">
@@ -283,6 +282,7 @@ export default function Home() {
             {visible.slice(0, shownCount).map((product, index) => (
               <motion.article
                 className={`product-card card-${index % 3}`}
+                data-category={product.category}
                 key={product.id}
                 initial={reduceMotion ? false : { opacity: 0, y: 38 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -311,7 +311,7 @@ export default function Home() {
       <motion.section className="how" id="cach-cho-chay" initial={reduceMotion ? false : { opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: "-90px" }} transition={{ duration: .9 }}>
         <div className="how-visual">
           <motion.img src="/products/ky-la-coin-purple-v2.png" alt="Đồng Xu Kỳ Lạ 3D realistic" whileHover={reduceMotion ? undefined : { scale: 1.05, rotate: -2 }} transition={{ type: "spring", stiffness: 130, damping: 16 }} />
-          <span>5000</span>
+          <span>+5.000 Xu</span>
         </div>
         <div className="how-copy">
           <p>Xu Kỳ Lạ dùng thế nào?</p>

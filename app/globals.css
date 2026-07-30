@@ -10,7 +10,7 @@ html {
 
 body {
   margin: 0;
-  font-family: var(--font-body), "Inter", sans-serif;
+  font-family: var(--font-body), "Quicksand", sans-serif;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -19,4 +19,57 @@ input,
 select,
 textarea {
   font: inherit;
+}
+
+:root {
+  --space-1: 8px;
+  --space-2: 16px;
+  --space-3: 24px;
+  --space-4: 32px;
+  --space-5: 48px;
+  --space-6: 64px;
+  --spell-violet: #8b46ff;
+  --spell-plum: #1d0d2a;
+  --spell-plum-deep: #100717;
+  --button-cut: polygon(10px 0,calc(100% - 10px) 0,100% 10px,100% calc(100% - 10px),calc(100% - 10px) 100%,10px 100%,0 calc(100% - 10px),0 10px);
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: var(--font-display), "Playfair Display", serif;
+}
+
+button:not(.icon-button):not(.share-button):not(.modal-close):not(.share-close),
+.magic-add,
+.share-detail,
+.pay-button,
+.track-order-link,
+.continue-market,
+.checkout-empty a,
+.checkout-success a,
+.weird-success a,
+.tracking-empty a,
+.store-toolbar button,
+.seller-card a {
+  border-radius:0!important;
+  clip-path:var(--button-cut);
+}
+
+.modal,
+.drawer,
+.share-modal {
+  border:1px solid rgba(202,157,255,.2)!important;
+  background:
+    radial-gradient(circle at 85% 0,rgba(155,92,255,.3),transparent 34%),
+    linear-gradient(155deg,var(--spell-plum),var(--spell-plum-deep))!important;
+  color:#fff!important;
+  box-shadow:0 36px 110px rgba(20,4,32,.58)!important;
+}
+
+.gallery-main img,
+.gallery-thumbs img,
+.checkout-items article>img,
+.store-grid img,
+.order-summary article img {
+  object-fit:contain!important;
+  object-position:center!important;
 }

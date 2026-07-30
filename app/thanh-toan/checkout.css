@@ -9,3 +9,7 @@
 .checkout-success>div{display:flex;justify-content:center;flex-wrap:wrap;gap:8px}.checkout-success .track-order-link{background:linear-gradient(135deg,#ba87ff,#8b46ff);color:#fff;box-shadow:0 12px 28px rgba(139,70,255,.25)}
 @keyframes checkoutCoin{0%,100%{transform:perspective(600px) rotateY(-15deg)}50%{transform:perspective(600px) rotateY(195deg) translateY(-4px)}}@keyframes checkoutSpark{to{transform:translate(-7px,7px);opacity:.35}}
 @media(prefers-reduced-motion:reduce){.checkout-nav img,.wallet img,.checkout-success img,.order-card form button:after,.pay-button:after{animation:none}}
+
+.checkout-page{font-family:var(--font-body),"Quicksand",sans-serif;padding:16px 0 80px}.checkout-title h1,.wallet strong,.checkout-success h2{font-family:var(--font-display),"Playfair Display",serif}
+.checkout-nav{top:16px}.checkout-shell{margin:48px auto}.checkout-grid{gap:32px}.checkout-items{gap:16px}.checkout-items article{gap:16px;padding:16px}.order-card{padding:24px}.order-card form{gap:16px}
+.order-card form button,.pay-button,.checkout-empty a,.checkout-success a{clip-path:var(--button-cut);border-radius:0!important}

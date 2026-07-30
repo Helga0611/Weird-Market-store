@@ -1243,3 +1243,174 @@ footer a:last-child { color:#fff; }
 @media(prefers-reduced-motion:reduce){
   .product-card:hover .product-image:before,.product-card:hover .product-shine{animation:none}
 }
+
+/* System polish: Playfair display, aligned rhythm, spectral commerce */
+.hero h1,
+.section-heading h2,
+.how h2,
+.product-card h3,
+.modal h2,
+.drawer h2,
+.drawer h3 {
+  font-family:var(--font-display),"Playfair Display",serif!important;
+  font-weight:700!important;
+}
+.hero-copy p { font-size:20px;line-height:1.5; }
+.hero-bottom { align-items:end; }
+.hero-bottom-cta {
+  width:min(600px,100%);
+  flex-direction:row;
+  align-items:center;
+  justify-content:center;
+  gap:16px;
+}
+.hero-bottom-cta .primary-button,
+.hero-bottom-cta .secondary-hero-button {
+  width:280px;
+  max-width:none;
+  height:52px;
+}
+.hero-bottom-cta .secondary-hero-button {
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border:1px solid rgba(223,199,255,.5);
+  background:rgba(27,10,40,.52);
+  color:#fff;
+  font-weight:700;
+  backdrop-filter:blur(16px);
+  transition:transform .25s,background .25s,box-shadow .25s;
+}
+.hero-bottom-cta .secondary-hero-button:hover {
+  transform:translateY(-3px);
+  background:rgba(115,53,178,.55);
+  box-shadow:0 12px 34px rgba(94,37,154,.34);
+}
+.nav-actions { gap:16px!important; }
+.ticker div { animation-duration:19.2s; }
+
+.market { padding:64px 32px 128px; }
+.section-heading { margin-bottom:32px;padding-top:24px; }
+.filters { margin:32px auto 48px; }
+.product-grid { gap:64px 24px; }
+.product-meta { margin:16px 0 8px; }
+.product-card>p { margin:8px 0 16px; }
+.product-tags { margin-bottom:16px; }
+.product-bottom { margin-top:16px; }
+
+.product-image {
+  padding:4px;
+  background:#ebe9ee;
+}
+.product-image:before {
+  inset:-52%;
+  background:conic-gradient(from 20deg,#ff5f92,#ff9b45,#f9df4b,#59d98e,#46c9e8,#667cf2,#b75cff,#ff5f92);
+  filter:saturate(1.12);
+}
+.product-image:after { inset:4px;border-radius:12px;background:#100819; }
+.product-art {
+  width:calc(100% - 16px);
+  height:calc(100% - 16px);
+  margin:8px;
+  border-radius:10px;
+  transform:scale(.96)!important;
+}
+.product-card:hover .product-art { transform:scale(.96)!important;filter:saturate(1.08) contrast(1.02); }
+.product-card:hover .product-image {
+  box-shadow:0 0 0 1px rgba(255,255,255,.75),0 12px 34px rgba(96,49,133,.18);
+}
+.product-card:hover .product-image:before { animation:chatSpectrum 1.8s linear infinite; }
+.product-card:hover .product-shine { animation:chatSweep 1.45s ease-in-out infinite; }
+
+.product-card[data-category="Gia dụng tâm linh"] .product-meta>span:first-child { color:#7a3db5;background:#f2e7ff; }
+.product-card[data-category="Phương tiện dịch chuyển"] .product-meta>span:first-child { color:#116f8c;background:#dff7ff; }
+.product-card[data-category="Mỹ phẩm phòng thân"] .product-meta>span:first-child { color:#a23567;background:#ffe5f0; }
+.product-card[data-category="Ẩm thực thần kỳ"] .product-meta>span:first-child { color:#976112;background:#fff0cf; }
+.product-card[data-category="Đồ chơi cứu sinh"] .product-meta>span:first-child { color:#237648;background:#def7e7; }
+.product-meta>span:first-child { padding:6px 9px;border-radius:999px;font-weight:750; }
+.product-card[data-category="Gia dụng tâm linh"] .product-tags span { color:#673294;background:#f3e9ff; }
+.product-card[data-category="Phương tiện dịch chuyển"] .product-tags span { color:#126d87;background:#e3f8ff; }
+.product-card[data-category="Mỹ phẩm phòng thân"] .product-tags span { color:#9d3864;background:#ffe8f1; }
+.product-card[data-category="Ẩm thực thần kỳ"] .product-tags span { color:#8d5b18;background:#fff1d6; }
+.product-card[data-category="Đồ chơi cứu sinh"] .product-tags span { color:#237044;background:#e2f7e9; }
+
+.round-magic-button {
+  min-height:44px;
+  padding:0 6px 0 16px;
+  gap:12px;
+  overflow:hidden!important;
+  border:1px solid rgba(119,61,178,.22)!important;
+  background:linear-gradient(135deg,#271335,#4d206b)!important;
+  color:#fff!important;
+  box-shadow:0 10px 26px rgba(67,26,97,.2),inset 0 1px 0 rgba(255,255,255,.18);
+  transition:transform .25s,box-shadow .25s;
+}
+.round-magic-button:before {
+  content:"";
+  position:absolute;
+  inset:-40%;
+  background:linear-gradient(110deg,transparent 34%,rgba(255,255,255,.78) 48%,transparent 62%);
+  transform:translateX(-100%) rotate(-8deg);
+}
+.round-magic-button:hover { transform:translateY(-2px);box-shadow:0 15px 34px rgba(79,29,119,.32),0 0 22px rgba(155,92,255,.22); }
+.round-magic-button:hover:before { animation:cartButtonGlint 1.25s ease-out; }
+.round-magic-button span {
+  flex:0 0 auto;
+  margin-left:0!important;
+  background:linear-gradient(145deg,#c698ff,#7b36c8)!important;
+  color:#fff!important;
+}
+
+.how { gap:64px;padding:96px 32px; }
+.how-visual {
+  min-height:520px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  padding:48px;
+  overflow:hidden;
+}
+.how-visual img {
+  position:relative;
+  z-index:2;
+  width:min(76%,420px);
+  height:auto;
+  object-fit:contain;
+}
+.how-visual span {
+  position:relative;
+  z-index:3;
+  inset:auto;
+  width:min(90%,420px);
+  margin-top:16px;
+  padding:12px 20px;
+  border:1px solid rgba(255,255,255,.22);
+  border-radius:16px;
+  background:rgba(30,11,44,.72);
+  color:#eadbff;
+  font-size:clamp(38px,5vw,64px);
+  letter-spacing:-.04em;
+  text-align:center;
+  backdrop-filter:blur(16px);
+}
+.modal,.drawer { padding:32px; }
+.modal form { gap:16px; }
+.form-grid { gap:16px; }
+
+@keyframes chatSpectrum { to{transform:rotate(360deg)} }
+@keyframes chatSweep { 0%{background-position:180% 0}100%{background-position:-80% 0} }
+@keyframes cartButtonGlint { to{transform:translateX(100%) rotate(-8deg)} }
+@media(max-width:760px){
+  .hero-copy p{font-size:16px}
+  .hero-bottom-cta{width:100%;gap:8px}
+  .hero-bottom-cta .primary-button,.hero-bottom-cta .secondary-hero-button{width:50%;min-width:0}
+  .nav-actions{gap:8px!important}
+  .market{padding:64px 16px 96px}
+  .product-grid{gap:48px}
+  .how{padding:64px 16px;gap:32px}
+  .how-visual{min-height:400px;padding:32px 16px}
+}
+@media(prefers-reduced-motion:reduce){
+  .product-card:hover .product-image:before,.product-card:hover .product-shine,.round-magic-button:hover:before{animation:none!important}
+}

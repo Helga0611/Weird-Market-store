@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Fredoka, Quicksand } from "next/font/google";
+import { Playfair_Display, Quicksand } from "next/font/google";
 import "./globals.css";
 
 const quicksand = Quicksand({
@@ -8,9 +8,9 @@ const quicksand = Quicksand({
   variable: "--font-body",
   display: "swap",
 });
-const fredoka = Fredoka({
+const playfair = Playfair_Display({
   subsets: ["latin", "latin-ext"],
-  weight: ["600", "700"],
+  weight: ["600", "700", "800"],
   variable: "--font-display",
   display: "swap",
 });
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="vi" data-scroll-behavior="smooth">
-      <body className={`${quicksand.variable} ${fredoka.variable}`}>{children}</body>
+      <body className={`${quicksand.variable} ${playfair.variable}`}>{children}</body>
     </html>
   );
 }
