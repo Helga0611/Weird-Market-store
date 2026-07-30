@@ -6,7 +6,7 @@ body { margin:0; background:var(--ink); }
 button,input,select,textarea { font:inherit; }
 button,a { -webkit-tap-highlight-color:transparent; }
 button { cursor:pointer; }
-.kyky { min-height:100vh; overflow:hidden; background:#070707; color:#fff; font-family:"Be Vietnam Pro",sans-serif; }
+.kyky { min-height:100vh; overflow:hidden; background:#070707; color:#fff; font-family:"Instrument Serif",serif; }
 .liquid-glass { position:relative; overflow:hidden; border:1px solid rgba(255,255,255,.15); background:rgba(255,255,255,.055); box-shadow:inset 0 1px 1px rgba(255,255,255,.16),0 16px 50px rgba(0,0,0,.25); backdrop-filter:blur(16px); -webkit-backdrop-filter:blur(16px); }
 .liquid-glass:before { content:""; position:absolute; inset:0; border-radius:inherit; padding:1px; pointer-events:none; background:linear-gradient(180deg,rgba(255,255,255,.45),transparent 40%,transparent 65%,rgba(255,255,255,.16)); -webkit-mask:linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0); -webkit-mask-composite:xor; mask-composite:exclude; }
 .nav-wrap { position:absolute; z-index:10; top:0; left:0; right:0; padding:24px; }
@@ -198,7 +198,7 @@ footer a:last-child { color:#fff; text-decoration:none; }
 /* Design Spells-inspired visual direction */
 :root { --acid:#8b5cf6; --violet:#8b5cf6; --ink:#f7f7f5; --paper:#f7f7f5; --charcoal:#282522; --line:#deddd9; }
 body { background:var(--paper); }
-.kyky { background:var(--paper); color:var(--charcoal); font-family:"Be Vietnam Pro",sans-serif; }
+.kyky { background:var(--paper); color:var(--charcoal); font-family:"Instrument Serif",serif; }
 .nav-wrap { position:fixed; z-index:30; padding:22px; pointer-events:none; }
 .nav { width:min(460px,calc(100% - 28px)); height:54px; padding:6px 7px 6px 14px; border:0; background:#292623; color:#fff; box-shadow:0 16px 28px rgba(43,38,34,.18); pointer-events:auto; }
 .nav:before { display:none; }
@@ -215,7 +215,7 @@ body { background:var(--paper); }
 .hero:after,.hero-glow { display:none; }
 .hero-copy { max-width:none; animation:none; }
 .eyebrow { display:none; }
-.hero h1 { max-width:1120px; margin:0; color:#24211f; font-family:var(--font-display),"Be Vietnam Pro",sans-serif!important; font-size:clamp(58px,8vw,124px); font-weight:400; line-height:.82; letter-spacing:-.065em; }
+.hero h1 { max-width:1120px; margin:0; color:#24211f; font-family:var(--font-display),"Instrument Serif",serif!important; font-size:clamp(58px,8vw,124px); font-weight:400; line-height:.82; letter-spacing:-.065em; }
 .hero h1 br { display:none; }
 .hero h1 em { color:var(--violet); font-weight:400; line-height:.98; }
 .hero-sub { max-width:470px; margin:36px 0 26px; color:#6f6b67; font-size:14px; }
@@ -227,14 +227,14 @@ body { background:var(--paper); }
 .orb-one { left:0; right:auto; transform:rotate(-3deg); }
 .orb-two { left:118px; transform:rotate(4deg); }
 .orb-three { left:236px; right:auto; width:142px; height:142px; transform:rotate(-2deg); }
-.hero-sticker { top:36px; right:0; left:auto; width:106px; height:106px; background:var(--violet); color:#fff; box-shadow:none; font-family:var(--font-display),"Be Vietnam Pro",sans-serif; }
+.hero-sticker { top:36px; right:0; left:auto; width:106px; height:106px; background:var(--violet); color:#fff; box-shadow:none; font-family:var(--font-display),"Instrument Serif",serif; }
 .ticker { margin:36px 0 10px; border:0; background:var(--violet); color:#fff; transform:rotate(-.8deg) scale(1.01); }
 .ticker div { padding:14px 0; font-size:11px; }
 .ticker span { color:#fff; }
 .market { padding:74px 32px 120px; }
 .section-heading { width:100%; margin:0 auto 28px; align-items:start; border-top:1px solid var(--line); padding-top:20px; }
 .section-heading p { margin:0 0 10px; color:#7a7672; font-size:11px; letter-spacing:0; text-transform:none; }
-.section-heading h2 { max-width:900px; color:#292623; font-family:var(--font-display),"Be Vietnam Pro",sans-serif!important; font-size:clamp(46px,6.3vw,92px); font-weight:400; line-height:.88; letter-spacing:-.055em; }
+.section-heading h2 { max-width:900px; color:#292623; font-family:var(--font-display),"Instrument Serif",serif!important; font-size:clamp(46px,6.3vw,92px); font-weight:400; line-height:.88; letter-spacing:-.055em; }
 .section-heading strong { color:#7a7672; }
 .filters { width:100%; min-height:0; margin:28px auto 44px; display:flex; gap:8px; border:0; overflow:visible; background:transparent; box-shadow:none; backdrop-filter:none; }
 .filters:before { display:none; }
@@ -252,7 +252,7 @@ body { background:var(--paper); }
 .share-button:hover { background:var(--violet); color:#fff; }
 .product-meta { margin:10px 2px 8px; color:#716d68; font-size:11px; }
 .product-meta span:first-child { color:#716d68; }
-.product-card h3 { color:#292623; font-family:var(--font-display),"Be Vietnam Pro",sans-serif!important; font-size:27px; font-weight:400; letter-spacing:-.025em; }
+.product-card h3 { color:#292623; font-family:var(--font-display),"Instrument Serif",serif!important; font-size:27px; font-weight:400; letter-spacing:-.025em; }
 .product-card>p { min-height:44px; color:#716d68; font-size:11px; }
 .product-bottom>strong { color:#292623; }
 .product-bottom strong small { color:#716d68; }
@@ -264,7 +264,7 @@ body { background:var(--paper); }
 .how-visual { min-height:520px; background:#c8bef9; border-right:1px solid #bab4d9; }
 .how-visual span { color:#292623; opacity:.95; }
 .how-copy>p { color:#6a45db; }
-.how h2 { color:#292623; font-family:var(--font-display),"Be Vietnam Pro",sans-serif!important; font-weight:400; }
+.how h2 { color:#292623; font-family:var(--font-display),"Instrument Serif",serif!important; font-weight:400; }
 .steps div { border-color:rgba(41,38,35,.18); }
 .steps span { color:#625d68; }
 .how-copy .primary-button { background:#292623; color:#fff; }
@@ -328,7 +328,7 @@ footer a:last-child { color:#fff; }
   letter-spacing:.3em;
 }
 .loading-screen strong {
-  font-family:var(--font-display),"Be Vietnam Pro",sans-serif;
+  font-family:var(--font-display),"Instrument Serif",serif;
   font-size:clamp(40px,6vw,86px);
   font-style:italic;
   font-weight:400;
@@ -338,7 +338,7 @@ footer a:last-child { color:#fff; }
   position:absolute;
   right:28px;
   bottom:24px;
-  font-family:var(--font-display),"Be Vietnam Pro",sans-serif;
+  font-family:var(--font-display),"Instrument Serif",serif;
   font-size:clamp(72px,10vw,150px);
   font-weight:400;
   font-variant-numeric:tabular-nums;
@@ -775,7 +775,7 @@ footer a:last-child { color:#fff; }
   flex-direction:column;
   align-items:center;
   color:#291018;
-  font-family:var(--font-display),"Be Vietnam Pro",sans-serif;
+  font-family:var(--font-display),"Instrument Serif",serif;
   font-size:23px;
   line-height:.75;
   text-shadow:0 1px 0 rgba(255,255,255,.65);
@@ -896,7 +896,7 @@ footer a:last-child { color:#fff; }
 
 /* 100-product catalog refinement: 8px spacing rhythm */
 .kyky,.kyky button,.kyky input,.kyky select,.kyky textarea{font-family:var(--font-body),"Inter",sans-serif}
-.hero h1,.section-heading h2,.how h2,.product-card h3,.modal h2{font-family:var(--font-display),"Be Vietnam Pro",sans-serif!important}
+.hero h1,.section-heading h2,.how h2,.product-card h3,.modal h2{font-family:var(--font-display),"Instrument Serif",serif!important}
 .nav-wrap{padding:16px 24px}.nav{width:min(720px,calc(100% - 32px));height:60px;padding:8px 8px 8px 16px;border-radius:32px}
 .brand-mark{width:40px!important;height:40px!important;border-radius:50%;background:transparent!important}.brand-mark img{width:100%;height:100%;object-fit:contain!important;animation:none}.brand>span:last-child{display:inline!important}
 .account-button{height:44px!important;padding:4px 16px 4px 4px!important;display:flex!important;align-items:center!important;gap:8px!important;border-radius:24px!important;background:rgba(255,255,255,.09)!important;line-height:1!important;white-space:nowrap}.account-button img{width:36px;height:36px;object-fit:cover;border-radius:50%;box-shadow:0 0 14px rgba(180,119,255,.42)}
@@ -907,9 +907,31 @@ footer a:last-child { color:#fff; }
 .load-more{grid-column:1/-1;justify-self:center;height:48px;padding:0 24px;border:1px solid #d6c9df;border-radius:24px;background:rgba(255,255,255,.72);color:#35223e;font-weight:700;backdrop-filter:blur(16px)}.load-more span{display:inline-grid;place-items:center;width:32px;height:32px;margin-left:8px;border-radius:50%;background:#7e3dc4;color:#fff}
 .hero-moon{position:absolute;z-index:0;right:8%;top:12%;width:220px;height:220px;color:#d8bdff;font-size:220px;line-height:.7;text-shadow:0 0 40px rgba(165,98,255,.68),0 0 90px rgba(96,42,164,.5);animation:moonFloat 7s ease-in-out infinite;opacity:.62}.hero-moon i{position:absolute;width:7px;height:7px;border-radius:50%;background:#fff;box-shadow:0 0 14px 5px #d4a7ff;animation:moonSpark 1.7s ease-in-out infinite alternate}.hero-moon i:nth-of-type(1){left:-10px;top:48px}.hero-moon i:nth-of-type(2){right:8px;top:120px;animation-delay:.5s}.hero-moon i:nth-of-type(3){left:68px;bottom:2px;animation-delay:1s}
 .hero h1{max-width:1080px;font-size:clamp(56px,6.5vw,98px);line-height:.93;letter-spacing:-.055em}.hero h1 em{line-height:1.08}
-.hero-sticker{width:92px;height:92px;border:1px solid rgba(255,255,255,.22);border-radius:50%;background:rgba(32,12,47,.78);backdrop-filter:blur(16px)}.hero-sticker>img{opacity:.18;animation:none}.hero-sticker>span{color:#fff;font-family:var(--font-display),"Be Vietnam Pro",sans-serif;font-size:20px;font-weight:800;line-height:1;text-shadow:0 0 12px rgba(205,164,255,.75)}.hero-sticker small{display:block;margin-top:6px;color:#e7d8f4;font-family:var(--font-body),"Inter",sans-serif;font-size:7px;line-height:1.25}
+.hero-sticker{width:92px;height:92px;border:1px solid rgba(255,255,255,.22);border-radius:50%;background:rgba(32,12,47,.78);backdrop-filter:blur(16px)}.hero-sticker>img{opacity:.18;animation:none}.hero-sticker>span{color:#fff;font-family:var(--font-display),"Instrument Serif",serif;font-size:20px;font-weight:800;line-height:1;text-shadow:0 0 12px rgba(205,164,255,.75)}.hero-sticker small{display:block;margin-top:6px;color:#e7d8f4;font-family:var(--font-body),"Inter",sans-serif;font-size:7px;line-height:1.25}
 .cart-fireball{position:fixed;z-index:300;width:28px;height:28px;margin:-14px;border-radius:50%;display:grid;place-items:center;background:radial-gradient(circle at 35% 35%,#fff,#ffdc61 20%,#ff5d41 50%,#8c29dd 76%,transparent 78%);box-shadow:0 0 18px #ff734f,0 0 42px #9d4dff;pointer-events:none}.cart-fireball:after{content:"";position:absolute;right:70%;width:60px;height:16px;border-radius:50%;background:linear-gradient(90deg,transparent,#ff5f51,#fff);filter:blur(5px)}.cart-fireball i{color:#fff;font-style:normal}.cart-button.burst{animation:cartExplosion .65s cubic-bezier(.2,1.5,.4,1)}.cart-button.burst:after{content:"✦  ♥  ✧";position:absolute;inset:-30px;color:#ff8eb7;font-size:12px;text-shadow:0 0 10px #fff;animation:burstParticles .7s ease-out both}
 @keyframes heartRise{0%{opacity:0;transform:translateY(5px) scale(.6)}25%{opacity:1}100%{opacity:0;transform:translateY(-55px) rotate(18deg) scale(1.2)}}@keyframes moonFloat{50%{transform:translateY(-20px) rotate(4deg)}}@keyframes moonSpark{to{transform:translate(8px,-12px) scale(1.5);opacity:.35}}@keyframes cartExplosion{35%{transform:scale(1.35) rotate(-12deg);box-shadow:0 0 42px #ff765b,0 0 76px #9d53ff}100%{transform:none}}@keyframes burstParticles{to{transform:translateY(-20px) scale(1.4);opacity:0}}
 @media(max-width:1050px){.product-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.nav{width:min(620px,calc(100% - 24px))}.brand>span:last-child{display:none!important}}
 @media(max-width:760px){.nav-wrap{padding:16px 8px}.nav{width:100%;padding-left:8px}.account-button{font-size:0!important;padding-right:4px!important}.product-grid{grid-template-columns:1fr;gap:48px}.market{padding:60px 16px 96px}.filters{padding:8px}.hero-moon{right:-24%;top:16%;opacity:.42}.hero-sticker{width:80px;height:80px}.hero-sticker>span{font-size:17px}}
 @media(prefers-reduced-motion:reduce){.hero-moon,.hero-moon i,.heart-float,.cart-button.burst,.cart-button.burst:after{animation:none!important}}
+
+/* Vortx-style immersive hero, adapted to Chợ Kỳ Kỳ */
+@keyframes vortxFadeUp{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}
+@keyframes vortxFadeIn{from{opacity:0}to{opacity:1}}
+.anim-stagger{opacity:0;animation:vortxFadeUp .8s cubic-bezier(.16,1,.3,1) forwards}
+.anim-fade{opacity:0;animation:vortxFadeIn 1s cubic-bezier(.16,1,.3,1) forwards}
+.kyky{padding:12px;background:#000}
+.hero{width:100%;min-height:calc(100dvh - 24px);margin:0;padding:0 40px 40px;display:flex;flex-direction:column;justify-content:space-between;border-radius:16px;background:#000;color:#fff;overflow:hidden}
+.magic-loop-video{inset:0!important;width:100%!important;height:100%!important;opacity:0;transform:none;filter:saturate(.94) contrast(1.06)}.page-ready .magic-loop-video.anim-fade{animation:vortxFadeIn 1s cubic-bezier(.16,1,.3,1) forwards!important;animation-delay:.2s!important}
+.hero-video-overlay{background:linear-gradient(180deg,rgba(0,0,0,.28),rgba(0,0,0,.04) 46%,rgba(0,0,0,.64)),radial-gradient(circle at center,transparent 20%,rgba(0,0,0,.22) 80%)}
+.hero-left{position:absolute;z-index:3;left:40px;top:25%;display:flex;flex-direction:column;gap:24px}.hero-left>p{margin:0;color:rgba(255,255,255,.8);font-size:16px;line-height:1.55}.hero-left>div{display:flex;gap:4px;margin-top:16px}.hero-left>div span{width:16px;height:16px;border:1px solid rgba(255,255,255,.42);border-radius:50%}.hero-left small{color:rgba(255,255,255,.68);font-size:11px;line-height:1.4}.hero-left small b{margin-left:12px;color:rgba(255,255,255,.42);font-weight:400}
+.hero-copy{position:relative;z-index:2;width:100%;max-width:none;margin:auto;display:flex;align-items:center;justify-content:center;text-align:center}.hero h1{width:100%;max-width:900px;margin:0 auto;color:#fff;font-family:var(--font-display),"Instrument Serif",serif!important;font-size:clamp(40px,5.5vw,76px);font-weight:400;line-height:1.1;letter-spacing:-.04em;opacity:1!important;animation:none!important;text-shadow:0 2px 12px rgba(0,0,0,.25)}.hero h1 em{display:inline;color:#fff;font-weight:400;line-height:1.1;text-shadow:0 2px 12px rgba(0,0,0,.25)}
+.hero-bottom{position:relative;z-index:3;width:100%;display:grid;grid-template-columns:1fr 1fr 1fr;gap:24px;align-items:end;margin-top:32px}.hero-bottom-copy{display:flex;justify-content:flex-end}.hero-bottom-copy p{max-width:260px;margin:0;color:#fff;font-size:14px;line-height:1.6;text-align:left}.hero-bottom-cta{display:flex;flex-direction:column;align-items:center;gap:40px}.hero-bottom-cta>span{color:#fff;font-size:24px;font-weight:500}.hero-bottom-cta .primary-button{width:100%;max-width:280px;height:50px;background:#fff!important;color:#000!important;box-shadow:none}.hero-bottom-social{display:flex;align-items:center;justify-content:flex-end;gap:12px}.hero-bottom-social .btn-cut-sm{width:auto;min-width:54px;height:42px;padding:0 12px;display:flex;align-items:center;justify-content:center;border:0;background:#fff;color:#000;font-size:10px;font-weight:700;text-decoration:none;transition:transform .2s,background .2s}.hero-bottom-social .btn-cut-sm:hover{transform:translateY(-3px);background:#eadcff}
+.btn-cut,.btn-cut-border{clip-path:polygon(12px 0,calc(100% - 12px) 0,100% 12px,100% calc(100% - 12px),calc(100% - 12px) 100%,12px 100%,0 calc(100% - 12px),0 12px)}
+.btn-cut-border{position:relative;background:#fff}.btn-cut-border:before{content:"";position:absolute;inset:1px;z-index:0;background:#000;clip-path:polygon(11px 0,calc(100% - 11px) 0,100% 11px,100% calc(100% - 11px),calc(100% - 11px) 100%,11px 100%,0 calc(100% - 11px),0 11px)}.btn-cut-border>*{position:relative;z-index:1}
+.btn-cut-sm{clip-path:polygon(8px 0,calc(100% - 8px) 0,100% 8px,100% calc(100% - 8px),calc(100% - 8px) 100%,8px 100%,0 calc(100% - 8px),0 8px)}
+.nav-wrap{top:12px;padding:16px 24px}.nav{background:rgba(19,10,27,.42);border:1px solid rgba(255,255,255,.16);backdrop-filter:blur(20px) saturate(150%);-webkit-backdrop-filter:blur(20px) saturate(150%)}
+.product-card h3,.section-heading h2,.how h2,.modal h2{font-family:var(--font-display),"Instrument Serif",serif!important;font-weight:400}
+@media(min-width:768px){.kyky{padding:16px}.hero{min-height:calc(100dvh - 32px)}.nav-wrap{top:16px}.hero-bottom-cta{gap:48px}}
+@media(max-width:1279px){.hero-left{display:none}}
+@media(max-width:760px){.kyky{padding:12px}.hero{min-height:calc(100svh - 24px);padding:112px 24px 32px}.hero-copy{flex:1}.hero h1{font-size:clamp(38px,11vw,58px)}.hero-bottom{grid-template-columns:1fr;gap:24px}.hero-bottom-copy,.hero-bottom-social{justify-content:center}.hero-bottom-copy p{text-align:center}.hero-bottom-cta{gap:24px}.hero-bottom-cta>span{font-size:20px}.hero-bottom-social{display:none}.hero-bottom-copy{display:none}.nav-wrap{top:12px;padding:8px}.nav{width:100%}}
+@media(prefers-reduced-motion:reduce){.anim-stagger,.anim-fade{opacity:1;animation:none}}

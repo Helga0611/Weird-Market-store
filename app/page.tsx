@@ -238,24 +238,26 @@ export default function Home() {
       <section className="hero">
         <MagicVideo />
         <div className="hero-video-overlay" />
-        <div className="hero-glow" />
-        <div className="hero-moon" aria-hidden="true"><span>☾</span><i /><i /><i /></div>
-        <div className="hero-copy">
-          <p className="eyebrow">Sàn thương mại điện tử không bình thường</p>
-          <h1>Chợ không thiếu thứ gì,<br /><em>chỉ thiếu đồ bình thường.</em></h1>
-          <p className="hero-sub">Mua chuyện lạ bằng Xu Kỳ Lạ. Giao hàng thật, công dụng thì chưa chắc.</p>
-          <div className="hero-actions">
-            <a href="#san-pham" className="primary-button btn-cut"><b>Đi chợ ngay</b><span className="cta-arrow">↘</span><i className="cta-spark">✦</i></a>
-            <button className="glass-button btn-cut-border" onClick={() => setVendorOpen(true)}>Bán đồ kỳ lạ</button>
-          </div>
+        <div className="hero-left anim-stagger" style={{ animationDelay: ".4s" }}>
+          <p>Đi cùng chúng tôi<br />khám phá chân trời<br />không bình thường.</p>
+          <div><span /><span /></div>
+          <small>Phép màu<br />không giới hạn <b>01</b></small>
         </div>
-        <div className="hero-visual" aria-label="Bộ sưu tập sản phẩm kỳ lạ">
-          <div className="orb orb-one"><img src="/products/wide-1-1.webp" alt="" /></div>
-          <div className="orb orb-two"><img src="/products/wide-8-1.webp" alt="" /></div>
-          <div className="orb orb-three"><img src="/products/wide-3-1.webp" alt="" /></div>
-          <div className="hero-sticker">
-            <img src="/products/ky-la-coin-purple-v2.png" alt="" />
-            <span>100+<small>món lạ<br />đã lên kệ</small></span>
+        <div className="hero-copy anim-stagger" style={{ animationDelay: ".5s" }}>
+          <h1>Chợ không thiếu thứ gì,<br /><em>chỉ thiếu đồ bình thường.</em></h1>
+        </div>
+        <div className="hero-bottom">
+          <div className="hero-bottom-copy anim-stagger" style={{ animationDelay: ".7s" }}>
+            <p>Mua chuyện lạ bằng Xu Kỳ Lạ. Giao hàng thật, công dụng thì chưa chắc.</p>
+          </div>
+          <div className="hero-bottom-cta anim-stagger" style={{ animationDelay: ".85s" }}>
+            <span>100 vật phẩm kỳ tuyển</span>
+            <a href="#san-pham" className="primary-button btn-cut"><b>Đi chợ ngay</b><span className="cta-arrow">→</span><i className="cta-spark">✦</i></a>
+          </div>
+          <div className="hero-bottom-social anim-stagger" style={{ animationDelay: "1s" }}>
+            <button className="btn-cut-sm" onClick={() => setVendorOpen(true)}>Bán đồ</button>
+            <a className="btn-cut-sm" href="#cach-cho-chay">Xu Kỳ Lạ</a>
+            <a className="btn-cut-sm" href="#san-pham">Khám phá</a>
           </div>
         </div>
       </section>
