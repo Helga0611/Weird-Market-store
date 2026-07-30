@@ -2,36 +2,10 @@
 
 import { FormEvent, useEffect, useMemo, useRef, useState } from "react";
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
+import Link from "next/link";
 import gsap from "gsap";
 import "./cho-ky-ky.css";
-
-type Product = {
-  id: number;
-  name: string;
-  category: string;
-  price: number;
-  description: string;
-  users: number;
-  usage: string;
-  image: string;
-};
-
-type CartItem = Product & { quantity: number };
-
-const PRODUCTS: Product[] = [
-  { id: 1, name: "Băng dính hàn gắn tình bạn", category: "Đồ gia dụng tâm linh", price: 50, description: "Dán một đường, hết giận một đời. Không áp dụng cho hội bạn quên trả tiền.", users: 12300, usage: "người đã dùng", image: "/products/product-1.png" },
-  { id: 2, name: "Chong chóng tre bay", category: "Phương tiện giao thông", price: 250, description: "Lên trời trong ba vòng quay. Tóc rối là một phần của trải nghiệm.", users: 8100, usage: "người đang bay", image: "/products/product-2.png" },
-  { id: 3, name: "Cánh cửa thần kỳ", category: "Bất động sản dịch chuyển", price: 9999, description: "Mở ra bất cứ đâu, trừ nơi bạn thật sự cần đến đúng giờ.", users: 150, usage: "người sở hữu", image: "/products/product-3.png" },
-  { id: 4, name: "Kính lúp nhìn thấu lòng người", category: "Thiết bị y tế tình cảm", price: 500, description: "Phóng đại tín hiệu thả tim và soi rõ những lần xem mà không trả lời.", users: 3400, usage: "người đã soi", image: "/products/product-4.png" },
-  { id: 5, name: "Thuốc xịt tàng hình gặp người yêu cũ", category: "Mỹ phẩm phòng thân", price: 120, description: "Một lần xịt, biến mất vừa đủ lâu để rẽ sang lối khác.", users: 25000, usage: "người đã thoát", image: "/products/product-5.png" },
-  { id: 6, name: "Gối ôm kể chuyện nói xấu sếp", category: "Nội thất văn phòng", price: 180, description: "Thì thầm đúng chuyện bạn muốn nghe. Có chế độ im lặng khi sếp đi qua.", users: 14200, usage: "người đang nghe", image: "/products/product-6.png" },
-  { id: 7, name: "Đôi dép vấp ngã vào định mệnh", category: "Thời trang xu hướng", price: 90, description: "Mỗi cú vấp là một cơ hội gặp đúng người, sai thời điểm.", users: 19800, usage: "người đã vấp", image: "/products/product-7.png" },
-  { id: 8, name: "Trà sữa không bao giờ béo", category: "Ẩm thực thần kỳ", price: 35, description: "Trân châu gấp đôi, cảm giác tội lỗi bằng không. Khoa học xin phép đứng ngoài.", users: 85000, usage: "người đã uống", image: "/products/product-8.png" },
-  { id: 9, name: "Vé xe buýt đi thẳng đến tương lai", category: "Du lịch tâm linh", price: 1500, description: "Một chiều tới ngày mai. Không hoàn vé nếu tương lai hơi thất vọng.", users: 600, usage: "người đã đi", image: "/products/product-9.png" },
-  { id: 10, name: "Cây bút tự động làm bài tập", category: "Văn phòng phẩm cứu sinh", price: 300, description: "Viết nhanh, chữ đẹp, đôi lúc tự thêm lời nhắn xin cô thông cảm.", users: 45000, usage: "học sinh tin dùng", image: "/products/product-10.png" },
-];
-
-const money = (value: number) => new Intl.NumberFormat("vi-VN").format(value);
+import { CartItem, money, Product, PRODUCTS } from "./products";
 
 function LoadingScreen({ onComplete }: { onComplete: () => void }) {
   const [count, setCount] = useState(0);
@@ -93,9 +67,11 @@ export default function Home() {
   const [cart, setCart] = useState<CartItem[]>([]);
   const [cartOpen, setCartOpen] = useState(false);
   const [authOpen, setAuthOpen] = useState(false);
+  const [authMode, setAuthMode] = useState<"register" | "login">("register");
   const [vendorOpen, setVendorOpen] = useState(false);
   const [loggedIn, setLoggedIn] = useState(false);
   const [balance, setBalance] = useState(0);
+  const [hydrated, setHydrated] = useState(false);
   const [notice, setNotice] = useState("");
   const pageRef = useRef<HTMLElement>(null);
   const reduceMotion = useReducedMotion();
@@ -110,15 +86,24 @@ export default function Home() {
 
   useEffect(() => {
     const seen = localStorage.getItem("kyky-account");
+    const savedCart = localStorage.getItem("kyky-cart");
+    const savedProducts = localStorage.getItem("kyky-vendor-products");
+    if (savedCart) setCart(JSON.parse(savedCart));
+    if (savedProducts) setProducts([...JSON.parse(savedProducts), ...PRODUCTS]);
     if (seen) {
       setLoggedIn(true);
       setBalance(Number(localStorage.getItem("kyky-balance") || 5000));
     }
+    setHydrated(true);
   }, []);
 
   useEffect(() => {
     if (loggedIn) localStorage.setItem("kyky-balance", String(balance));
   }, [balance, loggedIn]);
+
+  useEffect(() => {
+    if (hydrated) localStorage.setItem("kyky-cart", JSON.stringify(cart));
+  }, [cart, hydrated]);
 
   const categories = useMemo(() => ["Tất cả danh mục", ...new Set(products.map((p) => p.category))], [products]);
   const visible = useMemo(() => {
@@ -158,27 +143,13 @@ export default function Home() {
   const register = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     setLoggedIn(true);
-    setBalance(5000);
+    const existingBalance = Number(localStorage.getItem("kyky-balance") || 0);
+    const nextBalance = authMode === "register" ? 5000 : existingBalance || 5000;
+    setBalance(nextBalance);
     localStorage.setItem("kyky-account", "true");
+    localStorage.setItem("kyky-balance", String(nextBalance));
     setAuthOpen(false);
-    toast("Chào mừng! 5.000 Xu Kỳ Lạ đã vào ví.");
-  };
-
-  const checkout = () => {
-    if (!loggedIn) {
-      setCartOpen(false);
-      setAuthOpen(true);
-      toast("Đăng nhập để thanh toán bằng Xu Kỳ Lạ");
-      return;
-    }
-    if (total > balance) {
-      toast(`Bạn còn thiếu ${money(total - balance)} Xu`);
-      return;
-    }
-    setBalance((value) => value - total);
-    setCart([]);
-    setCartOpen(false);
-    toast("Thanh toán thành công. Đồ kỳ lạ đang lên đường!");
+    toast(authMode === "register" ? "Chào mừng! 5.000 Xu Kỳ Lạ đã vào ví." : "Đăng nhập thành công. Chào mừng bạn quay lại!");
   };
 
   const share = async (product: Product) => {
@@ -193,20 +164,40 @@ export default function Home() {
     }
   };
 
-  const submitProduct = (event: FormEvent<HTMLFormElement>) => {
+  const submitProduct = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
+    const upload = data.get("image");
+    let uploadedImage = "/products/magic-10-1.webp";
+    if (upload instanceof File && upload.size) {
+      uploadedImage = await new Promise<string>((resolve, reject) => {
+        const reader = new FileReader();
+        reader.onload = () => resolve(String(reader.result));
+        reader.onerror = () => reject(reader.error);
+        reader.readAsDataURL(upload);
+      });
+    }
     const next: Product = {
       id: Date.now(),
       name: String(data.get("name")),
       category: String(data.get("category")),
       price: Number(data.get("price")),
       description: String(data.get("description")),
+      longDescription: String(data.get("description")),
       users: 0,
       usage: "người vừa khám phá",
-      image: "/products/product-10.png",
+      image: uploadedImage,
+      gallery: [uploadedImage, uploadedImage, uploadedImage, uploadedImage],
+      tags: ["Mới lên kệ", "Đồ của dân chợ"],
+      rating: 5,
+      stock: 1,
     };
-    setProducts((current) => [next, ...current]);
+    setProducts((current) => {
+      const updated = [next, ...current];
+      const vendorItems = updated.filter((item) => item.id > 10);
+      try { localStorage.setItem("kyky-vendor-products", JSON.stringify(vendorItems)); } catch {}
+      return updated;
+    });
     setVendorOpen(false);
     toast("Đã gửi duyệt. Bản demo cho sản phẩm lên kệ ngay!");
   };
@@ -217,13 +208,13 @@ export default function Home() {
     <main className={isLoading ? "kyky" : "kyky page-ready"} ref={pageRef}>
       <header className="nav-wrap">
         <nav className="liquid-glass nav">
-          <a className="brand" href="#"><span className="brand-mark">K</span><span>Chợ Kỳ Kỳ</span></a>
+          <a className="brand" href="#"><span className="brand-mark"><img src="/products/ky-la-coin-3d.png" alt="" /></span><span>Chợ Kỳ Kỳ</span></a>
           <div className="nav-links"><a href="#san-pham">Khám phá</a><a href="#cach-cho-chay">Chợ vận hành</a></div>
           <div className="nav-actions">
-            {loggedIn && <span className="balance"><i>◉</i> {money(balance)} Xu</span>}
+            {loggedIn && <span className="balance"><img src="/products/ky-la-coin-3d.png" alt="" /> {money(balance)} Xu</span>}
             <button className="text-button vendor-nav" onClick={() => setVendorOpen(true)}>Mở gian hàng</button>
             <button className="text-button login" onClick={() => setAuthOpen(true)}>{loggedIn ? "Tài khoản" : "Đăng nhập"}</button>
-            <button className="icon-button cart-button" onClick={() => setCartOpen(true)} aria-label="Mở giỏ hàng">⌁<b>{cartCount}</b></button>
+            <button className="icon-button cart-button" onClick={() => setCartOpen(true)} aria-label="Mở giỏ hàng"><span className="magic-cart-icon">✦</span><b>{cartCount}</b></button>
           </div>
         </nav>
       </header>
@@ -239,15 +230,18 @@ export default function Home() {
           <h1>Chợ không thiếu thứ gì,<br /><em>chỉ thiếu đồ bình thường.</em></h1>
           <p className="hero-sub">Mua chuyện lạ bằng Xu Kỳ Lạ. Giao hàng thật, công dụng thì chưa chắc.</p>
           <div className="hero-actions">
-            <a href="#san-pham" className="primary-button btn-cut">Đi chợ ngay <span>↘</span></a>
+            <a href="#san-pham" className="primary-button btn-cut"><b>Đi chợ ngay</b><span className="cta-arrow">↘</span><i className="cta-spark">✦</i></a>
             <button className="glass-button btn-cut-border" onClick={() => setVendorOpen(true)}>Bán đồ kỳ lạ</button>
           </div>
         </div>
         <div className="hero-visual" aria-label="Bộ sưu tập sản phẩm kỳ lạ">
-          <div className="orb orb-one"><img src="/products/product-1.png" alt="" /></div>
-          <div className="orb orb-two"><img src="/products/product-8.png" alt="" /></div>
-          <div className="orb orb-three"><img src="/products/product-3.png" alt="" /></div>
-          <div className="hero-sticker">10+<small>món lạ<br />đã lên kệ</small></div>
+          <div className="orb orb-one"><img src="/products/magic-1-1.webp" alt="" /></div>
+          <div className="orb orb-two"><img src="/products/magic-8-1.webp" alt="" /></div>
+          <div className="orb orb-three"><img src="/products/magic-3-1.webp" alt="" /></div>
+          <div className="hero-sticker">
+            <img src="/products/ky-la-coin-3d.png" alt="" />
+            <span>10+<small>món lạ<br />đã lên kệ</small></span>
+          </div>
         </div>
       </section>
 
@@ -279,13 +273,14 @@ export default function Home() {
                 transition={{ duration: .65, delay: (index % 3) * .07, ease: [0.25, 0.1, 0.25, 1] }}
                 whileHover={reduceMotion ? undefined : { y: -8 }}
               >
-                <div className="product-image">
+                <Link className="product-image" href={`/san-pham/${product.id}`} aria-label={`Xem chi tiết ${product.name}`}>
                   <img className="product-art" src={product.image} alt={`Ảnh 3D kỳ ảo của ${product.name}`} />
                   <span className="product-shine" />
-                  <button className="share-button" onClick={() => share(product)} aria-label={`Gửi ${product.name} cho bạn bè`}>↗</button>
-                </div>
+                  <span className="magic-particles" aria-hidden="true"><i>✦</i><i>♡</i><i>✧</i><i>♡</i><i>✦</i></span>
+                </Link>
+                <button className="share-button" onClick={() => share(product)} aria-label={`Gửi ${product.name} cho bạn bè`}>↗</button>
                 <div className="product-meta"><span>{product.category}</span><span>{money(product.users)} {product.usage}</span></div>
-                <h3>{product.name}</h3>
+                <h3><Link href={`/san-pham/${product.id}`}>{product.name}</Link></h3>
                 <p>{product.description}</p>
                 <div className="product-bottom"><strong>{money(product.price)} <small>Xu</small></strong><button onClick={() => addToCart(product)}>Thêm vào giỏ <span>+</span></button></div>
               </motion.article>
@@ -311,7 +306,7 @@ export default function Home() {
         </div>
       </motion.section>
 
-      <footer><a className="brand" href="#"><span className="brand-mark">K</span><span>Chợ Kỳ Kỳ</span></a><p>Chợ không thiếu thứ gì, chỉ thiếu đồ bình thường.</p><a href="#san-pham">Quay lại gian hàng ↑</a></footer>
+      <footer><a className="brand" href="#"><span className="brand-mark"><img src="/products/ky-la-coin-3d.png" alt="" /></span><span>Chợ Kỳ Kỳ</span></a><p>Chợ không thiếu thứ gì, chỉ thiếu đồ bình thường.</p><a href="#san-pham">Quay lại gian hàng ↑</a></footer>
 
       {notice && <div className="toast" role="status">{notice}</div>}
 
@@ -323,20 +318,21 @@ export default function Home() {
               <div className="cart-item" key={item.id}><img className="mini-sprite" src={item.image} alt="" /><div><h3>{item.name}</h3><span>{money(item.price)} Xu</span></div><div className="quantity"><button onClick={() => updateQuantity(item.id, -1)}>−</button><b>{item.quantity}</b><button onClick={() => updateQuantity(item.id, 1)}>+</button></div></div>
             ))}
           </div>
-          <div className="checkout"><div><span>Tổng cộng</span><strong>{money(total)} Xu</strong></div><button disabled={!cart.length} onClick={checkout}>Thanh toán bằng Xu</button></div>
+          <div className="checkout"><div><span>Tổng cộng</span><strong>{money(total)} Xu</strong></div>{cart.length ? <Link href="/thanh-toan" onClick={() => setCartOpen(false)}>Đến trang thanh toán</Link> : <button disabled>Chưa có món để thanh toán</button>}</div>
         </aside>
       </div>}
 
       {authOpen && <div className="modal-layer" onMouseDown={() => setAuthOpen(false)}>
         <div className="modal auth-modal" onMouseDown={(e) => e.stopPropagation()}>
           <button className="modal-close" onClick={() => setAuthOpen(false)}>×</button>
-          <span className="coin">K</span><p>HỘ CHIẾU VÀO CHỢ</p><h2>{loggedIn ? "Bạn đã là dân chợ." : "Tạo tài khoản, nhận ngay 5.000 Xu."}</h2>
+          <span className="coin">K</span><p>HỘ CHIẾU VÀO CHỢ</p><h2>{loggedIn ? "Bạn đã là dân chợ." : authMode === "register" ? "Tạo tài khoản, nhận ngay 5.000 Xu." : "Đăng nhập để tiếp tục đi chợ."}</h2>
           {loggedIn ? <><div className="account-balance">{money(balance)} <small>Xu Kỳ Lạ</small></div><button className="primary-button" onClick={() => setAuthOpen(false)}>Tiếp tục đi chợ</button></> :
           <form onSubmit={register}>
             <label>Họ và tên<input required placeholder="Nguyễn Kỳ Lạ" /></label>
             <label>Email<input type="email" required placeholder="ban@kyky.vn" /></label>
             <label>Mật khẩu<input type="password" required minLength={6} placeholder="Ít nhất 6 ký tự" /></label>
-            <button type="submit">Đăng ký và nhận Xu</button>
+            <button type="submit">{authMode === "register" ? "Đăng ký và nhận Xu" : "Đăng nhập"}</button>
+            <button className="auth-switch" type="button" onClick={() => setAuthMode(authMode === "register" ? "login" : "register")}>{authMode === "register" ? "Đã có tài khoản? Đăng nhập" : "Chưa có tài khoản? Đăng ký"}</button>
             <small>Bằng cách tham gia, bạn đồng ý rằng đồ ở đây hơi kỳ.</small>
           </form>}
         </div>
