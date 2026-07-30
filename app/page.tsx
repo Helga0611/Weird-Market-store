@@ -1,6 +1,8 @@
 "use client";
 
-import { FormEvent, useEffect, useMemo, useState } from "react";
+import { FormEvent, useEffect, useMemo, useRef, useState } from "react";
+import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
+import gsap from "gsap";
 import "./cho-ky-ky.css";
 
 type Product = {
@@ -12,26 +14,79 @@ type Product = {
   users: number;
   usage: string;
   position: string;
+  imageSet: "a" | "b";
 };
 
 type CartItem = Product & { quantity: number };
 
 const PRODUCTS: Product[] = [
-  { id: 1, name: "Băng dính hàn gắn tình bạn", category: "Đồ gia dụng tâm linh", price: 50, description: "Dán một đường, hết giận một đời. Không áp dụng cho hội bạn quên trả tiền.", users: 12300, usage: "người đã dùng", position: "0% 0%" },
-  { id: 2, name: "Chong chóng tre bay", category: "Phương tiện giao thông", price: 250, description: "Lên trời trong ba vòng quay. Tóc rối là một phần của trải nghiệm.", users: 8100, usage: "người đang bay", position: "25% 0%" },
-  { id: 3, name: "Cánh cửa thần kỳ", category: "Bất động sản dịch chuyển", price: 9999, description: "Mở ra bất cứ đâu, trừ nơi bạn thật sự cần đến đúng giờ.", users: 150, usage: "người sở hữu", position: "50% 0%" },
-  { id: 4, name: "Kính lúp nhìn thấu lòng người", category: "Thiết bị y tế tình cảm", price: 500, description: "Phóng đại tín hiệu thả tim và soi rõ những lần xem mà không trả lời.", users: 3400, usage: "người đã soi", position: "75% 0%" },
-  { id: 5, name: "Thuốc xịt tàng hình gặp người yêu cũ", category: "Mỹ phẩm phòng thân", price: 120, description: "Một lần xịt, biến mất vừa đủ lâu để rẽ sang lối khác.", users: 25000, usage: "người đã thoát", position: "100% 0%" },
-  { id: 6, name: "Gối ôm kể chuyện nói xấu sếp", category: "Nội thất văn phòng", price: 180, description: "Thì thầm đúng chuyện bạn muốn nghe. Có chế độ im lặng khi sếp đi qua.", users: 14200, usage: "người đang nghe", position: "0% 100%" },
-  { id: 7, name: "Đôi dép vấp ngã vào định mệnh", category: "Thời trang xu hướng", price: 90, description: "Mỗi cú vấp là một cơ hội gặp đúng người, sai thời điểm.", users: 19800, usage: "người đã vấp", position: "25% 100%" },
-  { id: 8, name: "Trà sữa không bao giờ béo", category: "Ẩm thực thần kỳ", price: 35, description: "Trân châu gấp đôi, cảm giác tội lỗi bằng không. Khoa học xin phép đứng ngoài.", users: 85000, usage: "người đã uống", position: "50% 100%" },
-  { id: 9, name: "Vé xe buýt đi thẳng đến tương lai", category: "Du lịch tâm linh", price: 1500, description: "Một chiều tới ngày mai. Không hoàn vé nếu tương lai hơi thất vọng.", users: 600, usage: "người đã đi", position: "75% 100%" },
-  { id: 10, name: "Cây bút tự động làm bài tập", category: "Văn phòng phẩm cứu sinh", price: 300, description: "Viết nhanh, chữ đẹp, đôi lúc tự thêm lời nhắn xin cô thông cảm.", users: 45000, usage: "học sinh tin dùng", position: "100% 100%" },
+  { id: 1, name: "Băng dính hàn gắn tình bạn", category: "Đồ gia dụng tâm linh", price: 50, description: "Dán một đường, hết giận một đời. Không áp dụng cho hội bạn quên trả tiền.", users: 12300, usage: "người đã dùng", position: "0% 50%", imageSet: "a" },
+  { id: 2, name: "Chong chóng tre bay", category: "Phương tiện giao thông", price: 250, description: "Lên trời trong ba vòng quay. Tóc rối là một phần của trải nghiệm.", users: 8100, usage: "người đang bay", position: "25% 50%", imageSet: "a" },
+  { id: 3, name: "Cánh cửa thần kỳ", category: "Bất động sản dịch chuyển", price: 9999, description: "Mở ra bất cứ đâu, trừ nơi bạn thật sự cần đến đúng giờ.", users: 150, usage: "người sở hữu", position: "50% 50%", imageSet: "a" },
+  { id: 4, name: "Kính lúp nhìn thấu lòng người", category: "Thiết bị y tế tình cảm", price: 500, description: "Phóng đại tín hiệu thả tim và soi rõ những lần xem mà không trả lời.", users: 3400, usage: "người đã soi", position: "75% 50%", imageSet: "a" },
+  { id: 5, name: "Thuốc xịt tàng hình gặp người yêu cũ", category: "Mỹ phẩm phòng thân", price: 120, description: "Một lần xịt, biến mất vừa đủ lâu để rẽ sang lối khác.", users: 25000, usage: "người đã thoát", position: "100% 50%", imageSet: "a" },
+  { id: 6, name: "Gối ôm kể chuyện nói xấu sếp", category: "Nội thất văn phòng", price: 180, description: "Thì thầm đúng chuyện bạn muốn nghe. Có chế độ im lặng khi sếp đi qua.", users: 14200, usage: "người đang nghe", position: "0% 50%", imageSet: "b" },
+  { id: 7, name: "Đôi dép vấp ngã vào định mệnh", category: "Thời trang xu hướng", price: 90, description: "Mỗi cú vấp là một cơ hội gặp đúng người, sai thời điểm.", users: 19800, usage: "người đã vấp", position: "25% 50%", imageSet: "b" },
+  { id: 8, name: "Trà sữa không bao giờ béo", category: "Ẩm thực thần kỳ", price: 35, description: "Trân châu gấp đôi, cảm giác tội lỗi bằng không. Khoa học xin phép đứng ngoài.", users: 85000, usage: "người đã uống", position: "50% 50%", imageSet: "b" },
+  { id: 9, name: "Vé xe buýt đi thẳng đến tương lai", category: "Du lịch tâm linh", price: 1500, description: "Một chiều tới ngày mai. Không hoàn vé nếu tương lai hơi thất vọng.", users: 600, usage: "người đã đi", position: "75% 50%", imageSet: "b" },
+  { id: 10, name: "Cây bút tự động làm bài tập", category: "Văn phòng phẩm cứu sinh", price: 300, description: "Viết nhanh, chữ đẹp, đôi lúc tự thêm lời nhắn xin cô thông cảm.", users: 45000, usage: "học sinh tin dùng", position: "100% 50%", imageSet: "b" },
 ];
 
 const money = (value: number) => new Intl.NumberFormat("vi-VN").format(value);
 
+function LoadingScreen({ onComplete }: { onComplete: () => void }) {
+  const [count, setCount] = useState(0);
+  const reduceMotion = useReducedMotion();
+
+  useEffect(() => {
+    if (reduceMotion) {
+      setCount(100);
+      const timeout = window.setTimeout(onComplete, 120);
+      return () => window.clearTimeout(timeout);
+    }
+
+    const started = performance.now();
+    let frame = 0;
+    const tick = (now: number) => {
+      const progress = Math.min((now - started) / 1800, 1);
+      setCount(Math.round(progress * 100));
+      if (progress < 1) frame = requestAnimationFrame(tick);
+      else window.setTimeout(onComplete, 280);
+    };
+    frame = requestAnimationFrame(tick);
+    return () => cancelAnimationFrame(frame);
+  }, [onComplete, reduceMotion]);
+
+  const words = ["Tìm đồ lạ", "Gom phép màu", "Mở cửa chợ"];
+  const wordIndex = Math.min(Math.floor(count / 34), 2);
+
+  return (
+    <motion.div
+      className="loading-screen"
+      initial={{ opacity: 1 }}
+      exit={{ opacity: 0, y: "-4%" }}
+      transition={{ duration: .55, ease: [0.76, 0, 0.24, 1] }}
+    >
+      <span className="loading-brand">CHỢ KỲ KỲ</span>
+      <AnimatePresence mode="wait">
+        <motion.strong
+          key={wordIndex}
+          initial={{ opacity: 0, y: 18 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: -18 }}
+          transition={{ duration: .35 }}
+        >
+          {words[wordIndex]}
+        </motion.strong>
+      </AnimatePresence>
+      <b>{String(count).padStart(3, "0")}</b>
+      <i><span style={{ transform: `scaleX(${count / 100})` }} /></i>
+    </motion.div>
+  );
+}
+
 export default function Home() {
+  const [isLoading, setIsLoading] = useState(true);
   const [products, setProducts] = useState(PRODUCTS);
   const [query, setQuery] = useState("");
   const [category, setCategory] = useState("Tất cả danh mục");
@@ -43,6 +98,21 @@ export default function Home() {
   const [loggedIn, setLoggedIn] = useState(false);
   const [balance, setBalance] = useState(0);
   const [notice, setNotice] = useState("");
+  const pageRef = useRef<HTMLElement>(null);
+  const reduceMotion = useReducedMotion();
+
+  useEffect(() => {
+    if (isLoading || reduceMotion || !pageRef.current) return;
+    const context = gsap.context(() => {
+      const timeline = gsap.timeline({ defaults: { ease: "power3.out" } });
+      timeline
+        .fromTo(".hero h1", { opacity: 0, y: 60 }, { opacity: 1, y: 0, duration: 1.15 })
+        .fromTo(".hero-sub, .hero-actions", { opacity: 0, filter: "blur(10px)", y: 24 }, { opacity: 1, filter: "blur(0px)", y: 0, duration: .85, stagger: .12 }, "-=.7")
+        .fromTo(".hero-visual > *", { opacity: 0, y: 28, rotate: -4 }, { opacity: 1, y: 0, rotate: 0, duration: .75, stagger: .09 }, "-=.55");
+      gsap.to(".ticker > div", { xPercent: -50, duration: 28, ease: "none", repeat: -1 });
+    }, pageRef);
+    return () => context.revert();
+  }, [isLoading, reduceMotion]);
 
   useEffect(() => {
     const seen = localStorage.getItem("kyky-account");
@@ -140,7 +210,8 @@ export default function Home() {
       description: String(data.get("description")),
       users: 0,
       usage: "người vừa khám phá",
-      position: "100% 100%",
+      position: "100% 50%",
+      imageSet: "b",
     };
     setProducts((current) => [next, ...current]);
     setVendorOpen(false);
@@ -148,7 +219,9 @@ export default function Home() {
   };
 
   return (
-    <main className="kyky">
+    <>
+    <AnimatePresence>{isLoading && <LoadingScreen onComplete={() => setIsLoading(false)} />}</AnimatePresence>
+    <main className="kyky" ref={pageRef}>
       <header className="nav-wrap">
         <nav className="liquid-glass nav">
           <a className="brand" href="#"><span className="brand-mark">K</span><span>Chợ Kỳ Kỳ</span></a>
@@ -174,9 +247,9 @@ export default function Home() {
           </div>
         </div>
         <div className="hero-visual" aria-label="Bộ sưu tập sản phẩm kỳ lạ">
-          <div className="orb orb-one"><div className="sprite" style={{ backgroundPosition: "0% 0%" }} /></div>
-          <div className="orb orb-two"><div className="sprite" style={{ backgroundPosition: "50% 100%" }} /></div>
-          <div className="orb orb-three"><div className="sprite" style={{ backgroundPosition: "50% 0%" }} /></div>
+          <div className="orb orb-one"><div className="sprite sprite-a" style={{ backgroundPosition: "0% 50%" }} /></div>
+          <div className="orb orb-two"><div className="sprite sprite-b" style={{ backgroundPosition: "50% 50%" }} /></div>
+          <div className="orb orb-three"><div className="sprite sprite-a" style={{ backgroundPosition: "50% 50%" }} /></div>
           <div className="hero-sticker">10+<small>món lạ<br />đã lên kệ</small></div>
         </div>
       </section>
@@ -186,10 +259,10 @@ export default function Home() {
       </section>
 
       <section className="market" id="san-pham">
-        <div className="section-heading">
+        <motion.div className="section-heading" initial={reduceMotion ? false : { opacity: 0, y: 36 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: "-100px" }} transition={{ duration: .8, ease: [0.25, 0.1, 0.25, 1] }}>
           <div><p>Gian hàng kỳ tuyển</p><h2>Hôm nay bạn cần<br />kỳ lạ đến mức nào?</h2></div>
           <strong>{visible.length.toString().padStart(2, "0")} món đang chờ chủ</strong>
-        </div>
+        </motion.div>
 
         <div className="filters liquid-glass">
           <label className="search"><span>⌕</span><input aria-label="Tìm sản phẩm" value={query} onChange={(e) => setQuery(e.target.value)} placeholder="Tìm một thứ không bình thường..." /></label>
@@ -200,23 +273,35 @@ export default function Home() {
         {visible.length ? (
           <div className="product-grid">
             {visible.map((product, index) => (
-              <article className={`product-card card-${index % 3}`} key={product.id}>
+              <motion.article
+                className={`product-card card-${index % 3}`}
+                key={product.id}
+                initial={reduceMotion ? false : { opacity: 0, y: 38 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-70px" }}
+                transition={{ duration: .65, delay: (index % 3) * .07, ease: [0.25, 0.1, 0.25, 1] }}
+                whileHover={reduceMotion ? undefined : { y: -8 }}
+              >
                 <div className="product-image">
-                  <div className="sprite" style={{ backgroundPosition: product.position }} role="img" aria-label={`Ảnh AI minh họa ${product.name}`} />
+                  <div className={`sprite sprite-${product.imageSet}`} style={{ backgroundPosition: product.position }} role="img" aria-label={`Ảnh AI minh họa ${product.name}`} />
+                  <span className="product-shine" />
                   <button className="share-button" onClick={() => share(product)} aria-label={`Gửi ${product.name} cho bạn bè`}>↗</button>
                 </div>
                 <div className="product-meta"><span>{product.category}</span><span>{money(product.users)} {product.usage}</span></div>
                 <h3>{product.name}</h3>
                 <p>{product.description}</p>
                 <div className="product-bottom"><strong>{money(product.price)} <small>Xu</small></strong><button onClick={() => addToCart(product)}>Thêm vào giỏ <span>+</span></button></div>
-              </article>
+              </motion.article>
             ))}
           </div>
         ) : <div className="empty"><h3>Chưa tìm thấy món nào kỳ đến vậy.</h3><button onClick={() => { setQuery(""); setCategory("Tất cả danh mục"); }}>Xem tất cả sản phẩm</button></div>}
       </section>
 
-      <section className="how" id="cach-cho-chay">
-        <div className="how-visual"><div className="sprite" style={{ backgroundPosition: "75% 100%" }} /><span>5000</span></div>
+      <motion.section className="how" id="cach-cho-chay" initial={reduceMotion ? false : { opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: "-90px" }} transition={{ duration: .9 }}>
+        <div className="how-visual">
+          <motion.img src="/products/ky-la-coin-3d.png" alt="Đồng Xu Kỳ Lạ 3D realistic" whileHover={reduceMotion ? undefined : { scale: 1.05, rotate: -2 }} transition={{ type: "spring", stiffness: 130, damping: 16 }} />
+          <span>5000</span>
+        </div>
         <div className="how-copy">
           <p>Xu Kỳ Lạ dùng thế nào?</p>
           <h2>Đăng ký một lần.<br />Kỳ lạ cả đời.</h2>
@@ -227,7 +312,7 @@ export default function Home() {
           </div>
           <button className="primary-button" onClick={() => setAuthOpen(true)}>Nhận 5.000 Xu</button>
         </div>
-      </section>
+      </motion.section>
 
       <footer><a className="brand" href="#"><span className="brand-mark">K</span><span>Chợ Kỳ Kỳ</span></a><p>Chợ không thiếu thứ gì, chỉ thiếu đồ bình thường.</p><a href="#san-pham">Quay lại gian hàng ↑</a></footer>
 
@@ -238,7 +323,7 @@ export default function Home() {
           <div className="modal-head"><div><small>GIỎ ĐỒ KỲ LẠ</small><h2>{cartCount} món đang đợi</h2></div><button onClick={() => setCartOpen(false)}>×</button></div>
           <div className="cart-list">
             {cart.length === 0 ? <div className="cart-empty"><span>⌁</span><h3>Giỏ đang bình thường quá.</h3><p>Thêm vài món lạ rồi quay lại nhé.</p></div> : cart.map((item) => (
-              <div className="cart-item" key={item.id}><div className="mini-sprite sprite" style={{ backgroundPosition: item.position }} /><div><h3>{item.name}</h3><span>{money(item.price)} Xu</span></div><div className="quantity"><button onClick={() => updateQuantity(item.id, -1)}>−</button><b>{item.quantity}</b><button onClick={() => updateQuantity(item.id, 1)}>+</button></div></div>
+              <div className="cart-item" key={item.id}><div className={`mini-sprite sprite sprite-${item.imageSet}`} style={{ backgroundPosition: item.position }} /><div><h3>{item.name}</h3><span>{money(item.price)} Xu</span></div><div className="quantity"><button onClick={() => updateQuantity(item.id, -1)}>−</button><b>{item.quantity}</b><button onClick={() => updateQuantity(item.id, 1)}>+</button></div></div>
             ))}
           </div>
           <div className="checkout"><div><span>Tổng cộng</span><strong>{money(total)} Xu</strong></div><button disabled={!cart.length} onClick={checkout}>Thanh toán bằng Xu</button></div>
@@ -276,5 +361,6 @@ export default function Home() {
         </div>
       </div>}
     </main>
+    </>
   );
 }
