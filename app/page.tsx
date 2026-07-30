@@ -75,7 +75,7 @@ export default function Home() {
   const [hydrated, setHydrated] = useState(false);
   const [notice, setNotice] = useState("");
   const [shownCount, setShownCount] = useState(24);
-  const [fireball, setFireball] = useState<{ key: number; x: number; y: number; tx: number; ty: number } | null>(null);
+  const [fireball, setFireball] = useState<{ key: number; x: number; y: number; tx: number; ty: number; image: string } | null>(null);
   const [cartBurst, setCartBurst] = useState(false);
   const pageRef = useRef<HTMLElement>(null);
   const reduceMotion = useReducedMotion();
@@ -139,7 +139,7 @@ export default function Home() {
       const origin = event.currentTarget.getBoundingClientRect();
       const target = document.querySelector(".cart-button")?.getBoundingClientRect();
       if (target) {
-        setFireball({ key: Date.now(), x: origin.left + origin.width / 2, y: origin.top + origin.height / 2, tx: target.left + target.width / 2, ty: target.top + target.height / 2 });
+        setFireball({ key: Date.now(), x: origin.left + origin.width / 2, y: origin.top + origin.height / 2, tx: target.left + target.width / 2, ty: target.top + target.height / 2, image: product.image });
         window.setTimeout(() => { setFireball(null); setCartBurst(true); }, 620);
         window.setTimeout(() => setCartBurst(false), 1280);
       }
@@ -230,7 +230,11 @@ export default function Home() {
             {loggedIn && <span className="balance"><img src="/products/ky-la-coin-purple-v2.png" alt="" /> {money(balance)} Xu</span>}
             <button className="text-button vendor-nav" onClick={() => setVendorOpen(true)}>Mở gian hàng</button>
             <button className="text-button login account-button" onClick={() => setAuthOpen(true)}><img src="/products/witch-avatar.png" alt="" />{loggedIn ? "Tài khoản" : "Đăng nhập"}</button>
-            <button className={`icon-button cart-button ${cartBurst ? "burst" : ""}`} onClick={() => setCartOpen(true)} aria-label="Mở giỏ hàng"><span className="magic-cart-icon">✦</span><b>{cartCount}</b></button>
+            <button className={`icon-button cart-button ${cartBurst ? "burst" : ""}`} onClick={() => setCartOpen(true)} aria-label="Mở giỏ hàng">
+              <img className="magic-cart-icon" src="/products/magic-cart-v2.png" alt="" />
+              <span className="cart-flames" aria-hidden="true"><i /><i /><i /></span>
+              <b>{cartCount}</b>
+            </button>
           </div>
         </nav>
       </header>
@@ -255,9 +259,8 @@ export default function Home() {
             <a href="#san-pham" className="primary-button btn-cut"><b>Đi chợ ngay</b><span className="cta-arrow">→</span><i className="cta-spark">✦</i></a>
           </div>
           <div className="hero-bottom-social anim-stagger" style={{ animationDelay: "1s" }}>
-            <button className="btn-cut-sm" onClick={() => setVendorOpen(true)}>Bán đồ</button>
+            <button className="primary-button btn-cut vendor-hero-button" onClick={() => setVendorOpen(true)}><b>Bán đồ</b><i className="cta-spark">♥</i></button>
             <a className="btn-cut-sm" href="#cach-cho-chay">Xu Kỳ Lạ</a>
-            <a className="btn-cut-sm" href="#san-pham">Khám phá</a>
           </div>
         </div>
       </section>
@@ -327,7 +330,7 @@ export default function Home() {
       <footer><a className="brand" href="#"><span className="brand-mark"><img src="/products/cho-ky-ky-logo.png" alt="" /></span><span>Chợ Kỳ Kỳ</span></a><p>Chợ không thiếu thứ gì, chỉ thiếu đồ bình thường.</p><a href="#san-pham">Quay lại gian hàng ↑</a></footer>
 
       {notice && <div className="toast" role="status">{notice}</div>}
-      <AnimatePresence>{fireball && <motion.span key={fireball.key} className="cart-fireball" initial={{ left: fireball.x, top: fireball.y, scale: .3, opacity: 0 }} animate={{ left: fireball.tx, top: fireball.ty, scale: [1, 1.5, .45], opacity: [0, 1, 1] }} exit={{ scale: 2.8, opacity: 0 }} transition={{ duration: .62, ease: [0.34, 1.2, .4, 1] }}><i>✦</i></motion.span>}</AnimatePresence>
+      <AnimatePresence>{fireball && <motion.span key={fireball.key} className="cart-fireball" initial={{ left: fireball.x, top: fireball.y, scale: .3, opacity: 0 }} animate={{ left: fireball.tx, top: fireball.ty, scale: [1, 1.35, .35], rotate: [0, -12, 24], opacity: [0, 1, 1] }} exit={{ scale: 2.8, opacity: 0 }} transition={{ duration: .62, ease: [0.34, 1.2, .4, 1] }}><img src={fireball.image} alt="" /><i>✦</i></motion.span>}</AnimatePresence>
 
       {cartOpen && <div className="modal-layer" onMouseDown={() => setCartOpen(false)}>
         <aside className="drawer" onMouseDown={(e) => e.stopPropagation()}>
@@ -344,7 +347,7 @@ export default function Home() {
       {authOpen && <div className="modal-layer" onMouseDown={() => setAuthOpen(false)}>
         <div className="modal auth-modal" onMouseDown={(e) => e.stopPropagation()}>
           <button className="modal-close" onClick={() => setAuthOpen(false)}>×</button>
-          <span className="coin">K</span><p>HỘ CHIẾU VÀO CHỢ</p><h2>{loggedIn ? "Bạn đã là dân chợ." : authMode === "register" ? "Tạo tài khoản, nhận ngay 5.000 Xu." : "Đăng nhập để tiếp tục đi chợ."}</h2>
+          <div className="account-coin"><img src="/products/ky-la-coin-purple-v2.png" alt="Xu Kỳ Lạ" /><span>{loggedIn ? money(balance) : "5.000"}<small> Xu Kỳ Lạ</small></span></div><p>VÍ XU KỲ LẠ</p><h2>{loggedIn ? "Kho phép màu của bạn." : authMode === "register" ? "Tạo tài khoản, nhận ngay 5.000 Xu." : "Đăng nhập để xem ví Xu Kỳ Lạ."}</h2>
           {loggedIn ? <><div className="account-balance">{money(balance)} <small>Xu Kỳ Lạ</small></div><button className="primary-button" onClick={() => setAuthOpen(false)}>Tiếp tục đi chợ</button></> :
           <form onSubmit={register}>
             <label>Họ và tên<input required placeholder="Nguyễn Kỳ Lạ" /></label>
