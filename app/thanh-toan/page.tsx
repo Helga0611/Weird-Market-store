@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { FormEvent, useEffect, useMemo, useState } from "react";
+import { Button } from "@/components/base/buttons/button";
 import { CartItem, money } from "../products";
 import "./checkout.css";
 
@@ -68,13 +69,13 @@ export default function CheckoutPage() {
           <div className="checkout-grid">
             <div className="checkout-items">
               {cart.length ? cart.map((item) => (
-                <article key={item.id}><img src={item.image} alt="" /><div><span>{item.category}</span><h2>{item.name}</h2><strong>{money(item.price)} Xu</strong></div><div className="checkout-qty"><button onClick={() => update(item.id,-1)}>−</button><b>{item.quantity}</b><button onClick={() => update(item.id,1)}>+</button></div></article>
+                <article key={item.id}><img src={item.image} alt="" /><div><span>{item.category}</span><h2>{item.name}</h2><strong>{money(item.price)} Xu</strong></div><div className="checkout-qty"><Button color="ghost" size="xs" onClick={() => update(item.id,-1)} aria-label={`Giảm số lượng ${item.name}`}>−</Button><b>{item.quantity}</b><Button color="ghost" size="xs" onClick={() => update(item.id,1)} aria-label={`Tăng số lượng ${item.name}`}>+</Button></div></article>
               )) : <div className="checkout-empty"><h2>Giỏ hàng đang rất bình thường.</h2><p>Chưa có món kỳ lạ nào chờ thanh toán.</p><Link href="/#san-pham">Đi chọn một món</Link></div>}
             </div>
             <aside className="order-card">
               <div className="wallet"><img src="/products/ky-la-coin-purple-v2.png" alt="" /><div><span>Số dư hiện tại</span><strong>{loggedIn ? money(balance) : "Chưa đăng nhập"} <small>{loggedIn ? "Xu" : ""}</small></strong></div></div>
               <div className="order-lines"><span>Tạm tính <b>{money(total)} Xu</b></span><span>Phí vận chuyển bằng chổi <b>0 Xu</b></span><span className="order-total">Tổng cộng <b>{money(total)} Xu</b></span></div>
-              {!loggedIn ? <form onSubmit={authenticate}><h3>Đăng ký hoặc đăng nhập</h3><p>Tài khoản mới nhận ngay 5.000 Xu.</p><label>Email<input required type="email" placeholder="ban@kyky.vn" /></label><label>Mật khẩu<input required type="password" minLength={6} placeholder="Ít nhất 6 ký tự" /></label><button>Tiếp tục và nhận Xu</button></form> : <button className="pay-button" disabled={!cart.length} onClick={pay}>Xác nhận thanh toán ✦</button>}
+              {!loggedIn ? <form onSubmit={authenticate}><h3>Đăng ký hoặc đăng nhập</h3><p>Tài khoản mới nhận ngay 5.000 Xu.</p><label>Email<input required type="email" placeholder="ban@kyky.vn" /></label><label>Mật khẩu<input required type="password" minLength={6} placeholder="Ít nhất 6 ký tự" /></label><Button color="primary" size="lg" type="submit">Tiếp tục và nhận Xu</Button></form> : <Button color="primary" size="lg" className="pay-button" disabled={!cart.length} onClick={pay}>Xác nhận thanh toán ✦</Button>}
               {message && <p className="checkout-message">{message}</p>}
             </aside>
           </div>

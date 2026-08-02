@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { type CSSProperties, useEffect, useState } from "react";
 import { motion, useReducedMotion } from "framer-motion";
+import { Button } from "@/components/base/buttons/button";
 import { CartItem, money, Product } from "../../products";
 import "./product-detail.css";
 
@@ -60,9 +61,9 @@ export default function ProductDetail({ product }: { product: Product }) {
           </motion.div>
           <div className="gallery-thumbs">
             {product.gallery.map((image, index) => (
-              <button key={image} className={image === activeImage ? "active" : ""} onClick={() => setActiveImage(image)} aria-label={`Xem hình ${index + 1}`}>
+              <Button color="ghost" size="xl" key={image} className={image === activeImage ? "active" : ""} onClick={() => setActiveImage(image)} aria-label={`Xem hình ${index + 1}`}>
                 <img src={image} alt="" />
-              </button>
+              </Button>
             ))}
           </div>
         </div>
@@ -76,7 +77,7 @@ export default function ProductDetail({ product }: { product: Product }) {
           <div className="detail-tags">{product.tags.map((tag) => <span key={tag}>{tag}</span>)}</div>
           <div className="aura-picker">
             <span>Chọn hào quang</span>
-            <div>{product.colors.map((aura, index) => <button key={aura} className={selectedAura === aura ? "active" : ""} onClick={() => { setSelectedAura(aura); setActiveImage(product.gallery[index]); }}><i style={{ "--aura-index": index } as CSSProperties} />{aura}</button>)}</div>
+            <div>{product.colors.map((aura, index) => <Button color="secondary" size="sm" key={aura} className={selectedAura === aura ? "active" : ""} onClick={() => { setSelectedAura(aura); setActiveImage(product.gallery[index]); }}><i style={{ "--aura-index": index } as CSSProperties} />{aura}</Button>)}</div>
           </div>
           <div className="witch-stats">
             <div><b>{money(product.users)}</b><span>phù thủy đã chọn</span></div>
@@ -85,10 +86,10 @@ export default function ProductDetail({ product }: { product: Product }) {
           </div>
           <div className="detail-buy">
             <div className="detail-price"><strong>{money(product.price)}</strong><span>Xu Kỳ Lạ</span></div>
-            <div className="quantity-picker"><button onClick={() => setQuantity(Math.max(1, quantity - 1))}>−</button><b>{quantity}</b><button onClick={() => setQuantity(Math.min(product.stock, quantity + 1))}>+</button></div>
+            <div className="quantity-picker"><Button color="ghost" size="xs" onClick={() => setQuantity(Math.max(1, quantity - 1))} aria-label="Giảm số lượng">−</Button><b>{quantity}</b><Button color="ghost" size="xs" onClick={() => setQuantity(Math.min(product.stock, quantity + 1))} aria-label="Tăng số lượng">+</Button></div>
           </div>
-          <button className="magic-add" onClick={addToCart}><span>Thêm vào giỏ phép thuật</span><b>✦</b></button>
-          <button className="share-detail" onClick={() => setShareOpen(true)}>Gửi món này cho bạn bè ↗</button>
+          <Button color="primary" size="lg" className="magic-add" onClick={addToCart}><span>Thêm vào giỏ phép thuật</span><b>✦</b></Button>
+          <Button color="secondary" size="lg" className="share-detail" onClick={() => setShareOpen(true)}>Gửi món này cho bạn bè ↗</Button>
           <div className="commerce-notes">
             <span>Giao trước khi phép hết tác dụng</span>
             <span>Đổi trả trong 7 đêm trăng</span>
@@ -115,14 +116,14 @@ export default function ProductDetail({ product }: { product: Product }) {
       {shareOpen && (
         <div className="share-modal-layer" onMouseDown={() => setShareOpen(false)}>
           <section className="share-modal liquid-glass" onMouseDown={(event) => event.stopPropagation()}>
-            <button className="share-close" onClick={() => setShareOpen(false)} aria-label="Đóng">×</button>
+            <Button color="ghost" size="sm" className="share-close" onClick={() => setShareOpen(false)} aria-label="Đóng">×</Button>
             <span className="share-sigil">✦</span>
             <p>Gửi một lời mời kỳ lạ</p>
             <h2>Cho bạn bè xem<br />món đồ này.</h2>
             <label>Email người nhận<input value={recipient} onChange={(event) => setRecipient(event.target.value)} type="email" placeholder="banthan@thegioi.vn" /></label>
             <label>Lời nhắn<textarea value={shareNote} onChange={(event) => setShareNote(event.target.value)} /></label>
             <label>Đường link<input readOnly value={typeof window === "undefined" ? "" : window.location.href} /></label>
-            <div className="share-actions"><button onClick={copyShare}>Sao chép link</button><button disabled={!recipient} onClick={sendEmail}>Mở email để gửi ↗</button></div>
+            <div className="share-actions"><Button color="secondary" size="md" onClick={copyShare}>Sao chép link</Button><Button color="primary" size="md" disabled={!recipient} onClick={sendEmail}>Mở email để gửi ↗</Button></div>
             <small>Email sẽ được gửi bằng ứng dụng mail của bạn. Chợ Kỳ Kỳ không lưu địa chỉ người nhận.</small>
           </section>
         </div>

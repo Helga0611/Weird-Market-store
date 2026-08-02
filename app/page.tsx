@@ -7,6 +7,7 @@ import gsap from "gsap";
 import "./cho-ky-ky.css";
 import { CartItem, money, Product, PRODUCTS } from "./products";
 import MagicVideo from "./components/magic-video";
+import { Button } from "@/components/base/buttons/button";
 
 function LoadingScreen({ onComplete }: { onComplete: () => void }) {
   const [count, setCount] = useState(0);
@@ -226,26 +227,26 @@ export default function Home() {
       <header className="nav-wrap">
         <nav className="liquid-glass nav">
           <a className="brand" href="#"><span className="brand-mark"><img src="/products/cho-ky-ky-logo.png" alt="" /></span><span>Chợ Kỳ Kỳ</span></a>
-          <div className="nav-links"><a href="#san-pham">Sản phẩm</a><a href="#san-pham">Danh mục</a><a href="#cach-cho-chay">Cách hoạt động</a><button onClick={() => setVendorOpen(true)}>Bán đồ</button></div>
+          <div className="nav-links"><a href="#san-pham">Sản phẩm</a><a href="#san-pham">Danh mục</a><a href="#cach-cho-chay">Cách hoạt động</a><Button color="ghost" size="xs" onClick={() => setVendorOpen(true)}>Bán đồ</Button></div>
           <div className="nav-actions">
             {loggedIn && <span className="balance"><img src="/products/ky-la-coin-purple-v2.png" alt="" /> {money(balance)} Xu</span>}
-            <button className="text-button vendor-nav" onClick={() => setVendorOpen(true)}>Mở gian hàng</button>
-            <button className="text-button login account-button" onClick={() => setAuthOpen(true)}><img src="/products/witch-avatar.png" alt="" />{loggedIn ? "Tài khoản" : "Đăng nhập"}</button>
-            <button className={`icon-button cart-button ${cartBurst ? "burst" : ""}`} onClick={() => setCartOpen(true)} aria-label="Mở giỏ hàng">
+            <Button color="ghost" size="xs" className="text-button vendor-nav" onClick={() => setVendorOpen(true)}>Mở gian hàng</Button>
+            <Button color="ghost" size="sm" className="text-button login account-button" onClick={() => setAuthOpen(true)}><img src="/products/witch-avatar.png" alt="" />{loggedIn ? "Tài khoản" : "Đăng nhập"}</Button>
+            <Button color="ghost" size="sm" className={`icon-button cart-button ${cartBurst ? "burst" : ""}`} onClick={() => setCartOpen(true)} aria-label="Mở giỏ hàng">
               <img className="magic-cart-icon" src="/products/magic-cart-v2.png" alt="" />
               <span className="cart-flames" aria-hidden="true"><i /><i /><i /></span>
               <b>{cartCount}</b>
-            </button>
-            <button className="mobile-nav-toggle" type="button" onClick={() => setMobileMenuOpen(true)} aria-label="Mở menu"><i /><i /><i /></button>
+            </Button>
+            <Button color="ghost" size="sm" className="mobile-nav-toggle" onClick={() => setMobileMenuOpen(true)} aria-label="Mở menu"><i /><i /><i /></Button>
           </div>
         </nav>
         <AnimatePresence>
           {mobileMenuOpen && <motion.div className="mobile-menu-layer" initial={{ opacity:0 }} animate={{ opacity:1 }} exit={{ opacity:0 }} onMouseDown={() => setMobileMenuOpen(false)}>
             <motion.aside className="mobile-menu" initial={{ x:"100%" }} animate={{ x:0 }} exit={{ x:"100%" }} transition={{ type:"spring",stiffness:260,damping:28 }} onMouseDown={(event) => event.stopPropagation()}>
-              <div><a className="brand" href="#" onClick={() => setMobileMenuOpen(false)}><span className="brand-mark"><img src="/products/cho-ky-ky-logo.png" alt="" /></span><span>Chợ Kỳ Kỳ</span></a><button onClick={() => setMobileMenuOpen(false)} aria-label="Đóng menu">×</button></div>
+              <div><a className="brand" href="#" onClick={() => setMobileMenuOpen(false)}><span className="brand-mark"><img src="/products/cho-ky-ky-logo.png" alt="" /></span><span>Chợ Kỳ Kỳ</span></a><Button color="ghost" size="sm" onClick={() => setMobileMenuOpen(false)} aria-label="Đóng menu">×</Button></div>
               <nav aria-label="Menu di động"><a href="#san-pham" onClick={() => setMobileMenuOpen(false)}>Sản phẩm</a><a href="#san-pham" onClick={() => setMobileMenuOpen(false)}>Danh mục</a><a href="#cach-cho-chay" onClick={() => setMobileMenuOpen(false)}>Cách hoạt động</a></nav>
-              <button className="primary-button" onClick={() => { setMobileMenuOpen(false);setVendorOpen(true); }}>Mở gian hàng</button>
-              <button className="mobile-login" onClick={() => { setMobileMenuOpen(false);setAuthOpen(true); }}>{loggedIn ? `Tài khoản · ${money(balance)} Xu` : "Đăng nhập →"}</button>
+              <Button color="primary" size="lg" className="primary-button" onClick={() => { setMobileMenuOpen(false);setVendorOpen(true); }}>Mở gian hàng</Button>
+              <Button color="secondary" size="lg" className="mobile-login" onClick={() => { setMobileMenuOpen(false);setAuthOpen(true); }}>{loggedIn ? `Tài khoản · ${money(balance)} Xu` : "Đăng nhập →"}</Button>
             </motion.aside>
           </motion.div>}
         </AnimatePresence>
@@ -262,7 +263,7 @@ export default function Home() {
           <div className="hero-bottom">
             <div className="hero-bottom-cta anim-stagger" style={{ animationDelay: ".85s" }}>
               <a href="#san-pham" className="primary-button btn-cut"><b>Đi chợ ngay</b><span className="cta-arrow">→</span><i className="cta-spark">✦</i></a>
-              <button className="secondary-hero-button btn-cut" onClick={() => setVendorOpen(true)}>Bán đồ <span aria-hidden="true">→</span></button>
+              <Button color="secondary" size="lg" className="secondary-hero-button btn-cut" onClick={() => setVendorOpen(true)}>Bán đồ <span aria-hidden="true">→</span></Button>
             </div>
           </div>
         </div>
@@ -302,17 +303,17 @@ export default function Home() {
                   <span className="product-shine" />
                   <span className="magic-particles" aria-hidden="true"><i>✦</i><i>♡</i><i>✧</i><i>♡</i><i>✦</i></span>
                 </Link>
-                <button className="share-button" onClick={() => share(product)} aria-label={`Gửi ${product.name} cho bạn bè`}>↗</button>
+                <Button color="ghost" size="xs" className="share-button" onClick={() => share(product)} aria-label={`Gửi ${product.name} cho bạn bè`}>↗</Button>
                 <div className="product-meta"><span>{product.category}</span><span>{money(product.users)} {product.usage}</span></div>
                 <h3><Link href={`/san-pham/${product.id}`}><span>{product.name}</span><b aria-hidden="true">↗</b></Link></h3>
                 <p>{product.description}</p>
                 <div className="product-tags">{product.tags.slice(0, 2).map((tag) => <span key={tag}>{tag}</span>)}</div>
-                <div className="product-bottom"><strong>{money(product.price)} <small>Xu</small></strong><button className="round-magic-button" onClick={(event) => addToCart(product, event)}>Thêm vào giỏ <span>+</span><i className="heart-float">♥ ♥ ♥</i></button></div>
+                <div className="product-bottom"><strong>{money(product.price)} <small>Xu</small></strong><Button color="primary" size="sm" className="round-magic-button" onClick={(event) => addToCart(product, event)}>Thêm vào giỏ <span>+</span><i className="heart-float">♥ ♥ ♥</i></Button></div>
               </motion.article>
             ))}
-            {shownCount < visible.length && <button className="load-more" onClick={() => setShownCount((count) => count + 24)}>Mở thêm 24 món kỳ lạ <span>↓</span></button>}
+            {shownCount < visible.length && <Button color="secondary" size="lg" className="load-more" onClick={() => setShownCount((count) => count + 24)}>Mở thêm 24 món kỳ lạ <span>↓</span></Button>}
           </div>
-        ) : <div className="empty"><h3>Chưa tìm thấy món nào kỳ đến vậy.</h3><button onClick={() => { setQuery(""); setCategory("Tất cả danh mục"); }}>Xem tất cả sản phẩm</button></div>}
+        ) : <div className="empty"><h3>Chưa tìm thấy món nào kỳ đến vậy.</h3><Button color="primary" size="md" onClick={() => { setQuery(""); setCategory("Tất cả danh mục"); }}>Xem tất cả sản phẩm</Button></div>}
       </section>
 
       <motion.section className="how" id="cach-cho-chay" initial={reduceMotion ? false : { opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: "-90px" }} transition={{ duration: .9 }}>
@@ -328,7 +329,7 @@ export default function Home() {
             <div><b>Săn món lạ</b><span>Thêm vào giỏ và thanh toán trực tiếp bằng số dư.</span></div>
             <div><b>Tự mở chợ</b><span>Đăng món của bạn, chờ duyệt rồi lên kệ.</span></div>
           </div>
-          <button className="primary-button" onClick={() => setAuthOpen(true)}>Nhận 5.000 Xu</button>
+          <Button color="primary" size="lg" className="primary-button" onClick={() => setAuthOpen(true)}>Nhận 5.000 Xu</Button>
         </div>
       </motion.section>
 
@@ -339,27 +340,27 @@ export default function Home() {
 
       {cartOpen && <div className="modal-layer" onMouseDown={() => setCartOpen(false)}>
         <aside className="drawer" onMouseDown={(e) => e.stopPropagation()}>
-          <div className="modal-head"><div><small>GIỎ ĐỒ KỲ LẠ</small><h2>{cartCount} món đang đợi</h2></div><button onClick={() => setCartOpen(false)}>×</button></div>
+          <div className="modal-head"><div><small>GIỎ ĐỒ KỲ LẠ</small><h2>{cartCount} món đang đợi</h2></div><Button color="ghost" size="sm" onClick={() => setCartOpen(false)}>×</Button></div>
           <div className="cart-list">
             {cart.length === 0 ? <div className="cart-empty"><span>⌁</span><h3>Giỏ đang bình thường quá.</h3><p>Thêm vài món lạ rồi quay lại nhé.</p></div> : cart.map((item) => (
-              <div className="cart-item" key={item.id}><img className="mini-sprite" src={item.image} alt="" /><div><h3>{item.name}</h3><span>{money(item.price)} Xu</span></div><div className="quantity"><button onClick={() => updateQuantity(item.id, -1)}>−</button><b>{item.quantity}</b><button onClick={() => updateQuantity(item.id, 1)}>+</button></div></div>
+              <div className="cart-item" key={item.id}><img className="mini-sprite" src={item.image} alt="" /><div><h3>{item.name}</h3><span>{money(item.price)} Xu</span></div><div className="quantity"><Button color="ghost" size="xs" onClick={() => updateQuantity(item.id, -1)}>−</Button><b>{item.quantity}</b><Button color="ghost" size="xs" onClick={() => updateQuantity(item.id, 1)}>+</Button></div></div>
             ))}
           </div>
-          <div className="checkout"><div><span>Tổng cộng</span><strong>{money(total)} Xu</strong></div>{cart.length ? <Link href="/thanh-toan" onClick={() => setCartOpen(false)}>Đến trang thanh toán</Link> : <button disabled>Chưa có món để thanh toán</button>}</div>
+          <div className="checkout"><div><span>Tổng cộng</span><strong>{money(total)} Xu</strong></div>{cart.length ? <Link href="/thanh-toan" onClick={() => setCartOpen(false)}>Đến trang thanh toán</Link> : <Button color="primary" size="lg" disabled>Chưa có món để thanh toán</Button>}</div>
         </aside>
       </div>}
 
       {authOpen && <div className="modal-layer" onMouseDown={() => setAuthOpen(false)}>
         <div className="modal auth-modal" onMouseDown={(e) => e.stopPropagation()}>
-          <button className="modal-close" onClick={() => setAuthOpen(false)}>×</button>
+          <Button color="ghost" size="sm" className="modal-close" onClick={() => setAuthOpen(false)}>×</Button>
           <div className="account-coin"><img src="/products/ky-la-coin-purple-v2.png" alt="Xu Kỳ Lạ" /><span>{loggedIn ? money(balance) : "5.000"}<small> Xu Kỳ Lạ</small></span></div><p>VÍ XU KỲ LẠ</p><h2>{loggedIn ? "Kho phép màu của bạn." : authMode === "register" ? "Tạo tài khoản, nhận ngay 5.000 Xu." : "Đăng nhập để xem ví Xu Kỳ Lạ."}</h2>
-          {loggedIn ? <><div className="account-balance">{money(balance)} <small>Xu Kỳ Lạ</small></div><button className="primary-button" onClick={() => setAuthOpen(false)}>Tiếp tục đi chợ</button></> :
+          {loggedIn ? <><div className="account-balance">{money(balance)} <small>Xu Kỳ Lạ</small></div><Button color="primary" size="lg" className="primary-button" onClick={() => setAuthOpen(false)}>Tiếp tục đi chợ</Button></> :
           <form onSubmit={register}>
             <label>Họ và tên<input required placeholder="Nguyễn Kỳ Lạ" /></label>
             <label>Email<input type="email" required placeholder="ban@kyky.vn" /></label>
             <label>Mật khẩu<input type="password" required minLength={6} placeholder="Ít nhất 6 ký tự" /></label>
-            <button type="submit">{authMode === "register" ? "Đăng ký và nhận Xu" : "Đăng nhập"}</button>
-            <button className="auth-switch" type="button" onClick={() => setAuthMode(authMode === "register" ? "login" : "register")}>{authMode === "register" ? "Đã có tài khoản? Đăng nhập" : "Chưa có tài khoản? Đăng ký"}</button>
+            <Button color="primary" size="lg" type="submit">{authMode === "register" ? "Đăng ký và nhận Xu" : "Đăng nhập"}</Button>
+            <Button color="secondary" size="lg" className="auth-switch" onClick={() => setAuthMode(authMode === "register" ? "login" : "register")}>{authMode === "register" ? "Đã có tài khoản? Đăng nhập" : "Chưa có tài khoản? Đăng ký"}</Button>
             <small>Bằng cách tham gia, bạn đồng ý rằng đồ ở đây hơi kỳ.</small>
           </form>}
         </div>
@@ -367,7 +368,7 @@ export default function Home() {
 
       {vendorOpen && <div className="modal-layer" onMouseDown={() => setVendorOpen(false)}>
         <div className="modal vendor-modal" onMouseDown={(e) => e.stopPropagation()}>
-          <button className="modal-close" onClick={() => setVendorOpen(false)}>×</button><p>MỞ GIAN HÀNG</p><h2>Bạn có gì lạ?</h2>
+          <Button color="ghost" size="sm" className="modal-close" onClick={() => setVendorOpen(false)}>×</Button><p>MỞ GIAN HÀNG</p><h2>Bạn có gì lạ?</h2>
           <form onSubmit={submitProduct}>
             <div className="form-grid">
               <label>Tên sản phẩm<input name="name" required placeholder="Ví dụ: Mũ nghe được suy nghĩ" /></label>
@@ -376,7 +377,7 @@ export default function Home() {
               <label>Ảnh minh họa<input name="image" type="file" accept="image/*" /></label>
             </div>
             <label>Mô tả độ kỳ lạ<textarea name="description" required placeholder="Nói rõ món này kỳ ở đâu và dùng để làm gì..." /></label>
-            <button type="submit">Gửi duyệt sản phẩm</button>
+            <Button color="primary" size="lg" type="submit">Gửi duyệt sản phẩm</Button>
           </form>
         </div>
       </div>}
