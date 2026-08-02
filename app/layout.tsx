@@ -1,11 +1,18 @@
 import type { Metadata } from "next";
-import { Quicksand } from "next/font/google";
+import { Montserrat, Quicksand } from "next/font/google";
 import "./globals.css";
 
 const quicksand = Quicksand({
   subsets: ["latin", "vietnamese"],
   weight: ["400", "500", "600", "700"],
   variable: "--font-body",
+  display: "swap",
+});
+const montserrat = Montserrat({
+  subsets: ["latin", "vietnamese"],
+  weight: ["700", "800"],
+  style: "italic",
+  variable: "--font-display",
   display: "swap",
 });
 export const metadata: Metadata = {
@@ -16,7 +23,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="vi" data-scroll-behavior="smooth">
-      <body className={quicksand.variable}>{children}</body>
+      <body className={`${quicksand.variable} ${montserrat.variable}`}>{children}</body>
     </html>
   );
 }
