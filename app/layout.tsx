@@ -11,7 +11,7 @@ const quicksand = Quicksand({
 const playfair = Playfair_Display({
   subsets: ["latin", "vietnamese"],
   weight: ["700", "800"],
-  style: "italic",
+  style: "normal",
   variable: "--font-display",
   display: "swap",
 });

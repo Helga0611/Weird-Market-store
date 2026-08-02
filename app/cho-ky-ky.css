@@ -1435,7 +1435,7 @@ footer a:last-child { color:#fff; }
   line-height:1.08;
   letter-spacing:-.025em;
 }
-.hero h1 em { font-style:italic; }
+.hero h1 em { font-style:normal!important; }
 .hero-copy { gap:24px; }
 .hero-copy p { line-height:1.5; }
 .hero-bottom { margin-top:48px; }
@@ -1765,7 +1765,7 @@ footer a:last-child { color:#fff; }
   color:#fff;
   font-family:var(--font-display);
   font-size:24px;
-  font-style:italic;
+  font-style:normal;
   font-weight:800;
 }
 .mobile-menu>.primary-button { margin-top:auto;display:flex;align-items:center;justify-content:center; }
