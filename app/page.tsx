@@ -70,6 +70,7 @@ export default function Home() {
   const [authOpen, setAuthOpen] = useState(false);
   const [authMode, setAuthMode] = useState<"register" | "login">("register");
   const [vendorOpen, setVendorOpen] = useState(false);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [loggedIn, setLoggedIn] = useState(false);
   const [balance, setBalance] = useState(0);
   const [hydrated, setHydrated] = useState(false);
@@ -225,7 +226,7 @@ export default function Home() {
       <header className="nav-wrap">
         <nav className="liquid-glass nav">
           <a className="brand" href="#"><span className="brand-mark"><img src="/products/cho-ky-ky-logo.png" alt="" /></span><span>Chợ Kỳ Kỳ</span></a>
-          <div className="nav-links"><a href="#san-pham">Khám phá</a><a href="#cach-cho-chay">Chợ vận hành</a></div>
+          <div className="nav-links"><a href="#san-pham">Sản phẩm</a><a href="#san-pham">Danh mục</a><a href="#cach-cho-chay">Cách hoạt động</a><button onClick={() => setVendorOpen(true)}>Bán đồ</button></div>
           <div className="nav-actions">
             {loggedIn && <span className="balance"><img src="/products/ky-la-coin-purple-v2.png" alt="" /> {money(balance)} Xu</span>}
             <button className="text-button vendor-nav" onClick={() => setVendorOpen(true)}>Mở gian hàng</button>
@@ -235,29 +236,36 @@ export default function Home() {
               <span className="cart-flames" aria-hidden="true"><i /><i /><i /></span>
               <b>{cartCount}</b>
             </button>
+            <button className="mobile-nav-toggle" type="button" onClick={() => setMobileMenuOpen(true)} aria-label="Mở menu"><i /><i /><i /></button>
           </div>
         </nav>
+        <AnimatePresence>
+          {mobileMenuOpen && <motion.div className="mobile-menu-layer" initial={{ opacity:0 }} animate={{ opacity:1 }} exit={{ opacity:0 }} onMouseDown={() => setMobileMenuOpen(false)}>
+            <motion.aside className="mobile-menu" initial={{ x:"100%" }} animate={{ x:0 }} exit={{ x:"100%" }} transition={{ type:"spring",stiffness:260,damping:28 }} onMouseDown={(event) => event.stopPropagation()}>
+              <div><a className="brand" href="#" onClick={() => setMobileMenuOpen(false)}><span className="brand-mark"><img src="/products/cho-ky-ky-logo.png" alt="" /></span><span>Chợ Kỳ Kỳ</span></a><button onClick={() => setMobileMenuOpen(false)} aria-label="Đóng menu">×</button></div>
+              <nav aria-label="Menu di động"><a href="#san-pham" onClick={() => setMobileMenuOpen(false)}>Sản phẩm</a><a href="#san-pham" onClick={() => setMobileMenuOpen(false)}>Danh mục</a><a href="#cach-cho-chay" onClick={() => setMobileMenuOpen(false)}>Cách hoạt động</a></nav>
+              <button className="primary-button" onClick={() => { setMobileMenuOpen(false);setVendorOpen(true); }}>Mở gian hàng</button>
+              <button className="mobile-login" onClick={() => { setMobileMenuOpen(false);setAuthOpen(true); }}>{loggedIn ? `Tài khoản · ${money(balance)} Xu` : "Đăng nhập →"}</button>
+            </motion.aside>
+          </motion.div>}
+        </AnimatePresence>
       </header>
 
       <section className="hero">
         <MagicVideo />
         <div className="hero-video-overlay" />
-        <div className="hero-left anim-stagger" style={{ animationDelay: ".4s" }}>
-          <p>Đi cùng chúng tôi<br />khám phá chân trời<br />không bình thường.</p>
-          <div><span /><span /></div>
-          <small>Phép màu<br />không giới hạn <b>01</b></small>
-        </div>
-        <div className="hero-copy anim-stagger" style={{ animationDelay: ".5s" }}>
-          <h1>Chợ không thiếu thứ gì,<br /><em>chỉ thiếu đồ bình thường.</em></h1>
-          <p>Mua chuyện lạ bằng Xu Kỳ Lạ. Giao hàng thật, công dụng thì chưa chắc.</p>
-        </div>
-        <div className="hero-bottom">
-          <div />
-          <div className="hero-bottom-cta anim-stagger" style={{ animationDelay: ".85s" }}>
-            <a href="#san-pham" className="primary-button btn-cut"><b>Đi chợ ngay</b><span className="cta-arrow">→</span><i className="cta-spark">✦</i></a>
-            <button className="secondary-hero-button btn-cut" onClick={() => setVendorOpen(true)}>Bán đồ</button>
+        <div className="hero-shell">
+          <a className="hero-announcement anim-stagger" style={{ animationDelay: ".35s" }} href="#san-pham"><span>Chợ vừa mở thêm 100 món kỳ tuyển</span><b>Khám phá →</b></a>
+          <div className="hero-copy anim-stagger" style={{ animationDelay: ".5s" }}>
+            <h1>Chợ không thiếu thứ gì, <em>chỉ thiếu đồ bình thường.</em></h1>
+            <p>Mua chuyện lạ bằng Xu Kỳ Lạ. Giao hàng thật, công dụng thì chưa chắc.</p>
           </div>
-          <div />
+          <div className="hero-bottom">
+            <div className="hero-bottom-cta anim-stagger" style={{ animationDelay: ".85s" }}>
+              <a href="#san-pham" className="primary-button btn-cut"><b>Đi chợ ngay</b><span className="cta-arrow">→</span><i className="cta-spark">✦</i></a>
+              <button className="secondary-hero-button btn-cut" onClick={() => setVendorOpen(true)}>Bán đồ <span aria-hidden="true">→</span></button>
+            </div>
+          </div>
         </div>
       </section>
 
