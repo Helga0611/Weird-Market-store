@@ -957,6 +957,14 @@ footer a:last-child { color:#fff; }
   transform:scale(1.18);
   filter:drop-shadow(0 0 8px rgba(190,128,255,.72));
 }
+button.cart-button.ui-button[data-size="sm"] {
+  width:42px;
+  min-width:42px;
+  height:42px!important;
+  min-height:42px!important;
+  padding:0!important;
+  aspect-ratio:1;
+}
 .cart-flames { position:absolute;z-index:-1;inset:-9px;pointer-events:none;opacity:0; }
 .cart-flames i {
   position:absolute;
