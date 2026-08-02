@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Montserrat, Quicksand } from "next/font/google";
+import { Playfair_Display, Quicksand } from "next/font/google";
 import "./globals.css";
 
 const quicksand = Quicksand({
@@ -8,7 +8,7 @@ const quicksand = Quicksand({
   variable: "--font-body",
   display: "swap",
 });
-const montserrat = Montserrat({
+const playfair = Playfair_Display({
   subsets: ["latin", "vietnamese"],
   weight: ["700", "800"],
   style: "italic",
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="vi" data-scroll-behavior="smooth">
-      <body className={`${quicksand.variable} ${montserrat.variable}`}>{children}</body>
+      <body className={`${quicksand.variable} ${playfair.variable}`}>{children}</body>
     </html>
   );
 }

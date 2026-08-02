@@ -255,7 +255,6 @@ export default function Home() {
         <MagicVideo />
         <div className="hero-video-overlay" />
         <div className="hero-shell">
-          <a className="hero-announcement anim-stagger" style={{ animationDelay: ".35s" }} href="#san-pham"><span>Chợ vừa mở thêm 100 món kỳ tuyển</span><b>Khám phá →</b></a>
           <div className="hero-copy anim-stagger" style={{ animationDelay: ".5s" }}>
             <h1>Chợ không thiếu thứ gì, <em>chỉ thiếu đồ bình thường.</em></h1>
             <p>Mua chuyện lạ bằng Xu Kỳ Lạ. Giao hàng thật, công dụng thì chưa chắc.</p>
